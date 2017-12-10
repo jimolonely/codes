@@ -33,6 +33,8 @@ $ nginx -s stop
 ## 配置
 首先确定配置文件在哪,默认安装的在:/etc/nginx/nginx.conf
 
+最烦的就是nginx的location配置,参考:[https://segmentfault.com/a/1190000009651161](https://segmentfault.com/a/1190000009651161)
+
 ```sh
 
 #user html;
@@ -82,9 +84,16 @@ http {
 
         #access_log  logs/host.access.log  main;
 
+        # 匹配根目录
         location / {
-            root   /usr/share/nginx/html; # 应用目录
-            index  index.html index.htm; # 访问入口
+            # root   /home/jimo/workspace/temp/react/inmyworld/build;
+            root   /usr/share/nginx/html;
+            index  index.html;
+        }
+
+        # 一些静态资源
+        location ~* \.(gif|jpg|jpeg|png|css|js|ico)$ {
+            root /usr/share/nginx/html;
         }
 
         #error_page  404              /404.html;
