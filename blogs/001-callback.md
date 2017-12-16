@@ -121,6 +121,15 @@ function calcSum(x, y) {
 console.log(someCalc(5, 15, calcProduct));
 console.log(someCalc(5, 15, calcSum));
 ```
+in fact,more common is jquery:
+```
+$.ajax(
+    url:"",
+    type:"",
+    success:function(){},
+    error:funtion(){}
+)
+```
 ## C
 c语言的实现和javascript类似,只不过涉及到传递函数的指针:
 ```c
