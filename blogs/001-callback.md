@@ -123,6 +123,7 @@ function calcSum(x, y) {
 console.log(someCalc(5, 15, calcProduct));
 console.log(someCalc(5, 15, calcSum));
 ```
+<<<<<<< HEAD
 其实更常用的Ajax请求使用的就是回调函数,这里以jquery库为例:
 ```javascript
 $.ajax({
@@ -138,6 +139,17 @@ $.ajax({
 console.log(2)
 ```
 这里的success和error是用户自定定义,而把请求的过程交给框架去执行,如果把async设为false,则console.log(2)会在请求完成后才执行,否则为异步,不过这里的异步与回调函数的异步无关了,因为无论如何这里的回调都是异步的.
+=======
+in fact,more common is jquery:
+```
+$.ajax(
+    url:"",
+    type:"",
+    success:function(){},
+    error:funtion(){}
+)
+```
+>>>>>>> 34ce382532488e633bd781713f2ffec794cfbe82
 ## C
 c语言的实现和javascript类似,只不过涉及到传递函数的指针:
 ```c
