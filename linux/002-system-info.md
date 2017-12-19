@@ -56,3 +56,21 @@ tmpfs           5.9G   44M  5.8G    1% /tmp
 tmpfs           1.2G   16K  1.2G    1% /run/user/1000
 ```
 也可以使用di命令，不过需要安装。
+## 3.测试硬盘读写速度
+写：
+```shell
+[jimo@jimo-pc ~]$ dd if=/dev/zero of=/tmp/output.img bs=8k count=256k conv=fdatasync; rm -rf /tmp/output.img
+记录了262144+0 的读入
+记录了262144+0 的写出
+2147483648 bytes (2.1 GB, 2.0 GiB) copied, 0.591138 s, 3.6 GB/s
+```
+读：
+```shell
+[jimo@jimo-pc ~]$ sudo hdparm -Tt /dev/sda
+[sudo] jimo 的密码：
+
+/dev/sda:
+ Timing cached reads: 17230 MB in  2.00 seconds = 8622.86 MB/sec
+ Timing buffered disk reads: 978 MB in  3.01 seconds = 325.39 MB/sec
+```
+看起来SSD还不错。
