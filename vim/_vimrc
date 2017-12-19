@@ -1,0 +1,43 @@
+""" used in windows
+
+
+syntax on  
+  
+filetype on  
+ 
+filetype plugin on  
+
+set backspace=indent,eol,start  
+set whichwrap+=<,>,h,l  
+
+set number  
+
+set scrolloff=6  
+" replace tab with space  
+set expandtab  
+ 
+set tabstop=4  
+  
+set softtabstop=4  
+ 
+set shiftwidth=4
+set smarttab  
+set history=1024
+ 
+set hlsearch 
+
+ 
+set smartindent
+
+  
+set showmatch
+
+
+set display=lastline
+
+ 
+" set encoding=utf-8
+
+set guifont=consolas:h13
+
+colorscheme desert
