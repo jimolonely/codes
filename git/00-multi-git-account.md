@@ -9,7 +9,7 @@
 很简单,2种方法
 1. 在github界面查看:当初是怎样克隆的就是哪种方式.
 
-![ssh](./images/003/1-ssh.png)
+![ssh](./images/00/1-ssh.png)
 
 2. 命令查看:
     1. ssh
