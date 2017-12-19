@@ -1,2 +1,2 @@
-# learning-notes
+# blogs
 full stack learning notes
