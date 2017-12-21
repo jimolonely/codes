@@ -169,6 +169,166 @@ $ awk '{print length($0)}' marks.txt
 23
 23
 ```
+## awk内置变量
+有一些内置变量需要了解,可以加快编程.
+### ARGC
+代表参数个数
+```shell
+$ awk 'BEGIN {print "Arguments =", ARGC}' One Two Three Four
+Arguments = 5
+```
+为什么有5个?看下面
+### ARGV
+存储每个参数
+```shell
+$ awk 'BEGIN {                                              
+   for (i = 0; i < ARGC; ++i) { 
+      printf "ARGV[%d] = %s\n", i, ARGV[i] 
+   } 
+}' one two three four
+ARGV[0] = awk
+ARGV[1] = one
+ARGV[2] = two
+ARGV[3] = three
+ARGV[4] = four
+```
+### CONVFMT
+代表数字的转换格式,默认是%.6g
+```shell
+]$ awk 'BEGIN {print "Conversion format = ",CONVFMT}'
+Conversion format =  %.6g
+```
+### ENVIRON
+一个环境变量的关联数组.
+```shell
+$ awk 'BEGIN {print ENVIRON["user"]}'
+# 什么都没有
+```
+### FILENAME
+当前文件名
+```shell
+$ awk 'END {print FILENAME}' marks.txt 
+marks.txt
+```
+### FS
+field separator,输入域的分隔符,默认是空格.可以使用-F修改.
+```shell
+[jimo@jimo-pc shell]$ awk 'BEGIN {print "FS=" FS}' | cat -vte
+FS= $
+
+[jimo@jimo-pc shell]$ awk -F "," 'BEGIN {print "FS=" FS}'
+FS=,
+```
+### NF
+number of field,只是某一行的域个数.
+```shell
+$ echo -e "One Two\nOne Two Three\nOne Two Three Four" | awk 'NF > 3'
+One Two Three Four
+```
+### NR
+number of record,当前记录的个数.
+```shell
+$ echo -e "One Two\nOne Two Three\nOne Two Three Four" | awk 'NR < 3'
+One Two
+One Two Three
+```
+### FNR
+它与NR类似，但相对于当前文件。AWK在多个文件上运行时很有用。FNR的值与新文件重置。
+### OFMT
+输出数字格式,默认%.6g
+```shell
+$ awk 'BEGIN {print "OFMT = " OFMT}'
+OFMT = %.6g
+```
+### OFS
+output field separator,行内输出分隔符,默认也是空格.
+```shell
+$ awk 'BEGIN {print "OFS = " OFS}' | cat -vte
+OFS =  $
+```
+### ORS
+output record separator,输出记录(行)分隔符,或则行间分隔符,默认是\n
+```shell
+$ awk 'BEGIN {print "ORS = " ORS}' | cat -vte
+ORS = $
+$
+```
+### RS
+input record separator,输入记录(行)分隔符,或则行间分隔符,默认是\n
+```shell
+$ awk 'BEGIN {print "RS = " RS}' | cat -vte
+RS = $
+$
+```
+### RLENGTH
+代表match函数匹配的字符串长度.
+```shell
+$ awk 'BEGIN { if (match("One Two Three", "re")) { print RLENGTH } }'
+2
+```
+### RSTART
+由match匹配的字符串的第一个位置.
+```shell
+$ awk 'BEGIN { if (match("One Two Three", "Thre")) { print RSTART } }'
+9
+```
+### SUBSEP
+数组下标分隔符,默认是\034
+```shell
+$ awk 'BEGIN { print "SUBSEP = " SUBSEP }' | cat -vte
+SUBSEP = ^\$
+```
+### $0
+代表整个输入记录
+```shell
+$ awk '{print $0}' marks.txt
+1)  Amit    Physics  80
+2)  Rahul   Maths    90
+3)  Shyam   Biology  87
+4)  Kedar   English  85
+5)  Hari    History  89
+```
+### $n
+代表第n个被FS分割的单元
+```shell
+$ awk '{print $3 "\t" $4}' marks.txt
+Physics	80
+Maths	90
+Biology	87
+English	85
+History	89
+```
+## GNU AWK的特定变量
+### ERRNO
+一个错误字符串
+```shell
+$ awk 'BEGIN { ret = getline < "junk.txt"; if (ret == -1) print "Error:", ERRNO }'
+Error: 没有那个文件或目录
+```
+### IGNORECASE
+忽略大小写
+```shell
+$ awk 'BEGIN{IGNORECASE = 1} /amit/' marks.txt
+1)  Amit    Physics  80
+```
+### LINT
+```shell
+$ awk 'BEGIN {LINT = 1; a}'
+awk: 命令行:1: 警告：引用未初始化的变量“a”
+awk: 命令行:1: 警告：statement has no effect
+```
+### PROCINFO
+打印与该进程相关的信息,如UID, PID等.
+```shell
+$ awk 'BEGIN { print PROCINFO["pid"] }'
+14206
+```
+### TEXTDOMAIN
+它代表了AWK程序的文本域,它用于查找程序字符串的本地化翻译。
+```shell
+$ awk 'BEGIN { print TEXTDOMAIN }'
+messages
+```
 
 
 
