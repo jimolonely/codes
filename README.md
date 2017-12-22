@@ -15,3 +15,8 @@ full stack learning notes
 
 [matplotlib-python绘图必备](./matplotlib)
 
+[maven](./maven)
+
+[nginx](./nginx)
+
+[npm](./npm)
