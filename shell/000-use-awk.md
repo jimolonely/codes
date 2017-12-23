@@ -329,7 +329,87 @@ $ awk 'BEGIN { print PROCINFO["pid"] }'
 $ awk 'BEGIN { print TEXTDOMAIN }'
 messages
 ```
+## awk运算符
+和程序语言一样的运算符.
 
+算术运算
++-*/%
+```shell
+[jimo@jimo-pc shell]$ awk 'BEGIN { a = 50; b = 20; print "(a + b) = ", (a + b) }'
+(a + b) =  70
+[jimo@jimo-pc shell]$ awk 'BEGIN { a = 50; b = 20; print "(a - b) = ", (a - b) }'
+(a - b) =  30
+[jimo@jimo-pc shell]$ awk 'BEGIN { a = 50; b = 20; print "(a * b) = ", (a * b) }'
+(a * b) =  1000
+[jimo@jimo-pc shell]$ awk 'BEGIN { a = 50; b = 20; print "(a / b) = ", (a / b) }'
+(a / b) =  2.5
+[jimo@jimo-pc shell]$ awk 'BEGIN { a = 50; b = 20; print "(a % b) = ", (a % b) }'
+(a % b) =  10
+```
+++,--
+```shell
+[jimo@jimo-pc shell]$ awk 'BEGIN { a = 10; b = ++a; printf "a = %d, b = %d\n", a, b }'
+a = 11, b = 11
+[jimo@jimo-pc shell]$ awk 'BEGIN { a = 10; b = a++; printf "a = %d, b = %d\n", a, b }'
+a = 11, b = 10
+[jimo@jimo-pc shell]$ awk 'BEGIN { a = 10; b = --a; printf "a = %d, b = %d\n", a, b }'
+a = 9, b = 9
+[jimo@jimo-pc shell]$ awk 'BEGIN { a = 10; b = a--; printf "a = %d, b = %d\n", a, b }'
+a = 9, b = 10
+```
+简写:
+```shell
+[jimo@jimo-pc shell]$ awk 'BEGIN { cnt = 2; cnt **= 4; print "Counter =", cnt }'
+Counter = 16
+[jimo@jimo-pc shell]$ awk 'BEGIN { cnt = 2; cnt ^= 4; print "Counter =", cnt }'
+Counter = 16
+```
+比较运算符:>,<,==,!=,>=,<=
+
+逻辑运算符:&&,||,!
+
+三元运算符:condition expression ? statement1 : statement2
+
+一元运算符:
+```shell
+[jimo@jimo-pc shell]$ awk 'BEGIN { a = -10; a = +a; print "a =", a }'
+a = -10
+[jimo@jimo-pc shell]$ awk 'BEGIN { a = -10; a = -a; print "a =", a }'
+a = 10
+```
+指数运算:
+```shell
+[jimo@jimo-pc shell]$ awk 'BEGIN { a = 10; a = a ^ 2; print "a =", a }'
+a = 100
+[jimo@jimo-pc shell]$ awk 'BEGIN { a = 10; a = a**2; print "a =", a }'
+a = 100
+```
+字符串连接符:有点区别,这里是空格
+```shell
+[jimo@jimo-pc shell]$ awk 'BEGIN { str1 = "Hello,"; str2 = "World"; str3 = str1 str2; print str3 }'
+Hello,World
+```
+in运算符:
+```shell
+[jimo@jimo-pc shell]$ awk 'BEGIN { 
+>    arr[0] = 1; arr[1] = 2; arr[2] = 3; for (i in arr) printf "arr[%d] = %d\n", i, arr[i]
+> }'
+arr[0] = 1
+arr[1] = 2
+arr[2] = 3
+```
+正则运算符:这里不是指正则运算的,而是匹配和不匹配:
+```shell
+# 含有9的行
+[jimo@jimo-pc shell]$ awk '$0 ~ 9' marks.txt
+2)  Rahul   Maths    90
+5)  Hari    History  89
+# 不含9的行
+[jimo@jimo-pc shell]$ awk '$0 !~ 9' marks.txt
+1)  Amit    Physics  80
+3)  Shyam   Biology  87
+4)  Kedar   English  85
+```
 
 
 
