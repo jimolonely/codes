@@ -59,3 +59,46 @@ public void convert() throws Exception {
     assertEquals(1234, re);
 }
 ```
+## 4.Method and constructor reference ::
+ ```java
+//way1
+@Test
+public void test() throws Exception {
+    Converter<Integer, String> converter = Integer::parseInt;
+    final int re = converter.convert("1234");
+    assertEquals(1234, re);
+}
+
+//way2
+public class Something {
+    String startsWith(String s) {
+        return String.valueOf(s.charAt(0));
+    }
+}
+
+final Something something = new Something();
+Converter<String, String> converter = something::startsWith;
+assertEquals("J", converter.convert("Jimo"));
+
+//way3
+public class Student {
+    String id;
+    String name;
+
+    public Student() {
+    }
+
+    public Student(String id, String name) {
+        this.id = id;
+        this.name = name;
+    }
+}
+
+public interface StudentFactory<S extends Student> {
+    S create(String id, String name);
+}
+
+StudentFactory<Student> factory = Student::new;
+final Student jimo = factory.create("001", "jimo");
+```
+
