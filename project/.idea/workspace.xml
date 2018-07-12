@@ -18,25 +18,38 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="417">
-                <caret line="93" column="5" lean-forward="true" selection-start-line="93" selection-start-column="5" selection-end-line="93" selection-end-column="5" />
+              <first_editor relative-caret-position="483">
+                <caret line="135" column="0" lean-forward="true" selection-start-line="135" selection-start-column="0" selection-end-line="135" selection-end-column="0" />
                 <folding>
-                  <marker date="1531274172716" expanded="false" signature="156:167" ph=" { " />
-                  <marker date="1531274172716" expanded="false" signature="180:186" ph=" }" />
-                  <marker date="1531274172716" expanded="true" signature="232:541" ph="{...}" />
-                  <marker date="1531274172716" expanded="true" signature="329:420" ph="(a, b) → { " />
-                  <marker date="1531274172716" expanded="true" signature="433:449" ph=" }" />
-                  <marker date="1531274172716" expanded="true" signature="1102:1256" ph="{...}" />
-                  <marker date="1531274172716" expanded="true" signature="1531:1618" ph="{...}" />
-                  <marker date="1531274172716" expanded="true" signature="1564:1575" ph=" { " />
-                  <marker date="1531274172716" expanded="true" signature="1610:1616" ph=" }" />
-                  <marker date="1531274172716" expanded="true" signature="1801:1966" ph="{...}" />
-                  <marker date="1531274172716" expanded="true" signature="1857:1864" ph="{...}" />
-                  <marker date="1531274172716" expanded="true" signature="1909:1964" ph="{...}" />
-                  <marker date="1531274172716" expanded="true" signature="2019:2060" ph="{...}" />
+                  <marker date="1531358639848" expanded="false" signature="156:167" ph=" { " />
+                  <marker date="1531358639848" expanded="false" signature="180:186" ph=" }" />
+                  <marker date="1531358639848" expanded="true" signature="232:541" ph="{...}" />
+                  <marker date="1531358639848" expanded="true" signature="329:420" ph="(a, b) → { " />
+                  <marker date="1531358639848" expanded="true" signature="433:449" ph=" }" />
+                  <marker date="1531358639848" expanded="true" signature="1102:1256" ph="{...}" />
+                  <marker date="1531358639848" expanded="true" signature="1531:1618" ph="{...}" />
+                  <marker date="1531358639848" expanded="true" signature="1564:1575" ph=" { " />
+                  <marker date="1531358639848" expanded="true" signature="1610:1616" ph=" }" />
+                  <marker date="1531358639848" expanded="true" signature="1801:1966" ph="{...}" />
+                  <marker date="1531358639848" expanded="true" signature="1857:1864" ph="{...}" />
+                  <marker date="1531358639848" expanded="true" signature="1909:1964" ph="{...}" />
+                  <marker date="1531358639848" expanded="true" signature="2019:2060" ph="{...}" />
+                  <marker date="1531358639848" expanded="true" signature="2527:2826" ph="{...}" />
+                  <marker date="1531358639848" expanded="true" signature="2586:2666" ph="{...}" />
+                  <marker date="1531358639848" expanded="true" signature="2727:2819" ph="{...}" />
                 </folding>
               </first_editor>
               <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LambdaScope.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/java8/LambdaScope.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="80">
+              <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="20" selection-end-column="1" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -67,8 +80,8 @@
       <file leaf-file-name="Converter.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/java8/Converter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="96">
-              <caret line="6" column="17" lean-forward="false" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+            <state relative-caret-position="112">
+              <caret line="7" column="22" lean-forward="true" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
               <folding />
             </state>
           </provider>
@@ -77,8 +90,8 @@
       <file leaf-file-name="ConverterTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/java8/ConverterTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="448">
-              <caret line="30" column="0" lean-forward="true" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+            <state relative-caret-position="496">
+              <caret line="33" column="0" lean-forward="false" selection-start-line="33" selection-start-column="0" selection-end-line="35" selection-end-column="38" />
               <folding />
             </state>
           </provider>
@@ -130,8 +143,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="Class" />
         <option value="JUnit4 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -149,9 +162,10 @@
         <option value="$PROJECT_DIR$/src/main/java/java8/Converter.java" />
         <option value="$PROJECT_DIR$/src/main/java/java8/Something.java" />
         <option value="$PROJECT_DIR$/src/main/java/java8/Student.java" />
-        <option value="$PROJECT_DIR$/src/test/java/java8/ConverterTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/java8/StudentFactory.java" />
         <option value="$PROJECT_DIR$/src/test/java/java8/StudentFactoryTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/java8/ConverterTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/java8/LambdaScope.java" />
         <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
@@ -837,7 +851,7 @@
       <option name="presentableId" value="Default" />
       <updated>1531228165221</updated>
       <workItem from="1531228166406" duration="554000" />
-      <workItem from="1531228868038" duration="3749000" />
+      <workItem from="1531228868038" duration="5392000" />
     </task>
     <servers />
   </component>
@@ -859,7 +873,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4303000" />
+    <option name="totallyTimeSpent" value="5946000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="0" width="1368" height="769" extended-state="6" />
@@ -943,14 +957,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/java8/Converter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="6" column="17" lean-forward="false" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/java8/Something.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="80">
@@ -959,14 +965,6 @@
             <element signature="e#112#113#0" expanded="true" />
             <element signature="e#162#163#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/java8/ConverterTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="448">
-          <caret line="30" column="0" lean-forward="true" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -994,25 +992,52 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/java8/ConverterTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="496">
+          <caret line="33" column="0" lean-forward="false" selection-start-line="33" selection-start-column="0" selection-end-line="35" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/java8/Converter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="7" column="22" lean-forward="true" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/java8/LambdaScope.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="20" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="417">
-            <caret line="93" column="5" lean-forward="true" selection-start-line="93" selection-start-column="5" selection-end-line="93" selection-end-column="5" />
+          <first_editor relative-caret-position="483">
+            <caret line="135" column="0" lean-forward="true" selection-start-line="135" selection-start-column="0" selection-end-line="135" selection-end-column="0" />
             <folding>
-              <marker date="1531274172716" expanded="false" signature="156:167" ph=" { " />
-              <marker date="1531274172716" expanded="false" signature="180:186" ph=" }" />
-              <marker date="1531274172716" expanded="true" signature="232:541" ph="{...}" />
-              <marker date="1531274172716" expanded="true" signature="329:420" ph="(a, b) → { " />
-              <marker date="1531274172716" expanded="true" signature="433:449" ph=" }" />
-              <marker date="1531274172716" expanded="true" signature="1102:1256" ph="{...}" />
-              <marker date="1531274172716" expanded="true" signature="1531:1618" ph="{...}" />
-              <marker date="1531274172716" expanded="true" signature="1564:1575" ph=" { " />
-              <marker date="1531274172716" expanded="true" signature="1610:1616" ph=" }" />
-              <marker date="1531274172716" expanded="true" signature="1801:1966" ph="{...}" />
-              <marker date="1531274172716" expanded="true" signature="1857:1864" ph="{...}" />
-              <marker date="1531274172716" expanded="true" signature="1909:1964" ph="{...}" />
-              <marker date="1531274172716" expanded="true" signature="2019:2060" ph="{...}" />
+              <marker date="1531358639848" expanded="false" signature="156:167" ph=" { " />
+              <marker date="1531358639848" expanded="false" signature="180:186" ph=" }" />
+              <marker date="1531358639848" expanded="true" signature="232:541" ph="{...}" />
+              <marker date="1531358639848" expanded="true" signature="329:420" ph="(a, b) → { " />
+              <marker date="1531358639848" expanded="true" signature="433:449" ph=" }" />
+              <marker date="1531358639848" expanded="true" signature="1102:1256" ph="{...}" />
+              <marker date="1531358639848" expanded="true" signature="1531:1618" ph="{...}" />
+              <marker date="1531358639848" expanded="true" signature="1564:1575" ph=" { " />
+              <marker date="1531358639848" expanded="true" signature="1610:1616" ph=" }" />
+              <marker date="1531358639848" expanded="true" signature="1801:1966" ph="{...}" />
+              <marker date="1531358639848" expanded="true" signature="1857:1864" ph="{...}" />
+              <marker date="1531358639848" expanded="true" signature="1909:1964" ph="{...}" />
+              <marker date="1531358639848" expanded="true" signature="2019:2060" ph="{...}" />
+              <marker date="1531358639848" expanded="true" signature="2527:2826" ph="{...}" />
+              <marker date="1531358639848" expanded="true" signature="2586:2666" ph="{...}" />
+              <marker date="1531358639848" expanded="true" signature="2727:2819" ph="{...}" />
             </folding>
           </first_editor>
           <second_editor />

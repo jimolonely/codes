@@ -29,4 +29,11 @@ public class ConverterTest {
         assertEquals("J", converter.convert("Jimo"));
     }
 
+    @Test
+    public void test3() throws Exception {
+        int num = 2;
+        Converter<String,Integer> converter = (from)->String.valueOf(from+num);
+//        num = 3;//error,num is final
+
+    }
 }

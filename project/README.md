@@ -101,4 +101,37 @@ public interface StudentFactory<S extends Student> {
 StudentFactory<Student> factory = Student::new;
 final Student jimo = factory.create("001", "jimo");
 ```
+## 5.Lambda Scopes
+### 5.1 final local variables
+```java
+int num = 2;
+Converter<String,Integer> converter = (from)->String.valueOf(from+num); 
+//num = 3;//error,num is final
+```
+### 5.2 field and static variables
+instance fields and static variables can read and write.
+```java
+public class LambdaScope {
+    int num;
+    static int staticNum;
+
+    void test() {
+        Converter<String, Integer> converter = (from) -> {
+            num = 10;
+            return String.valueOf(from + num);
+        };
+
+        Converter<String, Integer> converter1 = (from) -> {
+            staticNum = 20;
+            return String.valueOf(from + staticNum);
+        };
+    }
+}
+```
+### 5.3 access default interface method 
+the code does not compile when accessing the default interface method 
+```java
+final Calculator calculator = (a, b) -> a - b
+```
+
 
