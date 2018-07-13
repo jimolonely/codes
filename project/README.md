@@ -133,5 +133,18 @@ the code does not compile when accessing the default interface method
 ```java
 final Calculator calculator = (a, b) -> a - b
 ```
+## 6.Built-in Functional Interfaces
+### 6.1 Predicates
+```java
+Predicate<String> strLenBig = (s) -> s.length() > 0;
+assertEquals(true, strLenBig.test("jimo"));
+assertEquals(false, strLenBig.negate().test("jimo"));
+
+Predicate<Boolean> nonNull = Objects::nonNull;
+assertEquals(false, nonNull.test(null));
+
+Predicate<String> isEmpty = String::isEmpty;
+Predicate<String> isNotEmpty = isEmpty.negate();
+```
 
 

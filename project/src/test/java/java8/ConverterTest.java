@@ -2,6 +2,9 @@ package java8;
 
 import org.junit.Test;
 
+import java.util.Objects;
+import java.util.function.Predicate;
+
 import static org.junit.Assert.*;
 
 /**
@@ -32,8 +35,21 @@ public class ConverterTest {
     @Test
     public void test3() throws Exception {
         int num = 2;
-        Converter<String,Integer> converter = (from)->String.valueOf(from+num);
+        Converter<String, Integer> converter = (from) -> String.valueOf(from + num);
 //        num = 3;//error,num is final
 
+    }
+
+    @Test
+    public void test4() throws Exception {
+        Predicate<String> strLenBig = (s) -> s.length() > 0;
+        assertEquals(true, strLenBig.test("jimo"));
+        assertEquals(false, strLenBig.negate().test("jimo"));
+
+        Predicate<Boolean> nonNull = Objects::nonNull;
+        assertEquals(false, nonNull.test(null));
+
+        Predicate<String> isEmpty = String::isEmpty;
+        Predicate<String> isNotEmpty = isEmpty.negate();
     }
 }
