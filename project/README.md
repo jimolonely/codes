@@ -174,7 +174,7 @@ final int result = comparator.compare(jimo, hehe);
 assertTrue(result > 0);
 assertTrue(comparator.reversed().compare(jimo, hehe) < 0);
 ```
-### 6.6 Optional
+## 7.Optional
 ```java
 Optional<String> optional = Optional.of("jimo");
 assertEquals(true, optional.isPresent());
@@ -185,3 +185,52 @@ Optional<String> optional1 = Optional.empty();
 assertEquals("jimo", optional.orElse("haha")); //haha
 System.out.println(optional1.get());//java.util.NoSuchElementException: No value present
 ```
+## 8.Streams
+before
+```java
+List<String> data = new ArrayList<>();
+data.add("ddd2");
+data.add("aaa2");
+data.add("bbb1");
+data.add("aaa1");
+data.add("bbb3");
+data.add("ccc");
+data.add("bbb2");
+data.add("ddd1");
+```
+### 8.1 Filter
+```java
+data.stream().filter((s) -> s.startsWith("a")).forEach(System.out::println);
+//aa2 , aaa1
+```
+### 8.2 Sorted
+```java
+data.stream().sorted().filter((s) -> s.startsWith("a")).forEach(System.out::println);
+// aa1,aa2
+System.out.println(data);//[ddd2, aaa2, bbb1, aaa1, bbb3, ccc, bbb2, ddd1]
+```
+### 8.3 Map
+```java
+data
+                .stream()
+                .map(String::toUpperCase)
+                .sorted((a, b) -> b.compareTo(a))
+                .forEach(System.out::println);
+/**
+DDD2
+DDD1
+CCC
+BBB3
+BBB2
+BBB1
+AAA2
+AAA1
+*/
+```
+### 8.4 Match
+```java
+assertEquals(false, data.stream().allMatch((s) -> s.startsWith("a")));
+assertEquals(true, data.stream().anyMatch((s) -> s.startsWith("a")));
+assertEquals(true, data.stream().noneMatch((s) -> s.startsWith("z")));
+```
+
