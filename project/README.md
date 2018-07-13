@@ -146,5 +146,11 @@ assertEquals(false, nonNull.test(null));
 Predicate<String> isEmpty = String::isEmpty;
 Predicate<String> isNotEmpty = isEmpty.negate();
 ```
+### 6.2 Function<T,F>
+```java
+Function<String, Integer> strToInteger = Integer::parseInt;
+Function<String, String> intToStr = strToInteger.andThen(String::valueOf);
+assertEquals("123", intToStr.apply("123"));
+```
 
 

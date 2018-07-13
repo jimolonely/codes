@@ -3,6 +3,7 @@ package java8;
 import org.junit.Test;
 
 import java.util.Objects;
+import java.util.function.Function;
 import java.util.function.Predicate;
 
 import static org.junit.Assert.*;
@@ -51,5 +52,12 @@ public class ConverterTest {
 
         Predicate<String> isEmpty = String::isEmpty;
         Predicate<String> isNotEmpty = isEmpty.negate();
+    }
+
+    @Test
+    public void test5() throws Exception {
+        Function<String, Integer> strToInteger = Integer::parseInt;
+        Function<String, String> intToStr = strToInteger.andThen(String::valueOf);
+        assertEquals("123", intToStr.apply("123"));
     }
 }
