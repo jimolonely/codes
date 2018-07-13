@@ -4,6 +4,7 @@ import org.junit.Test;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 
 import static org.junit.Assert.*;
 
@@ -44,8 +45,15 @@ public class StudentFactoryTest {
 //                .forEach(System.out::println);
 
         //Match
-        assertEquals(false, data.stream().allMatch((s) -> s.startsWith("a")));
-        assertEquals(true, data.stream().anyMatch((s) -> s.startsWith("a")));
-        assertEquals(true, data.stream().noneMatch((s) -> s.startsWith("z")));
+//        assertEquals(false, data.stream().allMatch((s) -> s.startsWith("a")));
+//        assertEquals(true, data.stream().anyMatch((s) -> s.startsWith("a")));
+//        assertEquals(true, data.stream().noneMatch((s) -> s.startsWith("z")));
+
+        //Count
+//        assertEquals(3, data.stream().filter((s) -> s.startsWith("b")).count());
+
+        //Reduce
+        final Optional<String> reduce = data.stream().reduce((a, b) -> a + "_" + b);
+        reduce.ifPresent(System.out::println);
     }
 }

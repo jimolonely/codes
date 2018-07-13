@@ -233,4 +233,13 @@ assertEquals(false, data.stream().allMatch((s) -> s.startsWith("a")));
 assertEquals(true, data.stream().anyMatch((s) -> s.startsWith("a")));
 assertEquals(true, data.stream().noneMatch((s) -> s.startsWith("z")));
 ```
-
+### 8.4 Count
+```java
+assertEquals(3, data.stream().filter((s) -> s.startsWith("b")).count());
+```
+### 8.5 Reduce
+```java
+final Optional<String> reduce = data.stream().reduce((a, b) -> a + "_" + b);
+        reduce.ifPresent(System.out::println);
+//ddd2_aaa2_bbb1_aaa1_bbb3_ccc_bbb2_ddd1
+```

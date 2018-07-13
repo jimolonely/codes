@@ -19,24 +19,24 @@
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
               <first_editor relative-caret-position="371">
-                <caret line="235" column="0" lean-forward="true" selection-start-line="235" selection-start-column="0" selection-end-line="235" selection-end-column="0" />
+                <caret line="245" column="0" lean-forward="true" selection-start-line="245" selection-start-column="0" selection-end-line="245" selection-end-column="0" />
                 <folding>
-                  <marker date="1531524512603" expanded="false" signature="156:167" ph=" { " />
-                  <marker date="1531524512603" expanded="false" signature="180:186" ph=" }" />
-                  <marker date="1531524512603" expanded="true" signature="232:541" ph="{...}" />
-                  <marker date="1531524512603" expanded="true" signature="329:420" ph="(a, b) → { " />
-                  <marker date="1531524512603" expanded="true" signature="433:449" ph=" }" />
-                  <marker date="1531524512603" expanded="true" signature="1102:1256" ph="{...}" />
-                  <marker date="1531524512603" expanded="true" signature="1531:1618" ph="{...}" />
-                  <marker date="1531524512603" expanded="true" signature="1564:1575" ph=" { " />
-                  <marker date="1531524512603" expanded="true" signature="1610:1616" ph=" }" />
-                  <marker date="1531524512603" expanded="true" signature="1801:1966" ph="{...}" />
-                  <marker date="1531524512603" expanded="true" signature="1857:1864" ph="{...}" />
-                  <marker date="1531524512603" expanded="true" signature="1909:1964" ph="{...}" />
-                  <marker date="1531524512603" expanded="true" signature="2019:2060" ph="{...}" />
-                  <marker date="1531524512603" expanded="true" signature="2527:2826" ph="{...}" />
-                  <marker date="1531524512603" expanded="true" signature="2586:2666" ph="{...}" />
-                  <marker date="1531524512603" expanded="true" signature="2727:2819" ph="{...}" />
+                  <marker date="1531524791431" expanded="false" signature="156:167" ph=" { " />
+                  <marker date="1531524791431" expanded="false" signature="180:186" ph=" }" />
+                  <marker date="1531524791431" expanded="true" signature="232:541" ph="{...}" />
+                  <marker date="1531524791431" expanded="true" signature="329:420" ph="(a, b) → { " />
+                  <marker date="1531524791431" expanded="true" signature="433:449" ph=" }" />
+                  <marker date="1531524791431" expanded="true" signature="1102:1256" ph="{...}" />
+                  <marker date="1531524791431" expanded="true" signature="1531:1618" ph="{...}" />
+                  <marker date="1531524791431" expanded="true" signature="1564:1575" ph=" { " />
+                  <marker date="1531524791431" expanded="true" signature="1610:1616" ph=" }" />
+                  <marker date="1531524791431" expanded="true" signature="1801:1966" ph="{...}" />
+                  <marker date="1531524791431" expanded="true" signature="1857:1864" ph="{...}" />
+                  <marker date="1531524791431" expanded="true" signature="1909:1964" ph="{...}" />
+                  <marker date="1531524791431" expanded="true" signature="2019:2060" ph="{...}" />
+                  <marker date="1531524791431" expanded="true" signature="2527:2826" ph="{...}" />
+                  <marker date="1531524791431" expanded="true" signature="2586:2666" ph="{...}" />
+                  <marker date="1531524791431" expanded="true" signature="2727:2819" ph="{...}" />
                 </folding>
               </first_editor>
               <second_editor />
@@ -100,8 +100,8 @@
       <file leaf-file-name="StudentFactoryTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/java8/StudentFactoryTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="46" column="8" lean-forward="false" selection-start-line="46" selection-start-column="8" selection-end-line="48" selection-end-column="78" />
+            <state relative-caret-position="356">
+              <caret line="55" column="8" lean-forward="false" selection-start-line="55" selection-start-column="8" selection-end-line="56" selection-end-column="46" />
               <folding />
             </state>
           </provider>
@@ -897,17 +897,11 @@
       <option name="presentableId" value="Default" />
       <updated>1531228165221</updated>
       <workItem from="1531228166406" duration="554000" />
-      <workItem from="1531228868038" duration="10174000" />
+      <workItem from="1531228868038" duration="10453000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ConverterTest_test8 - 2018.07.13 at 08h 30m 57s.xml">
-      <configuration name="ConverterTest.test8" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ConverterTest_test8 - 2018.07.13 at 08h 31m 28s.xml">
-      <configuration name="ConverterTest.test8" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="ConverterTest_test9 - 2018.07.14 at 07h 03m 48s.xml">
       <configuration name="ConverterTest.test9" configurationId="JUnit" />
     </history-entry>
@@ -932,9 +926,15 @@
     <history-entry file="StudentFactoryTest_streams - 2018.07.14 at 07h 27m 57s.xml">
       <configuration name="StudentFactoryTest.streams" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="StudentFactoryTest_streams - 2018.07.14 at 07h 30m 02s.xml">
+      <configuration name="StudentFactoryTest.streams" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="StudentFactoryTest_streams - 2018.07.14 at 07h 32m 32s.xml">
+      <configuration name="StudentFactoryTest.streams" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10728000" />
+    <option name="totallyTimeSpent" value="11007000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="0" width="1368" height="769" extended-state="6" />
@@ -1071,8 +1071,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/java8/StudentFactoryTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="46" column="8" lean-forward="false" selection-start-line="46" selection-start-column="8" selection-end-line="48" selection-end-column="78" />
+        <state relative-caret-position="356">
+          <caret line="55" column="8" lean-forward="false" selection-start-line="55" selection-start-column="8" selection-end-line="56" selection-end-column="46" />
           <folding />
         </state>
       </provider>
@@ -1081,24 +1081,24 @@
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="371">
-            <caret line="235" column="0" lean-forward="true" selection-start-line="235" selection-start-column="0" selection-end-line="235" selection-end-column="0" />
+            <caret line="245" column="0" lean-forward="true" selection-start-line="245" selection-start-column="0" selection-end-line="245" selection-end-column="0" />
             <folding>
-              <marker date="1531524512603" expanded="false" signature="156:167" ph=" { " />
-              <marker date="1531524512603" expanded="false" signature="180:186" ph=" }" />
-              <marker date="1531524512603" expanded="true" signature="232:541" ph="{...}" />
-              <marker date="1531524512603" expanded="true" signature="329:420" ph="(a, b) → { " />
-              <marker date="1531524512603" expanded="true" signature="433:449" ph=" }" />
-              <marker date="1531524512603" expanded="true" signature="1102:1256" ph="{...}" />
-              <marker date="1531524512603" expanded="true" signature="1531:1618" ph="{...}" />
-              <marker date="1531524512603" expanded="true" signature="1564:1575" ph=" { " />
-              <marker date="1531524512603" expanded="true" signature="1610:1616" ph=" }" />
-              <marker date="1531524512603" expanded="true" signature="1801:1966" ph="{...}" />
-              <marker date="1531524512603" expanded="true" signature="1857:1864" ph="{...}" />
-              <marker date="1531524512603" expanded="true" signature="1909:1964" ph="{...}" />
-              <marker date="1531524512603" expanded="true" signature="2019:2060" ph="{...}" />
-              <marker date="1531524512603" expanded="true" signature="2527:2826" ph="{...}" />
-              <marker date="1531524512603" expanded="true" signature="2586:2666" ph="{...}" />
-              <marker date="1531524512603" expanded="true" signature="2727:2819" ph="{...}" />
+              <marker date="1531524791431" expanded="false" signature="156:167" ph=" { " />
+              <marker date="1531524791431" expanded="false" signature="180:186" ph=" }" />
+              <marker date="1531524791431" expanded="true" signature="232:541" ph="{...}" />
+              <marker date="1531524791431" expanded="true" signature="329:420" ph="(a, b) → { " />
+              <marker date="1531524791431" expanded="true" signature="433:449" ph=" }" />
+              <marker date="1531524791431" expanded="true" signature="1102:1256" ph="{...}" />
+              <marker date="1531524791431" expanded="true" signature="1531:1618" ph="{...}" />
+              <marker date="1531524791431" expanded="true" signature="1564:1575" ph=" { " />
+              <marker date="1531524791431" expanded="true" signature="1610:1616" ph=" }" />
+              <marker date="1531524791431" expanded="true" signature="1801:1966" ph="{...}" />
+              <marker date="1531524791431" expanded="true" signature="1857:1864" ph="{...}" />
+              <marker date="1531524791431" expanded="true" signature="1909:1964" ph="{...}" />
+              <marker date="1531524791431" expanded="true" signature="2019:2060" ph="{...}" />
+              <marker date="1531524791431" expanded="true" signature="2527:2826" ph="{...}" />
+              <marker date="1531524791431" expanded="true" signature="2586:2666" ph="{...}" />
+              <marker date="1531524791431" expanded="true" signature="2727:2819" ph="{...}" />
             </folding>
           </first_editor>
           <second_editor />
