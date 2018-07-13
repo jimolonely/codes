@@ -4,8 +4,8 @@ package java8;
  * Created by jimo on 18-7-11.
  */
 public class Student {
-    String id;
-    String name;
+    public String id;
+    public String name;
 
     public Student() {
     }

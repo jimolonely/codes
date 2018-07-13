@@ -152,5 +152,26 @@ Function<String, Integer> strToInteger = Integer::parseInt;
 Function<String, String> intToStr = strToInteger.andThen(String::valueOf);
 assertEquals("123", intToStr.apply("123"));
 ```
-
+### 6.3 Supplier<T>
+don't accept arguments
+```java
+Supplier<Student> studentSupplier = Student::new;
+final Student student = studentSupplier.get();//new Student
+```
+### 6.4 Consumer<T>
+```java
+Consumer<Student> consumer = (s) -> System.out.println("Hello, " + s.name);
+consumer.accept(new Student("001", "jimo"));
+consumer.accept(new Student("002", "hehe"));
+```
+### 6.5 Comparator
+```java
+//Comparator<Student> comparator = Comparator.comparing(s -> (s.name));
+Comparator<Student> comparator = (s1, s2) -> (s1.name).compareTo(s2.name);
+final Student jimo = new Student("001", "jimo");
+final Student hehe = new Student("001", "hehe");
+final int result = comparator.compare(jimo, hehe);
+assertTrue(result > 0);
+assertTrue(comparator.reversed().compare(jimo, hehe) < 0);
+```
 
