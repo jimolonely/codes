@@ -174,4 +174,14 @@ final int result = comparator.compare(jimo, hehe);
 assertTrue(result > 0);
 assertTrue(comparator.reversed().compare(jimo, hehe) < 0);
 ```
+### 6.6 Optional
+```java
+Optional<String> optional = Optional.of("jimo");
+assertEquals(true, optional.isPresent());
+assertEquals("jimo", optional.get());
+assertEquals("jimo", optional.orElse("haha"));
 
+Optional<String> optional1 = Optional.empty();
+assertEquals("jimo", optional.orElse("haha")); //haha
+System.out.println(optional1.get());//java.util.NoSuchElementException: No value present
+```

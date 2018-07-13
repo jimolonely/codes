@@ -4,6 +4,7 @@ import org.junit.Test;
 
 import java.util.Comparator;
 import java.util.Objects;
+import java.util.Optional;
 import java.util.function.Consumer;
 import java.util.function.Function;
 import java.util.function.Predicate;
@@ -86,5 +87,17 @@ public class ConverterTest {
         final int result = comparator.compare(jimo, hehe);
         assertTrue(result > 0);
         assertTrue(comparator.reversed().compare(jimo, hehe) < 0);
+    }
+
+    @Test
+    public void test9() throws Exception {
+        Optional<String> optional = Optional.of("jimo");
+        assertEquals(true, optional.isPresent());
+        assertEquals("jimo", optional.get());
+        assertEquals("jimo", optional.orElse("haha"));
+
+        Optional<String> optional1 = Optional.empty();
+        assertEquals("jimo", optional.orElse("haha")); //haha
+        System.out.println(optional1.get());//java.util.NoSuchElementException: No value present
     }
 }
