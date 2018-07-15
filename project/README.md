@@ -243,3 +243,45 @@ final Optional<String> reduce = data.stream().reduce((a, b) -> a + "_" + b);
         reduce.ifPresent(System.out::println);
 //ddd2_aaa2_bbb1_aaa1_bbb3_ccc_bbb2_ddd1
 ```
+## 9.Parallel Streams
+```java
+public class ParallelStreamsTest {
+
+    private List<String> data;
+
+    @Before
+    public void init() {
+        int max = 1000000;
+        data = new ArrayList<>();
+        for (int i = 0; i < max; i++) {
+            data.add(UUID.randomUUID().toString());
+        }
+    }
+
+    @Test
+    public void sequentialTest() {
+        long t0 = System.nanoTime();
+        final long count = data.stream().sorted().count();
+        System.out.println(count);
+        long t1 = System.nanoTime();
+        final long millis = TimeUnit.NANOSECONDS.toMillis(t1 - t0);
+        System.out.println(String.format("Sequential Sort spend: %d ms.", millis));
+    }
+
+    @Test
+    public void parallelTest() {
+        long t0 = System.nanoTime();
+        final long count = data.parallelStream().sorted().count();
+        System.out.println(count);
+        long t1 = System.nanoTime();
+        final long millis = TimeUnit.NANOSECONDS.toMillis(t1 - t0);
+        System.out.println(String.format("Parallel Sort spend: %d ms.", millis));
+    }
+}
+/**
+1000000
+Sequential Sort spend: 774 ms.
+1000000
+Parallel Sort spend: 380 ms.
+*/
+```

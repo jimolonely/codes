@@ -18,28 +18,53 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="371">
-                <caret line="245" column="0" lean-forward="true" selection-start-line="245" selection-start-column="0" selection-end-line="245" selection-end-column="0" />
+              <first_editor relative-caret-position="293">
+                <caret line="287" column="0" lean-forward="true" selection-start-line="287" selection-start-column="0" selection-end-line="287" selection-end-column="0" />
                 <folding>
-                  <marker date="1531524791431" expanded="false" signature="156:167" ph=" { " />
-                  <marker date="1531524791431" expanded="false" signature="180:186" ph=" }" />
-                  <marker date="1531524791431" expanded="true" signature="232:541" ph="{...}" />
-                  <marker date="1531524791431" expanded="true" signature="329:420" ph="(a, b) → { " />
-                  <marker date="1531524791431" expanded="true" signature="433:449" ph=" }" />
-                  <marker date="1531524791431" expanded="true" signature="1102:1256" ph="{...}" />
-                  <marker date="1531524791431" expanded="true" signature="1531:1618" ph="{...}" />
-                  <marker date="1531524791431" expanded="true" signature="1564:1575" ph=" { " />
-                  <marker date="1531524791431" expanded="true" signature="1610:1616" ph=" }" />
-                  <marker date="1531524791431" expanded="true" signature="1801:1966" ph="{...}" />
-                  <marker date="1531524791431" expanded="true" signature="1857:1864" ph="{...}" />
-                  <marker date="1531524791431" expanded="true" signature="1909:1964" ph="{...}" />
-                  <marker date="1531524791431" expanded="true" signature="2019:2060" ph="{...}" />
-                  <marker date="1531524791431" expanded="true" signature="2527:2826" ph="{...}" />
-                  <marker date="1531524791431" expanded="true" signature="2586:2666" ph="{...}" />
-                  <marker date="1531524791431" expanded="true" signature="2727:2819" ph="{...}" />
+                  <marker date="1531616998540" expanded="false" signature="156:167" ph=" { " />
+                  <marker date="1531616998540" expanded="false" signature="180:186" ph=" }" />
+                  <marker date="1531616998540" expanded="true" signature="232:541" ph="{...}" />
+                  <marker date="1531616998540" expanded="true" signature="329:420" ph="(a, b) → { " />
+                  <marker date="1531616998540" expanded="true" signature="433:449" ph=" }" />
+                  <marker date="1531616998540" expanded="true" signature="1102:1256" ph="{...}" />
+                  <marker date="1531616998540" expanded="true" signature="1531:1618" ph="{...}" />
+                  <marker date="1531616998540" expanded="true" signature="1564:1575" ph=" { " />
+                  <marker date="1531616998540" expanded="true" signature="1610:1616" ph=" }" />
+                  <marker date="1531616998540" expanded="true" signature="1801:1966" ph="{...}" />
+                  <marker date="1531616998540" expanded="true" signature="1857:1864" ph="{...}" />
+                  <marker date="1531616998540" expanded="true" signature="1909:1964" ph="{...}" />
+                  <marker date="1531616998540" expanded="true" signature="2019:2060" ph="{...}" />
+                  <marker date="1531616998540" expanded="true" signature="2527:2826" ph="{...}" />
+                  <marker date="1531616998540" expanded="true" signature="2586:2666" ph="{...}" />
+                  <marker date="1531616998540" expanded="true" signature="2727:2819" ph="{...}" />
+                  <marker date="1531616998540" expanded="true" signature="6216:6386" ph="{...}" />
+                  <marker date="1531616998540" expanded="true" signature="6431:6758" ph="{...}" />
+                  <marker date="1531616998540" expanded="true" signature="6801:7134" ph="{...}" />
                 </folding>
               </first_editor>
               <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ParallelStreamsTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/java8/ParallelStreamsTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="176">
+              <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="46" selection-end-column="1" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="260">
+              <caret line="30" column="21" lean-forward="false" selection-start-line="30" selection-start-column="21" selection-end-line="30" selection-end-column="21" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -71,7 +96,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/java8/Converter.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="112">
-              <caret line="7" column="22" lean-forward="true" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
+              <caret line="7" column="22" lean-forward="false" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
               <folding />
             </state>
           </provider>
@@ -80,7 +105,7 @@
       <file leaf-file-name="ConverterTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/java8/ConverterTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
+            <state relative-caret-position="1328">
               <caret line="93" column="0" lean-forward="false" selection-start-line="93" selection-start-column="0" selection-end-line="100" selection-end-column="96" />
               <folding />
             </state>
@@ -100,19 +125,11 @@
       <file leaf-file-name="StudentFactoryTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/java8/StudentFactoryTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="356">
-              <caret line="55" column="8" lean-forward="false" selection-start-line="55" selection-start-column="8" selection-end-line="56" selection-end-column="46" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Calculator.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/java8/Calculator.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="11" column="5" lean-forward="false" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
-              <folding />
+            <state relative-caret-position="128">
+              <caret line="8" column="33" lean-forward="false" selection-start-line="8" selection-start-column="33" selection-end-line="8" selection-end-column="33" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -121,7 +138,7 @@
         <entry file="file://$PROJECT_DIR$/src/test/java/java8/CalculatorTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="464">
-              <caret line="35" column="44" lean-forward="true" selection-start-line="31" selection-start-column="8" selection-end-line="35" selection-end-column="44" />
+              <caret line="35" column="44" lean-forward="false" selection-start-line="31" selection-start-column="8" selection-end-line="35" selection-end-column="44" />
               <folding />
             </state>
           </provider>
@@ -146,7 +163,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/java8/Calculator.java" />
         <option value="$PROJECT_DIR$/src/test/java/java8/CalculatorTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/java8/Converter.java" />
@@ -156,6 +172,9 @@
         <option value="$PROJECT_DIR$/src/main/java/java8/Student.java" />
         <option value="$PROJECT_DIR$/src/test/java/java8/ConverterTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/java8/StudentFactoryTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/java8/ParallelStreams.java" />
+        <option value="$PROJECT_DIR$/src/test/java/java8/ParallelStreamsTest.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
@@ -193,11 +212,21 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="practice" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+          </PATH>
           <PATH>
             <PATH_ELEMENT>
               <option name="myItemId" value="practice" />
@@ -219,6 +248,18 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java8" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -275,9 +316,13 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
+    <property name="SearchEverywhereHistoryKey" value="pom&#9;FILE&#9;file:///home/jimo/workspace/Git/blogs/project/pom.xml" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="java8" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="java8" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
@@ -296,85 +341,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.StudentFactoryTest.streams">
-    <configuration default="false" name="ConverterTest.test5" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="java8.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="project" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="java8" />
-      <option name="MAIN_CLASS_NAME" value="java8.ConverterTest" />
-      <option name="METHOD_NAME" value="test5" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <configuration default="false" name="ConverterTest.test7" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="java8.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="project" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="java8" />
-      <option name="MAIN_CLASS_NAME" value="java8.ConverterTest" />
-      <option name="METHOD_NAME" value="test7" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <configuration default="false" name="ConverterTest.test8" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="java8.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="project" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="java8" />
-      <option name="MAIN_CLASS_NAME" value="java8.ConverterTest" />
-      <option name="METHOD_NAME" value="test8" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
+  <component name="RunManager">
     <configuration default="false" name="ConverterTest.test9" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -414,6 +381,84 @@
       <option name="PACKAGE_NAME" value="java8" />
       <option name="MAIN_CLASS_NAME" value="java8.StudentFactoryTest" />
       <option name="METHOD_NAME" value="streams" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="ParallelStreamsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="java8.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="project" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="java8" />
+      <option name="MAIN_CLASS_NAME" value="java8.ParallelStreamsTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="ParallelStreamsTest.sequentialTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="java8.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="project" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="java8" />
+      <option name="MAIN_CLASS_NAME" value="java8.ParallelStreamsTest" />
+      <option name="METHOD_NAME" value="sequentialTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="ParallelStreamsTest.parallelTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="java8.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="project" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="java8" />
+      <option name="MAIN_CLASS_NAME" value="java8.ParallelStreamsTest" />
+      <option name="METHOD_NAME" value="parallelTest" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -664,6 +709,7 @@
       <setting name="passParentEnv" value="true" />
       <setting name="launchBrowser" value="true" />
       <setting name="launchBrowserUrl" value="" />
+      <setting name="depsClasspath" value="false" />
       <method />
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
@@ -830,6 +876,12 @@
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.npm" factoryName="npm">
@@ -865,19 +917,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.ConverterTest.test5" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.ConverterTest.test7" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.ConverterTest.test8" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.ConverterTest.test9" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.StudentFactoryTest.streams" />
+      <item index="0" class="java.lang.String" itemvalue="JUnit.ConverterTest.test9" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.StudentFactoryTest.streams" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.ParallelStreamsTest" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.ParallelStreamsTest.sequentialTest" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.ParallelStreamsTest.parallelTest" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.StudentFactoryTest.streams" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.ConverterTest.test9" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.ConverterTest.test8" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.ConverterTest.test7" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.ConverterTest.test5" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.ParallelStreamsTest" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.ParallelStreamsTest.parallelTest" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.ParallelStreamsTest.sequentialTest" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.StudentFactoryTest.streams" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.ConverterTest.test9" />
       </list>
     </recent_temporary>
   </component>
@@ -897,28 +949,29 @@
       <option name="presentableId" value="Default" />
       <updated>1531228165221</updated>
       <workItem from="1531228166406" duration="554000" />
-      <workItem from="1531228868038" duration="10453000" />
+      <workItem from="1531228868038" duration="11053000" />
+      <workItem from="1531615127572" duration="1757000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ConverterTest_test9 - 2018.07.14 at 07h 03m 48s.xml">
-      <configuration name="ConverterTest.test9" configurationId="JUnit" />
+    <history-entry file="ParallelStreams - 2018.07.15 at 09h 03m 56s.xml">
+      <configuration name="ParallelStreams" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ConverterTest_test9 - 2018.07.14 at 07h 04m 06s.xml">
-      <configuration name="ConverterTest.test9" configurationId="JUnit" />
+    <history-entry file="ParallelStreamsTest - 2018.07.15 at 09h 05m 17s.xml">
+      <configuration name="ParallelStreamsTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ConverterTest_test9 - 2018.07.14 at 07h 05m 19s.xml">
-      <configuration name="ConverterTest.test9" configurationId="JUnit" />
+    <history-entry file="ParallelStreamsTest - 2018.07.15 at 09h 05m 31s.xml">
+      <configuration name="ParallelStreamsTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="StudentFactoryTest_streams - 2018.07.14 at 07h 14m 58s.xml">
-      <configuration name="StudentFactoryTest.streams" configurationId="JUnit" />
+    <history-entry file="ParallelStreamsTest - 2018.07.15 at 09h 08m 59s.xml">
+      <configuration name="ParallelStreamsTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="StudentFactoryTest_streams - 2018.07.14 at 07h 17m 56s.xml">
-      <configuration name="StudentFactoryTest.streams" configurationId="JUnit" />
+    <history-entry file="ParallelStreamsTest_parallelTest - 2018.07.15 at 09h 08m 30s.xml">
+      <configuration name="ParallelStreamsTest.parallelTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="StudentFactoryTest_streams - 2018.07.14 at 07h 19m 10s.xml">
-      <configuration name="StudentFactoryTest.streams" configurationId="JUnit" />
+    <history-entry file="ParallelStreams_sequentialTest - 2018.07.15 at 09h 04m 24s.xml">
+      <configuration name="ParallelStreams.sequentialTest" configurationId="JUnit" />
     </history-entry>
     <history-entry file="StudentFactoryTest_streams - 2018.07.14 at 07h 22m 15s.xml">
       <configuration name="StudentFactoryTest.streams" configurationId="JUnit" />
@@ -934,7 +987,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11007000" />
+    <option name="totallyTimeSpent" value="13364000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="0" width="1368" height="769" extended-state="6" />
@@ -943,14 +996,14 @@
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3288889" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3288889" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -961,8 +1014,8 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -986,19 +1039,87 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding>
+              <marker date="1531616998540" expanded="false" signature="156:167" ph=" { " />
+              <marker date="1531616998540" expanded="false" signature="180:186" ph=" }" />
+              <marker date="1531616998540" expanded="true" signature="232:541" ph="{...}" />
+              <marker date="1531616998540" expanded="true" signature="329:420" ph="(a, b) → { " />
+              <marker date="1531616998540" expanded="true" signature="433:449" ph=" }" />
+              <marker date="1531616998540" expanded="true" signature="1102:1256" ph="{...}" />
+              <marker date="1531616998540" expanded="true" signature="1531:1618" ph="{...}" />
+              <marker date="1531616998540" expanded="true" signature="1564:1575" ph=" { " />
+              <marker date="1531616998540" expanded="true" signature="1610:1616" ph=" }" />
+              <marker date="1531616998540" expanded="true" signature="1801:1966" ph="{...}" />
+              <marker date="1531616998540" expanded="true" signature="1857:1864" ph="{...}" />
+              <marker date="1531616998540" expanded="true" signature="1909:1964" ph="{...}" />
+              <marker date="1531616998540" expanded="true" signature="2019:2060" ph="{...}" />
+              <marker date="1531616998540" expanded="true" signature="2527:2826" ph="{...}" />
+              <marker date="1531616998540" expanded="true" signature="2586:2666" ph="{...}" />
+              <marker date="1531616998540" expanded="true" signature="2727:2819" ph="{...}" />
+              <marker date="1531616998540" expanded="true" signature="6216:6386" ph="{...}" />
+              <marker date="1531616998540" expanded="true" signature="6431:6758" ph="{...}" />
+              <marker date="1531616998540" expanded="true" signature="6801:7134" ph="{...}" />
+            </folding>
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/java8/LambdaScope.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="80">
+          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="20" selection-end-column="1" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/java8/Something.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="528">
-          <caret line="33" column="10" lean-forward="false" selection-start-line="33" selection-start-column="10" selection-end-line="33" selection-end-column="10" />
+        <state relative-caret-position="80">
+          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="9" selection-end-column="1" />
+          <folding>
+            <element signature="e#112#113#0" expanded="true" />
+            <element signature="e#162#163#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/java8/Converter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="7" column="22" lean-forward="true" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/java8/ConverterTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1488">
+          <caret line="93" column="0" lean-forward="false" selection-start-line="93" selection-start-column="0" selection-end-line="100" selection-end-column="96" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/java8/StudentFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="7" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/java8/StudentFactoryTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="784">
+          <caret line="55" column="8" lean-forward="false" selection-start-line="55" selection-start-column="8" selection-end-line="56" selection-end-column="46" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1014,6 +1135,30 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="464">
           <caret line="35" column="44" lean-forward="true" selection-start-line="31" selection-start-column="8" selection-end-line="35" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/java8/Calculator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="11" column="5" lean-forward="false" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/java8/CalculatorTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="464">
+          <caret line="35" column="44" lean-forward="false" selection-start-line="31" selection-start-column="8" selection-end-line="35" selection-end-column="44" />
           <folding />
         </state>
       </provider>
@@ -1040,7 +1185,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/java8/Converter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="112">
-          <caret line="7" column="22" lean-forward="true" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
+          <caret line="7" column="22" lean-forward="false" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
           <folding />
         </state>
       </provider>
@@ -1063,7 +1208,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/java8/ConverterTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
+        <state relative-caret-position="1328">
           <caret line="93" column="0" lean-forward="false" selection-start-line="93" selection-start-column="0" selection-end-line="100" selection-end-column="96" />
           <folding />
         </state>
@@ -1071,34 +1216,57 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/java8/StudentFactoryTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="356">
-          <caret line="55" column="8" lean-forward="false" selection-start-line="55" selection-start-column="8" selection-end-line="56" selection-end-column="46" />
+        <state relative-caret-position="128">
+          <caret line="8" column="33" lean-forward="false" selection-start-line="8" selection-start-column="33" selection-end-line="8" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="30" column="21" lean-forward="false" selection-start-line="30" selection-start-column="21" selection-end-line="30" selection-end-column="21" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/java8/ParallelStreamsTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="46" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="371">
-            <caret line="245" column="0" lean-forward="true" selection-start-line="245" selection-start-column="0" selection-end-line="245" selection-end-column="0" />
+          <first_editor relative-caret-position="293">
+            <caret line="287" column="0" lean-forward="true" selection-start-line="287" selection-start-column="0" selection-end-line="287" selection-end-column="0" />
             <folding>
-              <marker date="1531524791431" expanded="false" signature="156:167" ph=" { " />
-              <marker date="1531524791431" expanded="false" signature="180:186" ph=" }" />
-              <marker date="1531524791431" expanded="true" signature="232:541" ph="{...}" />
-              <marker date="1531524791431" expanded="true" signature="329:420" ph="(a, b) → { " />
-              <marker date="1531524791431" expanded="true" signature="433:449" ph=" }" />
-              <marker date="1531524791431" expanded="true" signature="1102:1256" ph="{...}" />
-              <marker date="1531524791431" expanded="true" signature="1531:1618" ph="{...}" />
-              <marker date="1531524791431" expanded="true" signature="1564:1575" ph=" { " />
-              <marker date="1531524791431" expanded="true" signature="1610:1616" ph=" }" />
-              <marker date="1531524791431" expanded="true" signature="1801:1966" ph="{...}" />
-              <marker date="1531524791431" expanded="true" signature="1857:1864" ph="{...}" />
-              <marker date="1531524791431" expanded="true" signature="1909:1964" ph="{...}" />
-              <marker date="1531524791431" expanded="true" signature="2019:2060" ph="{...}" />
-              <marker date="1531524791431" expanded="true" signature="2527:2826" ph="{...}" />
-              <marker date="1531524791431" expanded="true" signature="2586:2666" ph="{...}" />
-              <marker date="1531524791431" expanded="true" signature="2727:2819" ph="{...}" />
+              <marker date="1531616998540" expanded="false" signature="156:167" ph=" { " />
+              <marker date="1531616998540" expanded="false" signature="180:186" ph=" }" />
+              <marker date="1531616998540" expanded="true" signature="232:541" ph="{...}" />
+              <marker date="1531616998540" expanded="true" signature="329:420" ph="(a, b) → { " />
+              <marker date="1531616998540" expanded="true" signature="433:449" ph=" }" />
+              <marker date="1531616998540" expanded="true" signature="1102:1256" ph="{...}" />
+              <marker date="1531616998540" expanded="true" signature="1531:1618" ph="{...}" />
+              <marker date="1531616998540" expanded="true" signature="1564:1575" ph=" { " />
+              <marker date="1531616998540" expanded="true" signature="1610:1616" ph=" }" />
+              <marker date="1531616998540" expanded="true" signature="1801:1966" ph="{...}" />
+              <marker date="1531616998540" expanded="true" signature="1857:1864" ph="{...}" />
+              <marker date="1531616998540" expanded="true" signature="1909:1964" ph="{...}" />
+              <marker date="1531616998540" expanded="true" signature="2019:2060" ph="{...}" />
+              <marker date="1531616998540" expanded="true" signature="2527:2826" ph="{...}" />
+              <marker date="1531616998540" expanded="true" signature="2586:2666" ph="{...}" />
+              <marker date="1531616998540" expanded="true" signature="2727:2819" ph="{...}" />
+              <marker date="1531616998540" expanded="true" signature="6216:6386" ph="{...}" />
+              <marker date="1531616998540" expanded="true" signature="6431:6758" ph="{...}" />
+              <marker date="1531616998540" expanded="true" signature="6801:7134" ph="{...}" />
             </folding>
           </first_editor>
           <second_editor />
