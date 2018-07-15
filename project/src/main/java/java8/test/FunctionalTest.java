@@ -1,5 +1,6 @@
-package java8;
+package java8.test;
 
+import java8.model.Student;
 import org.junit.Test;
 
 import java.util.Comparator;
@@ -10,41 +11,13 @@ import java.util.function.Function;
 import java.util.function.Predicate;
 import java.util.function.Supplier;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
 
 /**
- * Created by jimo on 18-7-11.
+ * Created by jimo on 18-7-15.
  */
-public class ConverterTest {
-    @Test
-    public void convert() throws Exception {
-        Converter<Integer, String> converter = (from) -> Integer.parseInt(from);
-        final int re = converter.convert("1234");
-        assertEquals(1234, re);
-    }
-
-    @Test
-    public void test() throws Exception {
-        Converter<Integer, String> converter = Integer::parseInt;
-        final int re = converter.convert("1234");
-        assertEquals(1234, re);
-    }
-
-    @Test
-    public void test2() throws Exception {
-        final Something something = new Something();
-        Converter<String, String> converter = something::startsWith;
-        assertEquals("J", converter.convert("Jimo"));
-    }
-
-    @Test
-    public void test3() throws Exception {
-        int num = 2;
-        Converter<String, Integer> converter = (from) -> String.valueOf(from + num);
-//        num = 3;//error,num is final
-
-    }
-
+public class FunctionalTest {
     @Test
     public void test4() throws Exception {
         Predicate<String> strLenBig = (s) -> s.length() > 0;

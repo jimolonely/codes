@@ -1,4 +1,4 @@
-package java8;
+package java8.model;
 
 /**
  * Created by jimo on 18-7-11.

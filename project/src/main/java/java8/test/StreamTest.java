@@ -1,4 +1,4 @@
-package java8;
+package java8.test;
 
 import org.junit.Test;
 
@@ -6,17 +6,11 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
-import static org.junit.Assert.*;
-
 /**
  * Created by jimo on 18-7-11.
  */
-public class StudentFactoryTest {
-    @Test
-    public void create() throws Exception {
-        StudentFactory<Student> factory = Student::new;
-        final Student jimo = factory.create("001", "jimo");
-    }
+public class StreamTest {
+
 
     @Test
     public void streams() throws Exception {
