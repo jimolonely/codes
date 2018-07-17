@@ -1,0 +1,7 @@
+server:
+  port: 8080
+
+spring:
+  data:
+    elasticsearch:
+      cluster-nodes: 127.0.0.1:9300 # 9300默认是java程序的监听端口, 如果有多个集群，用逗号分隔
