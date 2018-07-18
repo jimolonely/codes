@@ -13,24 +13,22 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="361">
-              <caret line="309" lean-forward="true" selection-start-line="309" selection-end-line="309" />
+            <state relative-caret-position="404">
+              <caret line="424" lean-forward="true" selection-start-line="424" selection-end-line="424" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MapTest.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/java8/test/MapTest.java">
+      <file leaf-file-name="DateTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/java8/test/DateTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="256">
-              <caret line="55" column="47" selection-start-line="55" selection-start-column="47" selection-end-line="55" selection-end-column="47" />
+            <state relative-caret-position="186">
+              <caret line="62" column="4" lean-forward="true" selection-start-line="62" selection-start-column="4" selection-end-line="62" selection-end-column="4" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1106#1107#0" expanded="true" />
-                <element signature="e#1179#1180#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -71,9 +69,9 @@
         <option value="$PROJECT_DIR$/src/main/java/java8/test/LambdaTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/java8/test/FunctionalTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/java8/test/ReferenceTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/java8/test/MapTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/java8/test/DateTest.java" />
         <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/src/main/java/java8/test/MapTest.java" />
       </list>
     </option>
   </component>
@@ -191,7 +189,30 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Android JUnit.MapTest">
+  <component name="RunManager" selected="Android JUnit.DateTest.localDate">
+    <configuration name="DateTest.localDate" type="AndroidJUnit" factoryName="Android JUnit" temporary="true" nameIsGenerated="true">
+      <module name="project" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="java8.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="java8.test" />
+      <option name="MAIN_CLASS_NAME" value="java8.test.DateTest" />
+      <option name="METHOD_NAME" value="localDate" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
     <configuration name="MapTest" type="AndroidJUnit" factoryName="Android JUnit" temporary="true" nameIsGenerated="true">
       <module name="project" />
       <extension name="coverage">
@@ -281,29 +302,6 @@
       <option name="MAIN_CLASS_NAME" value="java8.test.DateTest" />
       <option name="METHOD_NAME" value="timeZone" />
       <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
-    </configuration>
-    <configuration name="ParallelStreamsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="project" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="java8.model.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="java8.test" />
-      <option name="MAIN_CLASS_NAME" value="java8.test.ParallelStreamsTest" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
@@ -619,19 +617,19 @@
       <method />
     </configuration>
     <list>
-      <item itemvalue="JUnit.ParallelStreamsTest" />
       <item itemvalue="JUnit.DateTest.clock" />
       <item itemvalue="JUnit.DateTest.timeZone" />
       <item itemvalue="JUnit.DateTest.localTime" />
       <item itemvalue="Android JUnit.MapTest" />
+      <item itemvalue="Android JUnit.DateTest.localDate" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Android JUnit.DateTest.localDate" />
         <item itemvalue="Android JUnit.MapTest" />
         <item itemvalue="JUnit.DateTest.localTime" />
         <item itemvalue="JUnit.DateTest.timeZone" />
         <item itemvalue="JUnit.DateTest.clock" />
-        <item itemvalue="JUnit.ParallelStreamsTest" />
       </list>
     </recent_temporary>
   </component>
@@ -658,15 +656,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="DateTest_localTime - 2018.07.15 at 15h 59m 05s.xml">
-      <configuration name="DateTest.localTime" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="DateTest_localTime - 2018.07.15 at 15h 59m 34s.xml">
-      <configuration name="DateTest.localTime" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="DateTest_localTime - 2018.07.15 at 15h 59m 43s.xml">
-      <configuration name="DateTest.localTime" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="DateTest_localTime - 2018.07.15 at 16h 00m 15s.xml">
       <configuration name="DateTest.localTime" configurationId="JUnit" />
     </history-entry>
@@ -687,6 +676,15 @@
     </history-entry>
     <history-entry file="MapTest - 2018.07.18 at 16h 26m 29s.xml">
       <configuration name="MapTest" configurationId="AndroidJUnit" />
+    </history-entry>
+    <history-entry file="DateTest_localDate - 2018.07.18 at 17h 06m 05s.xml">
+      <configuration name="DateTest.localDate" configurationId="AndroidJUnit" />
+    </history-entry>
+    <history-entry file="DateTest_localDate - 2018.07.18 at 17h 09m 30s.xml">
+      <configuration name="DateTest.localDate" configurationId="AndroidJUnit" />
+    </history-entry>
+    <history-entry file="DateTest_localDate - 2018.07.18 at 17h 09m 54s.xml">
+      <configuration name="DateTest.localDate" configurationId="AndroidJUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
@@ -1070,10 +1068,22 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/java8/test/MapTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="521">
+          <caret line="60" column="5" lean-forward="true" selection-start-line="60" selection-start-column="5" selection-end-line="60" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1106#1107#0" expanded="true" />
+            <element signature="e#1179#1180#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/java8/test/DateTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
+        <state relative-caret-position="186">
+          <caret line="62" column="4" lean-forward="true" selection-start-line="62" selection-start-column="4" selection-end-line="62" selection-end-column="4" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1082,20 +1092,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="309" lean-forward="true" selection-start-line="309" selection-end-line="309" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/java8/test/MapTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="55" column="47" selection-start-line="55" selection-start-column="47" selection-end-line="55" selection-end-column="47" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1106#1107#0" expanded="true" />
-            <element signature="e#1179#1180#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="404">
+          <caret line="424" lean-forward="true" selection-start-line="424" selection-end-line="424" />
         </state>
       </provider>
     </entry>

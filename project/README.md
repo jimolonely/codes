@@ -403,6 +403,24 @@ final DateTimeFormatter formatter = DateTimeFormatter
 final LocalTime localTime = LocalTime.parse("3:30", formatter); //bug will be fixed in JDK9
 System.out.println(localTime);
 ```
+### 11.4 LocalDate
+```java
+@Test
+public void localDate() {
+    LocalDate today = LocalDate.now();
+    LocalDate tomorrow = today.plus(1, ChronoUnit.DAYS);
+    LocalDate yesterday = tomorrow.minusDays(2);
 
+    System.out.println(today + " " + tomorrow + " " + yesterday);//2018-07-18 2018-07-19 2018-07-17
+
+    LocalDate nationalDay = LocalDate.of(2018, Month.OCTOBER, 1);
+    DayOfWeek dayOfWeek = nationalDay.getDayOfWeek();
+    System.out.println(dayOfWeek);//MONDAY
+
+    DateTimeFormatter formatter = DateTimeFormatter.ofLocalizedDate(FormatStyle.MEDIUM).withLocale(Locale.CHINA);
+    LocalDate date = LocalDate.parse("1.10.2018", formatter);
+    System.out.println(date);
+}
+```
 
 
