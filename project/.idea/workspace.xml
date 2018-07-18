@@ -17,7 +17,7 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="404">
-              <caret line="424" lean-forward="true" selection-start-line="424" selection-end-line="424" />
+              <caret line="455" lean-forward="true" selection-start-line="455" selection-end-line="455" />
             </state>
           </provider>
         </entry>
@@ -25,8 +25,8 @@
       <file leaf-file-name="DateTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/java8/test/DateTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="186">
-              <caret line="62" column="4" lean-forward="true" selection-start-line="62" selection-start-column="4" selection-end-line="62" selection-end-column="4" />
+            <state relative-caret-position="14">
+              <caret line="79" column="4" lean-forward="true" selection-start-line="79" selection-start-column="4" selection-end-line="106" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -189,7 +189,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Android JUnit.DateTest.localDate">
+  <component name="RunManager" selected="Android JUnit.DateTest.localDateTime">
     <configuration name="DateTest.localDate" type="AndroidJUnit" factoryName="Android JUnit" temporary="true" nameIsGenerated="true">
       <module name="project" />
       <extension name="coverage">
@@ -203,6 +203,29 @@
       <option name="PACKAGE_NAME" value="java8.test" />
       <option name="MAIN_CLASS_NAME" value="java8.test.DateTest" />
       <option name="METHOD_NAME" value="localDate" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="DateTest.localDateTime" type="AndroidJUnit" factoryName="Android JUnit" temporary="true" nameIsGenerated="true">
+      <module name="project" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="java8.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="java8.test" />
+      <option name="MAIN_CLASS_NAME" value="java8.test.DateTest" />
+      <option name="METHOD_NAME" value="localDateTime" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" />
       <option name="PARAMETERS" />
@@ -241,29 +264,6 @@
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-    </configuration>
-    <configuration name="DateTest.clock" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="project" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="java8.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="java8.test" />
-      <option name="MAIN_CLASS_NAME" value="java8.test.DateTest" />
-      <option name="METHOD_NAME" value="clock" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
     </configuration>
     <configuration name="DateTest.localTime" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="project" />
@@ -617,19 +617,19 @@
       <method />
     </configuration>
     <list>
-      <item itemvalue="JUnit.DateTest.clock" />
       <item itemvalue="JUnit.DateTest.timeZone" />
       <item itemvalue="JUnit.DateTest.localTime" />
       <item itemvalue="Android JUnit.MapTest" />
       <item itemvalue="Android JUnit.DateTest.localDate" />
+      <item itemvalue="Android JUnit.DateTest.localDateTime" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Android JUnit.DateTest.localDateTime" />
         <item itemvalue="Android JUnit.DateTest.localDate" />
         <item itemvalue="Android JUnit.MapTest" />
         <item itemvalue="JUnit.DateTest.localTime" />
         <item itemvalue="JUnit.DateTest.timeZone" />
-        <item itemvalue="JUnit.DateTest.clock" />
       </list>
     </recent_temporary>
   </component>
@@ -656,12 +656,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="DateTest_localTime - 2018.07.15 at 16h 00m 15s.xml">
-      <configuration name="DateTest.localTime" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="DateTest_localTime - 2018.07.15 at 16h 00m 25s.xml">
-      <configuration name="DateTest.localTime" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="DateTest_timeZone - 2018.07.15 at 15h 45m 07s.xml">
       <configuration name="DateTest.timeZone" configurationId="JUnit" />
     </history-entry>
@@ -685,6 +679,12 @@
     </history-entry>
     <history-entry file="DateTest_localDate - 2018.07.18 at 17h 09m 54s.xml">
       <configuration name="DateTest.localDate" configurationId="AndroidJUnit" />
+    </history-entry>
+    <history-entry file="DateTest_localDateTime - 2018.07.18 at 17h 42m 34s.xml">
+      <configuration name="DateTest.localDateTime" configurationId="AndroidJUnit" />
+    </history-entry>
+    <history-entry file="DateTest_localDateTime - 2018.07.18 at 17h 43m 01s.xml">
+      <configuration name="DateTest.localDateTime" configurationId="AndroidJUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
@@ -1082,8 +1082,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/java8/test/DateTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186">
-          <caret line="62" column="4" lean-forward="true" selection-start-line="62" selection-start-column="4" selection-end-line="62" selection-end-column="4" />
+        <state relative-caret-position="14">
+          <caret line="79" column="4" lean-forward="true" selection-start-line="79" selection-start-column="4" selection-end-line="106" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1093,7 +1093,7 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="404">
-          <caret line="424" lean-forward="true" selection-start-line="424" selection-end-line="424" />
+          <caret line="455" lean-forward="true" selection-start-line="455" selection-end-line="455" />
         </state>
       </provider>
     </entry>
