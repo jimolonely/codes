@@ -34,8 +34,8 @@
       <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/jimo/factory/README.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="401">
-              <caret line="71" column="3" selection-start-line="71" selection-start-column="3" selection-end-line="71" selection-end-column="3" />
+            <state relative-caret-position="60">
+              <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
               <folding>
                 <element signature="e#62#63#0" expanded="true" />
                 <element signature="e#113#114#0" expanded="true" />
@@ -218,6 +218,11 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java/jimo/factory" />
+    </key>
+  </component>
   <component name="RunDashboard">
     <option name="ruleStates">
       <list>
@@ -300,12 +305,12 @@
       <option name="presentableId" value="Default" />
       <updated>1532328136086</updated>
       <workItem from="1532328140926" duration="2615000" />
-      <workItem from="1532434227761" duration="1030000" />
+      <workItem from="1532434227761" duration="1866000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3645000" />
+    <option name="totallyTimeSpent" value="4481000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="0" width="1368" height="769" extended-state="6" />
@@ -423,8 +428,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/jimo/factory/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="401">
-          <caret line="71" column="3" selection-start-line="71" selection-start-column="3" selection-end-line="71" selection-end-column="3" />
+        <state relative-caret-position="60">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
           <folding>
             <element signature="e#62#63#0" expanded="true" />
             <element signature="e#113#114#0" expanded="true" />

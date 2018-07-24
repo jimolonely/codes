@@ -1,6 +1,8 @@
 
 # Factory Method
 
+![img](./factory_pattern_uml_diagram.png)
+
 ## 1
 ```java
 public interface Shape {
