@@ -1,7 +1,7 @@
 
 # Factory Method
 
-![img](./factory_pattern_uml_diagram.png)
+![img](./factory_pattern_uml_diagram.jpg)
 
 ## 1
 ```java
