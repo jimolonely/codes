@@ -32,7 +32,6 @@
         <option value="$PROJECT_DIR$/src/main/java/jimo/factory/Square.java" />
         <option value="$PROJECT_DIR$/src/main/java/jimo/factory/ShapeFactory.java" />
         <option value="$PROJECT_DIR$/src/main/java/jimo/factory/FactoryMain.java" />
-        <option value="$PROJECT_DIR$/src/main/java/jimo/factory/README.md" />
         <option value="$PROJECT_DIR$/src/main/java/jimo/abstract_factory/Circle.java" />
         <option value="$PROJECT_DIR$/src/main/java/jimo/abstract_factory/Rectangle.java" />
         <option value="$PROJECT_DIR$/src/main/java/jimo/abstract_factory/Color.java" />
@@ -45,6 +44,7 @@
         <option value="$PROJECT_DIR$/src/main/java/jimo/abstract_factory/FactoryProducer.java" />
         <option value="$PROJECT_DIR$/src/main/java/jimo/abstract_factory/AbstractFactoryPatternDemo.java" />
         <option value="$PROJECT_DIR$/src/main/java/jimo/abstract_factory/README.md" />
+        <option value="$PROJECT_DIR$/src/main/java/jimo/factory/README.md" />
       </list>
     </option>
   </component>
@@ -262,12 +262,12 @@
       <option name="presentableId" value="Default" />
       <updated>1532328136086</updated>
       <workItem from="1532328140926" duration="2615000" />
-      <workItem from="1532434227761" duration="4335000" />
+      <workItem from="1532434227761" duration="4610000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6950000" />
+    <option name="totallyTimeSpent" value="7225000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="0" width="1368" height="769" extended-state="6" />
@@ -398,13 +398,6 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/jimo/abstract_factory/Square.java">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/jimo/factory/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="326">
-          <caret line="37" column="3" lean-forward="true" selection-start-line="6" selection-end-line="37" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/jimo/abstract_factory/Color.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
@@ -474,8 +467,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/jimo/abstract_factory/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="341">
-          <caret line="142" selection-start-line="142" selection-end-line="142" />
+        <state relative-caret-position="45">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/jimo/factory/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="4" lean-forward="true" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="4" />
         </state>
       </provider>
     </entry>

@@ -1,5 +1,7 @@
 # Abstract Factory Pattern
 
+![img](./abstractfactory_pattern_uml_diagram.jpg?raw=true)
+
 ## 1.
 ```java
 public interface Shape {
