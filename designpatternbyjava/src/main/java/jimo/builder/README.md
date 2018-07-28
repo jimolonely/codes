@@ -1,5 +1,9 @@
 # Builder Pattern
+通过计算饭钱，一顿Meal由Items组成，Item由Burger,Drink，Burger和Drink
+又有不同的Packing方式，就像修建筑一样，一层层调用。
+素食和非素食的组合。
 
+![builder_pattern_uml_diagram](./builder_pattern_uml_diagram.jpg?raw=true)
 ## 1.
 ```java
 public interface Packing {
