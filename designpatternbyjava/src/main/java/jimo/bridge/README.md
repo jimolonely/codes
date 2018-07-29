@@ -1,5 +1,7 @@
 # Bridge Pattern
 
+![bridge_pattern_uml_diagram](./bridge_pattern_uml_diagram.jpg?raw=true)
+
 ## 1.
 ```java
 public interface DrawAPI {
