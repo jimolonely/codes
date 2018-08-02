@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0fc506e4-d98f-43aa-aafb-5b9f576411cc" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/../java-basic/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../java-basic/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -16,43 +16,43 @@
     <session id="2122932050">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="5" />
+          <entry key="project.closed" value="6" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.11" value="1" />
           <entry key="project.open.time.12" value="1" />
           <entry key="project.open.time.13" value="1" />
           <entry key="project.open.time.8" value="1" />
-          <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="6" />
+          <entry key="project.open.time.9" value="2" />
+          <entry key="project.opened" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="iml" value="1" />
-          <entry key="java" value="70" />
+          <entry key="java" value="74" />
           <entry key="jpg" value="2" />
-          <entry key="md" value="14" />
+          <entry key="md" value="15" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="IDEA_MODULE" value="1" />
           <entry key="Image" value="2" />
-          <entry key="JAVA" value="70" />
-          <entry key="Markdown" value="14" />
+          <entry key="JAVA" value="74" />
+          <entry key="Markdown" value="15" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="22" />
-          <entry key="java" value="5843" />
-          <entry key="md" value="1654" />
+          <entry key="java" value="6176" />
+          <entry key="md" value="1776" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="5865" />
-          <entry key="Markdown" value="1632" />
+          <entry key="JAVA" value="6198" />
+          <entry key="Markdown" value="1754" />
           <entry key="PLAIN_TEXT" value="22" />
         </counts>
       </usages-collector>
@@ -60,71 +60,62 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/jimo/interpreter/README.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="285">
-                <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
-                <folding>
-                  <element signature="e#124#125#0" expanded="true" />
-                  <element signature="e#156#157#0" expanded="true" />
-                  <element signature="e#219#220#0" expanded="true" />
-                  <element signature="e#264#265#0" expanded="true" />
-                </folding>
-              </first_editor>
-              <second_editor />
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/jimo/iterator/Iterator.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" selection-start-line="2" selection-end-line="6" selection-end-column="1" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/jimo/interpreter/Expression.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/jimo/iterator/Container.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="30">
-              <caret line="2" selection-start-line="2" selection-end-line="4" selection-end-column="1" />
+              <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="4" selection-end-column="1" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/jimo/interpreter/TerminalExpression.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/jimo/iterator/NameRepository.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" selection-start-line="2" selection-end-line="13" selection-end-column="1" />
+            <state relative-caret-position="329">
+              <caret line="26" column="1" selection-start-line="2" selection-end-line="26" selection-end-column="1" />
               <folding>
-                <element signature="e#152#153#0" expanded="true" />
-                <element signature="e#184#185#0" expanded="true" />
-                <element signature="e#144#145#0" expanded="true" />
-                <element signature="e#172#173#0" expanded="true" />
+                <element signature="e#122#123#0" expanded="true" />
+                <element signature="e#149#150#0" expanded="true" />
+                <element signature="e#313#314#0" expanded="true" />
+                <element signature="e#349#350#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/jimo/interpreter/OrExpression.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/jimo/iterator/IteratorPatternDemo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="15" selection-end-column="1" />
+            <state relative-caret-position="150">
+              <caret line="10" column="1" selection-start-line="2" selection-end-line="10" selection-end-column="1" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/jimo/interpreter/AndExpression.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" selection-start-line="2" selection-end-line="15" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/jimo/interpreter/InterpreterPatternDemo.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" selection-start-line="2" selection-end-line="22" selection-end-column="1" />
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/jimo/iterator/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="255">
+                <caret line="17" column="38" lean-forward="true" selection-start-line="17" selection-start-column="38" selection-end-line="17" selection-end-column="38" />
+                <folding>
+                  <element signature="e#159#160#0" expanded="true" />
+                  <element signature="e#200#201#0" expanded="true" />
+                  <element signature="e#325#326#0" expanded="true" />
+                  <element signature="e#376#377#0" expanded="true" />
+                </folding>
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -145,12 +136,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/jimo/bridge/GreenCircle.java" />
-        <option value="$PROJECT_DIR$/src/main/java/jimo/bridge/Shape.java" />
-        <option value="$PROJECT_DIR$/src/main/java/jimo/bridge/Circle.java" />
-        <option value="$PROJECT_DIR$/src/main/java/jimo/bridge/BridgePatternDemo.java" />
-        <option value="$PROJECT_DIR$/src/main/java/jimo/bridge/README.md" />
-        <option value="$PROJECT_DIR$/src/main/java/jimo/composite/Employee.java" />
         <option value="$PROJECT_DIR$/src/main/java/jimo/composite/CompositePatternDemo.java" />
         <option value="$PROJECT_DIR$/src/main/java/jimo/composite/README.md" />
         <option value="$PROJECT_DIR$/src/main/java/jimo/decorator/Shape.java" />
@@ -196,6 +181,12 @@
         <option value="$PROJECT_DIR$/src/main/java/jimo/interpreter/InterpreterPatternDemom.java" />
         <option value="$PROJECT_DIR$/src/main/java/jimo/interpreter/InterpreterPatternDemo.java" />
         <option value="$PROJECT_DIR$/src/main/java/jimo/interpreter/README.md" />
+        <option value="$PROJECT_DIR$/src/main/java/jimo/iterator/Iterator.java" />
+        <option value="$PROJECT_DIR$/src/main/java/jimo/iterator/Container.java" />
+        <option value="$PROJECT_DIR$/src/main/java/jimo/iterator/NameContainer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/jimo/iterator/NameRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/jimo/iterator/IteratorPatternDemo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/jimo/iterator/README.md" />
       </list>
     </option>
   </component>
@@ -231,7 +222,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane">
         <subPane>
           <expand>
@@ -243,6 +233,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
@@ -284,7 +275,7 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="jimo" type="462c0819:PsiDirectoryNode" />
-              <item name="interpreter" type="462c0819:PsiDirectoryNode" />
+              <item name="iterator" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -296,7 +287,7 @@
     <property name="SearchEverywhereHistoryKey" value="Buil&#9;FILE&#9;file:///home/jack/workspace/Git/codes/designpatternbyjava/src/main/java/jimo/builder/BuilderPatternDemo.java&#10;Mea&#9;FILE&#9;file:///home/jack/workspace/Git/codes/designpatternbyjava/src/main/java/jimo/builder/Meal.java&#10;Meal&#9;FILE&#9;file:///home/jack/workspace/Git/codes/designpatternbyjava/src/main/java/jimo/builder/MealBuilder.java&#10;Coco&#9;FILE&#9;file:///home/jack/workspace/Git/codes/designpatternbyjava/src/main/java/jimo/builder/Coco.java&#10;Pep&#9;FILE&#9;file:///home/jack/workspace/Git/codes/designpatternbyjava/src/main/java/jimo/builder/Pepsi.java&#10;Non&#9;FILE&#9;file:///home/jack/workspace/Git/codes/designpatternbyjava/src/main/java/jimo/builder/NonVegBurger.java&#10;Veg&#9;FILE&#9;file:///home/jack/workspace/Git/codes/designpatternbyjava/src/main/java/jimo/builder/VegBurger.java&#10;Cold&#9;FILE&#9;file:///home/jack/workspace/Git/codes/designpatternbyjava/src/main/java/jimo/builder/ColdDrink.java&#10;Burger&#9;FILE&#9;file:///home/jack/workspace/Git/codes/designpatternbyjava/src/main/java/jimo/builder/Burger.java&#10;Bur&#9;FILE&#9;file:///home/jack/workspace/Git/codes/designpatternbyjava/src/main/java/jimo/builder/NonVegBurger.java&#10;Ite&#9;FILE&#9;file:///home/jack/workspace/Git/codes/designpatternbyjava/src/main/java/jimo/builder/Item.java&#10;Bott&#9;FILE&#9;file:///home/jack/workspace/Git/codes/designpatternbyjava/src/main/java/jimo/builder/Bottle.java&#10;Wra&#9;FILE&#9;file:///home/jack/workspace/Git/codes/designpatternbyjava/src/main/java/jimo/builder/Wrapper.java&#10;Pack&#9;FILE&#9;file:///home/jack/workspace/Git/codes/designpatternbyjava/src/main/java/jimo/builder/Packing.java" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1533217039431" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1533253129501" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -304,21 +295,21 @@
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/main/java/jimo/command" />
-      <recent name="$PROJECT_DIR$/src/main/java/jimo/chainofresponsibility" />
-      <recent name="$PROJECT_DIR$/src/main/java/jimo/proxy" />
-      <recent name="$PROJECT_DIR$/src/main/java/jimo/flyweight" />
-      <recent name="$PROJECT_DIR$/src/main/java/jimo/facade" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java/jimo/singleton" />
+      <recent name="$PROJECT_DIR$/src/main/java/jimo/abstract_factory" />
+      <recent name="$PROJECT_DIR$/src/main/java/jimo/factory" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="jimo.bridge" />
       <recent name="jimo.abstract_factory" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/main/java/jimo/singleton" />
-      <recent name="$PROJECT_DIR$/src/main/java/jimo/abstract_factory" />
-      <recent name="$PROJECT_DIR$/src/main/java/jimo/factory" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java/jimo/interpreter" />
+      <recent name="$PROJECT_DIR$/src/main/java/jimo/command" />
+      <recent name="$PROJECT_DIR$/src/main/java/jimo/chainofresponsibility" />
+      <recent name="$PROJECT_DIR$/src/main/java/jimo/proxy" />
+      <recent name="$PROJECT_DIR$/src/main/java/jimo/flyweight" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -333,7 +324,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.InterpreterPatternDemo">
+  <component name="RunManager" selected="Application.IteratorPatternDemo">
     <configuration name="ChainOfResponsilityPatternDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="jimo.chainofresponsibility.ChainOfResponsilityPatternDemo" />
       <module name="design-pattern-by-java" />
@@ -362,20 +353,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FlyweightPatternDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="jimo.flyweight.FlyweightPatternDemo" />
-      <module name="design-pattern-by-java" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="jimo.flyweight.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="InterpreterPatternDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="jimo.interpreter.InterpreterPatternDemo" />
       <module name="design-pattern-by-java" />
@@ -383,6 +360,20 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="jimo.interpreter.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="IteratorPatternDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="jimo.iterator.IteratorPatternDemo" />
+      <module name="design-pattern-by-java" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="jimo.iterator.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -472,19 +463,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.FlyweightPatternDemo" />
       <item itemvalue="Application.ProxyPatternDemo" />
       <item itemvalue="Application.ChainOfResponsilityPatternDemo" />
       <item itemvalue="Application.CommandPatternDemo" />
       <item itemvalue="Application.InterpreterPatternDemo" />
+      <item itemvalue="Application.IteratorPatternDemo" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.IteratorPatternDemo" />
         <item itemvalue="Application.InterpreterPatternDemo" />
         <item itemvalue="Application.CommandPatternDemo" />
         <item itemvalue="Application.ChainOfResponsilityPatternDemo" />
         <item itemvalue="Application.ProxyPatternDemo" />
-        <item itemvalue="Application.FlyweightPatternDemo" />
       </list>
     </recent_temporary>
   </component>
@@ -506,18 +497,19 @@
       <workItem from="1532822080065" duration="11904000" />
       <workItem from="1533018013487" duration="6243000" />
       <workItem from="1533166388582" duration="34000" />
-      <workItem from="1533215928097" duration="1111000" />
+      <workItem from="1533215928097" duration="1187000" />
+      <workItem from="1533252593781" duration="533000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="41055000" />
+    <option name="totallyTimeSpent" value="41664000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1366" height="746" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22213855" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2251506" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -526,7 +518,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32850242" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.328" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.328" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -554,47 +546,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/jimo/bridge/Shape.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="1" selection-start-line="2" selection-end-line="10" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/jimo/bridge/Circle.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" selection-start-line="2" selection-end-line="18" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/jimo/bridge/BridgePatternDemo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="1" selection-start-line="2" selection-end-line="7" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/jimo/bridge/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="30">
-            <caret line="2" column="41" selection-start-line="2" selection-start-column="41" selection-end-line="2" selection-end-column="41" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/jimo/composite/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="300">
-            <caret line="20" column="5" lean-forward="true" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/jimo/composite/CompositePatternDemo.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
@@ -786,10 +737,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="375">
           <caret line="25" column="1" selection-start-line="2" selection-end-line="25" selection-end-column="1" />
-          <folding>
-            <element signature="e#279#280#0" expanded="true" />
-            <element signature="e#323#324#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -797,12 +744,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
           <caret line="11" column="1" selection-start-line="2" selection-end-line="11" selection-end-column="1" />
-          <folding>
-            <element signature="e#110#111#0" expanded="true" />
-            <element signature="e#152#153#0" expanded="true" />
-            <element signature="e#216#217#0" expanded="true" />
-            <element signature="e#252#253#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -810,12 +751,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
           <caret line="11" column="1" selection-start-line="2" selection-end-line="11" selection-end-column="1" />
-          <folding>
-            <element signature="e#110#111#0" expanded="true" />
-            <element signature="e#158#159#0" expanded="true" />
-            <element signature="e#217#218#0" expanded="true" />
-            <element signature="e#253#254#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -823,12 +758,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
           <caret line="11" column="1" selection-start-line="2" selection-end-line="11" selection-end-column="1" />
-          <folding>
-            <element signature="e#112#113#0" expanded="true" />
-            <element signature="e#160#161#0" expanded="true" />
-            <element signature="e#142#143#0" expanded="true" />
-            <element signature="e#178#179#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -860,12 +789,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" selection-start-line="2" selection-end-line="13" selection-end-column="1" />
-          <folding>
-            <element signature="e#131#132#0" expanded="true" />
-            <element signature="e#219#220#0" expanded="true" />
-            <element signature="e#245#246#0" expanded="true" />
-            <element signature="e#333#334#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -880,12 +803,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" selection-start-line="2" selection-end-line="13" selection-end-column="1" />
-          <folding>
-            <element signature="e#135#136#0" expanded="true" />
-            <element signature="e#169#170#0" expanded="true" />
-            <element signature="e#212#213#0" expanded="true" />
-            <element signature="e#229#230#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -893,12 +810,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" selection-start-line="2" selection-end-line="13" selection-end-column="1" />
-          <folding>
-            <element signature="e#133#134#0" expanded="true" />
-            <element signature="e#167#168#0" expanded="true" />
-            <element signature="e#210#211#0" expanded="true" />
-            <element signature="e#230#231#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -906,11 +817,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" selection-start-line="2" selection-end-line="18" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#189#190#0" expanded="true" />
-            <element signature="e#222#223#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -936,9 +842,6 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="435">
             <caret line="37" column="7" lean-forward="true" selection-start-line="37" selection-start-column="7" selection-end-line="37" selection-end-column="7" />
-            <folding>
-              <element signature="imports" expanded="true" />
-            </folding>
           </first_editor>
           <second_editor />
         </state>
@@ -969,12 +872,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" selection-start-line="2" selection-end-line="13" selection-end-column="1" />
-          <folding>
-            <element signature="e#152#153#0" expanded="true" />
-            <element signature="e#184#185#0" expanded="true" />
-            <element signature="e#144#145#0" expanded="true" />
-            <element signature="e#172#173#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -988,13 +885,57 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/jimo/interpreter/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="285">
-            <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+          <first_editor relative-caret-position="45">
+            <caret line="3" column="33" lean-forward="true" selection-start-line="3" selection-start-column="33" selection-end-line="3" selection-end-column="33" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/jimo/iterator/Iterator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" selection-start-line="2" selection-end-line="6" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/jimo/iterator/Container.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="4" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/jimo/iterator/NameRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="329">
+          <caret line="26" column="1" selection-start-line="2" selection-end-line="26" selection-end-column="1" />
+          <folding>
+            <element signature="e#122#123#0" expanded="true" />
+            <element signature="e#149#150#0" expanded="true" />
+            <element signature="e#313#314#0" expanded="true" />
+            <element signature="e#349#350#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/jimo/iterator/IteratorPatternDemo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="1" selection-start-line="2" selection-end-line="10" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/jimo/iterator/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="255">
+            <caret line="17" column="38" lean-forward="true" selection-start-line="17" selection-start-column="38" selection-end-line="17" selection-end-column="38" />
             <folding>
-              <element signature="e#124#125#0" expanded="true" />
-              <element signature="e#156#157#0" expanded="true" />
-              <element signature="e#219#220#0" expanded="true" />
-              <element signature="e#264#265#0" expanded="true" />
+              <element signature="e#159#160#0" expanded="true" />
+              <element signature="e#200#201#0" expanded="true" />
+              <element signature="e#325#326#0" expanded="true" />
+              <element signature="e#376#377#0" expanded="true" />
             </folding>
           </first_editor>
           <second_editor />
