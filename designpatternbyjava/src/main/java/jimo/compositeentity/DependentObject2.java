@@ -1,4 +1,4 @@
-package compositeentity;
+package jimo.compositeentity;
 
 public class DependentObject2 {
     private String data;

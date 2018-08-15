@@ -58,108 +58,7 @@
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="225">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/compositeentity/CompositeEntityPatternDemo.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" selection-start-line="2" selection-end-line="11" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/compositeentity/README.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="210">
-                <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
-                <folding>
-                  <element signature="e#85#86#0" expanded="true" />
-                  <element signature="e#112#113#0" expanded="true" />
-                  <element signature="e#151#152#0" expanded="true" />
-                  <element signature="e#183#184#0" expanded="true" />
-                  <element signature="e#85#86#0" expanded="true" />
-                  <element signature="e#112#113#0" expanded="true" />
-                  <element signature="e#151#152#0" expanded="true" />
-                  <element signature="e#183#184#0" expanded="true" />
-                  <element signature="e#315#316#0" expanded="true" />
-                  <element signature="e#388#389#0" expanded="true" />
-                  <element signature="e#151#152#0" expanded="true" />
-                  <element signature="e#195#196#0" expanded="true" />
-                  <element signature="e#227#228#0" expanded="true" />
-                  <element signature="e#266#267#0" expanded="true" />
-                  <element signature="e#134#135#0" expanded="true" />
-                  <element signature="e#178#179#0" expanded="true" />
-                </folding>
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/compositeentity/DependentObject1.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" selection-start-line="2" selection-end-line="12" selection-end-column="1" />
-              <folding>
-                <element signature="e#112#113#0" expanded="true" />
-                <element signature="e#139#140#0" expanded="true" />
-                <element signature="e#179#180#0" expanded="true" />
-                <element signature="e#211#212#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/compositeentity/DependentObject2.java">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/compositeentity/CoarseGrainedObject.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" selection-start-line="2" selection-end-line="14" selection-end-column="1" />
-              <folding>
-                <element signature="e#343#344#0" expanded="true" />
-                <element signature="e#416#417#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/compositeentity/CompositeEntity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" selection-start-line="2" selection-end-line="12" selection-end-column="1" />
-              <folding>
-                <element signature="e#177#178#0" expanded="true" />
-                <element signature="e#198#199#0" expanded="true" />
-                <element signature="e#253#254#0" expanded="true" />
-                <element signature="e#291#292#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/compositeentity/Client.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" selection-start-line="2" selection-end-line="14" selection-end-column="1" />
-              <folding>
-                <element signature="e#161#162#0" expanded="true" />
-                <element signature="e#205#206#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="225" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -332,7 +231,7 @@
     <property name="SearchEverywhereHistoryKey" value="Buil&#9;FILE&#9;file:///home/jack/workspace/Git/codes/designpatternbyjava/src/main/java/jimo/builder/BuilderPatternDemo.java&#10;Mea&#9;FILE&#9;file:///home/jack/workspace/Git/codes/designpatternbyjava/src/main/java/jimo/builder/Meal.java&#10;Meal&#9;FILE&#9;file:///home/jack/workspace/Git/codes/designpatternbyjava/src/main/java/jimo/builder/MealBuilder.java&#10;Coco&#9;FILE&#9;file:///home/jack/workspace/Git/codes/designpatternbyjava/src/main/java/jimo/builder/Coco.java&#10;Pep&#9;FILE&#9;file:///home/jack/workspace/Git/codes/designpatternbyjava/src/main/java/jimo/builder/Pepsi.java&#10;Non&#9;FILE&#9;file:///home/jack/workspace/Git/codes/designpatternbyjava/src/main/java/jimo/builder/NonVegBurger.java&#10;Veg&#9;FILE&#9;file:///home/jack/workspace/Git/codes/designpatternbyjava/src/main/java/jimo/builder/VegBurger.java&#10;Cold&#9;FILE&#9;file:///home/jack/workspace/Git/codes/designpatternbyjava/src/main/java/jimo/builder/ColdDrink.java&#10;Burger&#9;FILE&#9;file:///home/jack/workspace/Git/codes/designpatternbyjava/src/main/java/jimo/builder/Burger.java&#10;Bur&#9;FILE&#9;file:///home/jack/workspace/Git/codes/designpatternbyjava/src/main/java/jimo/builder/NonVegBurger.java&#10;Ite&#9;FILE&#9;file:///home/jack/workspace/Git/codes/designpatternbyjava/src/main/java/jimo/builder/Item.java&#10;Bott&#9;FILE&#9;file:///home/jack/workspace/Git/codes/designpatternbyjava/src/main/java/jimo/builder/Bottle.java&#10;Wra&#9;FILE&#9;file:///home/jack/workspace/Git/codes/designpatternbyjava/src/main/java/jimo/builder/Wrapper.java&#10;Pack&#9;FILE&#9;file:///home/jack/workspace/Git/codes/designpatternbyjava/src/main/java/jimo/builder/Packing.java" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1534252606117" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1534339276625" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -388,12 +287,12 @@
       </method>
     </configuration>
     <configuration name="CompositeEntityPatternDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="compositeentity.CompositeEntityPatternDemo" />
+      <option name="MAIN_CLASS_NAME" value="jimo.compositeentity.CompositeEntityPatternDemo" />
       <module name="design-pattern-by-java" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="compositeentity.*" />
+          <option name="PATTERN" value="jimo.compositeentity.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -547,16 +446,15 @@
       <workItem from="1533166388582" duration="34000" />
       <workItem from="1533215928097" duration="1187000" />
       <workItem from="1533252593781" duration="15337000" />
-      <workItem from="1533963315728" duration="6388000" />
+      <workItem from="1533963315728" duration="6994000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="62856000" />
+    <option name="totallyTimeSpent" value="63462000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1366" height="746" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22816265" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />

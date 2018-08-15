@@ -1,4 +1,4 @@
-package compositeentity;
+package jimo.compositeentity;
 
 public class Client {
     private CompositeEntity entity = new CompositeEntity();

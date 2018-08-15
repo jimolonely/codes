@@ -1,4 +1,4 @@
-package compositeentity;
+package jimo.compositeentity;
 
 public class CompositeEntity {
     private CoarseGrainedObject object = new CoarseGrainedObject();

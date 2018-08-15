@@ -1,4 +1,4 @@
-package compositeentity;
+package jimo.compositeentity;
 
 public class CompositeEntityPatternDemo {
     public static void main(String[] args) {
