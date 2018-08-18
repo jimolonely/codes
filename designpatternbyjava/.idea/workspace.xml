@@ -30,7 +30,7 @@
           <entry key="iml" value="1" />
           <entry key="java" value="142" />
           <entry key="jpg" value="2" />
-          <entry key="md" value="29" />
+          <entry key="md" value="31" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
@@ -38,27 +38,40 @@
           <entry key="IDEA_MODULE" value="1" />
           <entry key="Image" value="2" />
           <entry key="JAVA" value="142" />
-          <entry key="Markdown" value="29" />
+          <entry key="Markdown" value="31" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="22" />
           <entry key="java" value="11559" />
-          <entry key="md" value="3532" />
+          <entry key="md" value="3608" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JAVA" value="11613" />
-          <entry key="Markdown" value="3478" />
+          <entry key="Markdown" value="3554" />
           <entry key="PLAIN_TEXT" value="22" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="225" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="225">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/jimo/intercepting/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="225">
+                <caret line="15" column="5" lean-forward="true" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -82,8 +95,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/jimo/strategy/SubstractStrategy.java" />
-        <option value="$PROJECT_DIR$/src/main/java/jimo/strategy/SubtractStrategy.java" />
         <option value="$PROJECT_DIR$/src/main/java/jimo/strategy/Strategy.java" />
         <option value="$PROJECT_DIR$/src/main/java/jimo/strategy/README.md" />
         <option value="$PROJECT_DIR$/src/main/java/jimo/template/Game.java" />
@@ -133,6 +144,8 @@
         <option value="$PROJECT_DIR$/src/main/java/jimo/frontcontroller/FrontController.java" />
         <option value="$PROJECT_DIR$/src/main/java/jimo/frontcontroller/FrontControllerPatternDemo.java" />
         <option value="$PROJECT_DIR$/src/main/java/jimo/frontcontroller/README.md" />
+        <option value="$PROJECT_DIR$/src/main/java/jimo/intercepter/README.md" />
+        <option value="$PROJECT_DIR$/src/main/java/jimo/intercepting/README.md" />
       </list>
     </option>
   </component>
@@ -218,7 +231,7 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="jimo" type="462c0819:PsiDirectoryNode" />
-              <item name="frontcontroller" type="462c0819:PsiDirectoryNode" />
+              <item name="intercepting" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -232,7 +245,7 @@
     <property name="SearchEverywhereHistoryKey" value="Buil&#9;FILE&#9;file:///home/jack/workspace/Git/codes/designpatternbyjava/src/main/java/jimo/builder/BuilderPatternDemo.java&#10;Mea&#9;FILE&#9;file:///home/jack/workspace/Git/codes/designpatternbyjava/src/main/java/jimo/builder/Meal.java&#10;Meal&#9;FILE&#9;file:///home/jack/workspace/Git/codes/designpatternbyjava/src/main/java/jimo/builder/MealBuilder.java&#10;Coco&#9;FILE&#9;file:///home/jack/workspace/Git/codes/designpatternbyjava/src/main/java/jimo/builder/Coco.java&#10;Pep&#9;FILE&#9;file:///home/jack/workspace/Git/codes/designpatternbyjava/src/main/java/jimo/builder/Pepsi.java&#10;Non&#9;FILE&#9;file:///home/jack/workspace/Git/codes/designpatternbyjava/src/main/java/jimo/builder/NonVegBurger.java&#10;Veg&#9;FILE&#9;file:///home/jack/workspace/Git/codes/designpatternbyjava/src/main/java/jimo/builder/VegBurger.java&#10;Cold&#9;FILE&#9;file:///home/jack/workspace/Git/codes/designpatternbyjava/src/main/java/jimo/builder/ColdDrink.java&#10;Burger&#9;FILE&#9;file:///home/jack/workspace/Git/codes/designpatternbyjava/src/main/java/jimo/builder/Burger.java&#10;Bur&#9;FILE&#9;file:///home/jack/workspace/Git/codes/designpatternbyjava/src/main/java/jimo/builder/NonVegBurger.java&#10;Ite&#9;FILE&#9;file:///home/jack/workspace/Git/codes/designpatternbyjava/src/main/java/jimo/builder/Item.java&#10;Bott&#9;FILE&#9;file:///home/jack/workspace/Git/codes/designpatternbyjava/src/main/java/jimo/builder/Bottle.java&#10;Wra&#9;FILE&#9;file:///home/jack/workspace/Git/codes/designpatternbyjava/src/main/java/jimo/builder/Wrapper.java&#10;Pack&#9;FILE&#9;file:///home/jack/workspace/Git/codes/designpatternbyjava/src/main/java/jimo/builder/Packing.java" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1534461882354" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1534553456333" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -253,11 +266,11 @@
       <recent name="jimo.bridge" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java/jimo/intercepting" />
       <recent name="$PROJECT_DIR$/src/main/java/jimo/frontcontroller" />
       <recent name="$PROJECT_DIR$/src/main/java/jimo/dao" />
       <recent name="$PROJECT_DIR$/src/main/java/compositeentity" />
       <recent name="$PROJECT_DIR$/src/main/java/jimo/businessdelegate" />
-      <recent name="$PROJECT_DIR$/src/main/java/jimo/mvc" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -447,15 +460,16 @@
       <workItem from="1533166388582" duration="34000" />
       <workItem from="1533215928097" duration="1187000" />
       <workItem from="1533252593781" duration="15337000" />
-      <workItem from="1533963315728" duration="9660000" />
+      <workItem from="1533963315728" duration="10554000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="66128000" />
+    <option name="totallyTimeSpent" value="67022000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1366" height="746" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22816265" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -494,28 +508,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/jimo/strategy/MultiplyStrategy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" selection-start-line="2" selection-end-line="7" selection-end-column="1" />
-          <folding>
-            <element signature="e#136#137#0" expanded="true" />
-            <element signature="e#168#169#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/jimo/strategy/SubtractStrategy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
-          <folding>
-            <element signature="e#137#138#0" expanded="true" />
-            <element signature="e#163#164#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/jimo/strategy/Strategy.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
@@ -1077,6 +1069,26 @@
               <element signature="e#326#327#0" expanded="true" />
               <element signature="e#390#391#0" expanded="true" />
             </folding>
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/jimo/interpreter/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="150">
+            <caret line="10" column="3" lean-forward="true" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="3" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/jimo/intercepting/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="225">
+            <caret line="15" column="5" lean-forward="true" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
           </first_editor>
           <second_editor />
         </state>
