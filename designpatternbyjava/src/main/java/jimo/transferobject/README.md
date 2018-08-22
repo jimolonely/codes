@@ -7,3 +7,90 @@
 
 3. 客户端 - 客户端请求或将传输对象发送到业务对象。
 
+## 1.VO
+```java
+public class StudentVO {
+    private String name;
+    private int rollNo;
+
+    public StudentVO(String name, int rollNo) {
+        this.name = name;
+        this.rollNo = rollNo;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public int getRollNo() {
+        return rollNo;
+    }
+
+    public void setRollNo(int rollNo) {
+        this.rollNo = rollNo;
+    }
+}
+```
+## 2.BO
+```java
+public class StudentBO {
+    List<StudentVO> students;
+
+    public StudentBO() {
+        students = new ArrayList<>();
+        students.add(new StudentVO("jimo", 0));
+        students.add(new StudentVO("hehe", 1));
+    }
+
+    public void deleteStudent(StudentVO student) {
+        students.remove(student.getRollNo());
+        System.out.println("delete student,roll No:" + student.getRollNo());
+    }
+
+    public List<StudentVO> getStudents() {
+        return students;
+    }
+
+    public StudentVO getStudent(int rollNo) {
+        return students.get(rollNo);
+    }
+
+    public void updateStudent(StudentVO student) {
+        students.get(student.getRollNo()).setName(student.getName());
+        System.out.println("Student: Roll No " + student.getRollNo() + ", updated in the database");
+    }
+}
+```
+## 2.Client
+```java
+public class DataTransferObject {
+    public static void main(String[] args) {
+        StudentBO studentBusinessObject = new StudentBO();
+
+        //print all students
+        for (StudentVO student : studentBusinessObject.getStudents()) {
+            System.out.println("Student: [RollNo : " + student.getRollNo() + ", Name : " + student.getName() + " ]");
+        }
+
+        //update student
+        StudentVO student = studentBusinessObject.getStudents().get(0);
+        student.setName("Michael");
+        studentBusinessObject.updateStudent(student);
+
+        //get the student
+        student = studentBusinessObject.getStudent(0);
+        System.out.println("Student: [RollNo : " + student.getRollNo() + ", Name : " + student.getName() + " ]");
+
+    }
+}
+/*
+Student: [RollNo : 0, Name : jimo ]
+Student: [RollNo : 1, Name : hehe ]
+Student: Roll No 0, updated in the database
+Student: [RollNo : 0, Name : Michael ]
+*/
+```
