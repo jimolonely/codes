@@ -7,6 +7,8 @@
 
 3. 客户端 - 客户端请求或将传输对象发送到业务对象。
 
+![transferobject_pattern_uml_diagram](./transferobject_pattern_uml_diagram.jpg?raw=true)
+
 ## 1.VO
 ```java
 public class StudentVO {

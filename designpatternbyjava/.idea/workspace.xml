@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0fc506e4-d98f-43aa-aafb-5b9f576411cc" name="Default" comment="" />
+    <list default="true" id="0fc506e4-d98f-43aa-aafb-5b9f576411cc" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/src/main/java/jimo/transferobject/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jimo/transferobject/README.md" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -29,7 +31,7 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="iml" value="1" />
-          <entry key="java" value="159" />
+          <entry key="java" value="160" />
           <entry key="jpg" value="2" />
           <entry key="md" value="33" />
         </counts>
@@ -38,76 +40,28 @@
         <counts>
           <entry key="IDEA_MODULE" value="1" />
           <entry key="Image" value="2" />
-          <entry key="JAVA" value="159" />
+          <entry key="JAVA" value="160" />
           <entry key="Markdown" value="33" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="22" />
-          <entry key="java" value="13670" />
-          <entry key="md" value="3939" />
+          <entry key="java" value="13681" />
+          <entry key="md" value="4009" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="13726" />
-          <entry key="Markdown" value="3883" />
+          <entry key="JAVA" value="13739" />
+          <entry key="Markdown" value="3951" />
           <entry key="PLAIN_TEXT" value="22" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="225">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/jimo/transferobject/README.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="135">
-                <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/jimo/transferobject/StudentVO.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
-              <folding>
-                <element signature="e#133#134#0" expanded="true" />
-                <element signature="e#160#161#0" expanded="true" />
-                <element signature="e#200#201#0" expanded="true" />
-                <element signature="e#232#233#0" expanded="true" />
-                <element signature="e#262#263#0" expanded="true" />
-                <element signature="e#291#292#0" expanded="true" />
-                <element signature="e#332#333#0" expanded="true" />
-                <element signature="e#368#369#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/jimo/transferobject/StudentBO.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#526#527#0" expanded="true" />
-                <element signature="e#557#558#0" expanded="true" />
-                <element signature="e#603#604#0" expanded="true" />
-                <element signature="e#646#647#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="225" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -131,7 +85,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/jimo/mvc/README.md" />
         <option value="$PROJECT_DIR$/src/main/java/jimo/bussinessdelegate/README.md" />
         <option value="$PROJECT_DIR$/src/main/java/jimo/businessdelegate/BusinessService.java" />
         <option value="$PROJECT_DIR$/src/main/java/jimo/businessdelegate/EJBService.java" />
@@ -179,9 +132,10 @@
         <option value="$PROJECT_DIR$/src/main/java/jimo/servicelocator/ServiceLocator.java" />
         <option value="$PROJECT_DIR$/src/main/java/jimo/servicelocator/ServiceLocatorPattern.java" />
         <option value="$PROJECT_DIR$/src/main/java/jimo/servicelocator/README.md" />
-        <option value="$PROJECT_DIR$/src/main/java/jimo/transferobject/README.md" />
         <option value="$PROJECT_DIR$/src/main/java/jimo/transferobject/StudentVO.java" />
         <option value="$PROJECT_DIR$/src/main/java/jimo/transferobject/StudentBO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/jimo/transferobject/DataTransferObject.java" />
+        <option value="$PROJECT_DIR$/src/main/java/jimo/transferobject/README.md" />
       </list>
     </option>
   </component>
@@ -281,7 +235,7 @@
     <property name="SearchEverywhereHistoryKey" value="Buil&#9;FILE&#9;file:///home/jack/workspace/Git/codes/designpatternbyjava/src/main/java/jimo/builder/BuilderPatternDemo.java&#10;Mea&#9;FILE&#9;file:///home/jack/workspace/Git/codes/designpatternbyjava/src/main/java/jimo/builder/Meal.java&#10;Meal&#9;FILE&#9;file:///home/jack/workspace/Git/codes/designpatternbyjava/src/main/java/jimo/builder/MealBuilder.java&#10;Coco&#9;FILE&#9;file:///home/jack/workspace/Git/codes/designpatternbyjava/src/main/java/jimo/builder/Coco.java&#10;Pep&#9;FILE&#9;file:///home/jack/workspace/Git/codes/designpatternbyjava/src/main/java/jimo/builder/Pepsi.java&#10;Non&#9;FILE&#9;file:///home/jack/workspace/Git/codes/designpatternbyjava/src/main/java/jimo/builder/NonVegBurger.java&#10;Veg&#9;FILE&#9;file:///home/jack/workspace/Git/codes/designpatternbyjava/src/main/java/jimo/builder/VegBurger.java&#10;Cold&#9;FILE&#9;file:///home/jack/workspace/Git/codes/designpatternbyjava/src/main/java/jimo/builder/ColdDrink.java&#10;Burger&#9;FILE&#9;file:///home/jack/workspace/Git/codes/designpatternbyjava/src/main/java/jimo/builder/Burger.java&#10;Bur&#9;FILE&#9;file:///home/jack/workspace/Git/codes/designpatternbyjava/src/main/java/jimo/builder/NonVegBurger.java&#10;Ite&#9;FILE&#9;file:///home/jack/workspace/Git/codes/designpatternbyjava/src/main/java/jimo/builder/Item.java&#10;Bott&#9;FILE&#9;file:///home/jack/workspace/Git/codes/designpatternbyjava/src/main/java/jimo/builder/Bottle.java&#10;Wra&#9;FILE&#9;file:///home/jack/workspace/Git/codes/designpatternbyjava/src/main/java/jimo/builder/Wrapper.java&#10;Pack&#9;FILE&#9;file:///home/jack/workspace/Git/codes/designpatternbyjava/src/main/java/jimo/builder/Packing.java" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1534980734925" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1534980821866" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -290,11 +244,11 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java/jimo/transferobject" />
       <recent name="$PROJECT_DIR$/src/main/java/jimo/servicelocator" />
       <recent name="$PROJECT_DIR$/src/main/java/jimo/intercepting" />
       <recent name="$PROJECT_DIR$/src/main/java/jimo/frontcontroller" />
       <recent name="$PROJECT_DIR$/src/main/java/jimo/dao" />
-      <recent name="$PROJECT_DIR$/src/main/java/compositeentity" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="jimo.servicelocater" />
@@ -497,16 +451,15 @@
       <workItem from="1533215928097" duration="1187000" />
       <workItem from="1533252593781" duration="15337000" />
       <workItem from="1533963315728" duration="12137000" />
-      <workItem from="1534721047989" duration="4026000" />
+      <workItem from="1534721047989" duration="4847000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="72631000" />
+    <option name="totallyTimeSpent" value="73452000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1366" height="746" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23117469" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -526,7 +479,7 @@
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="11" weight="0.32850242" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.328" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -545,13 +498,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/jimo/mvc/StudentView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" selection-start-line="2" selection-end-line="6" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/jimo/mvc/StudentController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="450">
@@ -1011,8 +957,22 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/jimo/transferobject/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="135">
-            <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+          <first_editor relative-caret-position="120">
+            <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+            <folding>
+              <element signature="e#212#213#0" expanded="true" />
+              <element signature="e#239#240#0" expanded="true" />
+              <element signature="e#278#279#0" expanded="true" />
+              <element signature="e#310#311#0" expanded="true" />
+              <element signature="e#339#340#0" expanded="true" />
+              <element signature="e#368#369#0" expanded="true" />
+              <element signature="e#408#409#0" expanded="true" />
+              <element signature="e#444#445#0" expanded="true" />
+              <element signature="e#441#442#0" expanded="true" />
+              <element signature="e#472#473#0" expanded="true" />
+              <element signature="e#518#519#0" expanded="true" />
+              <element signature="e#561#562#0" expanded="true" />
+            </folding>
           </first_editor>
           <second_editor />
         </state>
@@ -1020,8 +980,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/jimo/transferobject/StudentVO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
+        <state relative-caret-position="30">
+          <caret line="2" selection-start-line="2" selection-end-line="26" selection-end-column="1" />
           <folding>
             <element signature="e#133#134#0" expanded="true" />
             <element signature="e#160#161#0" expanded="true" />
@@ -1037,8 +997,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/jimo/transferobject/StudentBO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
+        <state relative-caret-position="75">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="31" selection-end-column="1" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#526#527#0" expanded="true" />
@@ -1046,6 +1006,13 @@
             <element signature="e#603#604#0" expanded="true" />
             <element signature="e#646#647#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/jimo/transferobject/DataTransferObject.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" selection-start-line="2" selection-end-line="21" selection-end-column="1" />
         </state>
       </provider>
     </entry>
