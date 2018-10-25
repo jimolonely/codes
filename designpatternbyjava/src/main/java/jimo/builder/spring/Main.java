@@ -1,12 +1,11 @@
 package jimo.builder.spring;
 
-import org.junit.internal.runners.statements.FailOnTimeout;
+import org.springframework.beans.factory.support.BeanDefinitionBuilder;
 import org.springframework.boot.autoconfigure.condition.ConditionMessage;
 import org.springframework.cache.interceptor.CachePutOperation;
 import org.springframework.http.ContentDisposition;
 import org.springframework.web.servlet.mvc.method.RequestMappingInfo;
 
-import javax.websocket.server.ServerEndpointConfig;
 
 /**
  *
@@ -15,17 +14,15 @@ import javax.websocket.server.ServerEndpointConfig;
  */
 public class Main {
 	public static void main(String[]args){
-//		ServerEndpointConfig.Builder;
 
 //		RequestMappingInfo.BuilderConfiguration
 
 //		ContentDisposition.Builder
 
-//		FailOnTimeout.Builder
-
 //		CachePutOperation.Builder
 
 //		ConditionMessage.Builder
 
+//		BeanDefinitionBuilder
 	}
 }
