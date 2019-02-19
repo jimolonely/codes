@@ -1,0 +1,33 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+
+<canvas id="canvas" width="1200" height="880">浏览器不支持canvas</canvas>
+<img src="./img/jimo.png" style="display: none">
+<script>
+    let canvas = document.getElementById("canvas");
+    let ctx = canvas.getContext("2d");
+
+    let img = document.images[0];
+
+    img.onload = function () {
+        // 指定大小
+        ctx.drawImage(img, 10, 10, 300, 240);
+
+        //
+        ctx.drawImage(img, 0, 300, 200, 100, 700, 0, 200, 120);
+    };
+
+</script>
+</body>
+</html>

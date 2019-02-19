@@ -1,0 +1,48 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+
+<canvas id="canvas" width="1200" height="880">浏览器不支持canvas</canvas>
+<img src="./img/jimo.png" style="display: none">
+<script>
+    let canvas = document.getElementById("canvas");
+    let ctx = canvas.getContext("2d");
+
+    let img = document.images[0];
+    img.onload = function () {
+
+        ctx.drawImage(img, 0, 0, 200, 150);
+
+        let imageData = ctx.getImageData(0, 0, img.width, img.height);
+        let data = imageData.data;
+
+        for (let i = 0; i < data.length; i += 4) {
+            let red = data[i];
+            let green = data[i + 1];
+            let blue = data[i + 2];
+            let alpha = data[i + 3];
+
+            let avg = Math.floor((red + green + blue) / 3);
+
+            data[i] = avg;
+            data[i + 1] = avg;
+            data[i + 2] = avg;
+        }
+
+        imageData.data = data;
+        ctx.putImageData(imageData, 250, 0);
+    }
+
+</script>
+</body>
+</html>

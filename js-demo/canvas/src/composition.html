@@ -1,0 +1,39 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+
+<canvas id="canvas" width="1200" height="880">浏览器不支持canvas</canvas>
+<img src="./img/jimo.png" style="display: none">
+<script>
+    let canvas = document.getElementById("canvas");
+    let ctx = canvas.getContext("2d");
+
+    ctx.fillStyle = "#f00";
+    ctx.fillRect(10, 10, 200, 200);
+
+    ctx.globalAlpha = 0.5;
+
+    ctx.globalCompositeOperation = "destination-over";
+    // ctx.globalCompositeOperation = "xor";
+
+    ctx.fillStyle = "#00f";
+    ctx.fillRect(100, 100, 200, 200);
+
+
+    // default
+    ctx.globalAlpha = 0;
+
+
+</script>
+</body>
+</html>

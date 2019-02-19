@@ -1,0 +1,62 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+
+<canvas id="canvas" width="1200" height="880">浏览器不支持canvas</canvas>
+<img src="./img/lamp.gif" style="display: none">
+<script>
+    let canvas = document.getElementById("canvas");
+    let ctx = canvas.getContext("2d");
+
+    // 阴影
+    ctx.shadowOffsetX = 5;
+    ctx.shadowOffsetY = 5;
+    ctx.shadowBlur = 5;
+    ctx.shadowColor = "rgba(0,0,0,0.5)";
+
+    ctx.fillStyle = "#f00";
+    ctx.fillRect(10, 10, 100, 100);
+
+    ctx.shadowOffsetX = -5;
+    ctx.shadowOffsetY = -5;
+
+    ctx.fillStyle = "#0f0";
+    ctx.fillRect(200, 10, 100, 100);
+
+    // 渐变
+    let gradient = ctx.createLinearGradient(400, 10, 500, 110);
+    gradient.addColorStop(0, "white");
+    gradient.addColorStop(0.5, "#000");
+    gradient.addColorStop(1, "blue");
+
+    ctx.fillStyle = gradient;
+    ctx.fillRect(400, 10, 100, 100);
+
+    let rg = ctx.createRadialGradient(650, 55, 20, 650, 55, 40);
+    rg.addColorStop(0, "#fff");
+    rg.addColorStop(1, "#333");
+
+    ctx.fillStyle = rg;
+    ctx.fillRect(600, 10, 100, 100);
+
+    // pattern
+
+    let img = document.images[0];
+    img.onload = function () {
+        ctx.fillStyle = ctx.createPattern(img, "repeat");
+        ctx.fillRect(200, 140, 100, 100);
+    }
+
+</script>
+</body>
+</html>
