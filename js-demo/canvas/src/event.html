@@ -1,0 +1,68 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+
+<canvas id="canvas" width="600" height="480">浏览器不支持canvas</canvas>
+
+<script>
+    let canvas = document.getElementById("canvas");
+    let ctx = canvas.getContext("2d");
+
+    ctx.fillStyle = "#000";
+    ctx.fillRect(0, 0, ctx.canvas.width, ctx.canvas.height);
+
+    function RectObject(name, color, x, y, w, h) {
+        this.x = x;
+        this.y = y;
+        this.w = w;
+        this.h = h;
+        this.name = name;
+        ctx.fillStyle = color;
+        ctx.fillRect(x, y, w, h);
+
+        this.handleClick = function (mouse) {
+            if (this.x < mouse.x && this.x + this.w > mouse.x
+                && this.y < mouse.y && this.y + this.h > mouse.y) {
+                console.log(this.name, mouse);
+                return true;
+            }
+            return false;
+        }
+    }
+
+    let rectObjects = [
+            new RectObject("rect1", "#fff", 0, 0, 100, 100),
+            new RectObject("rect2", "#f00", 50, 50, 100, 100),
+            new RectObject("rect3", "#f0f", 200, 200, 100, 100),
+        ]
+    ;
+
+    let basePos = {
+        x: canvas.offsetLeft,
+        y: canvas.offsetTop
+    };
+
+    canvas.addEventListener('click', function (e) {
+        let mouse = {
+            x: e.pageX - basePos.x,
+            y: e.pageY - basePos.y
+        };
+        // 遍历所有对象处理事件
+        for (let i = 0; i < rectObjects.length; i++) {
+            rectObjects[i].handleClick(mouse);
+        }
+    });
+
+</script>
+</body>
+</html>
