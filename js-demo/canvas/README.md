@@ -16,7 +16,7 @@
 5. 2D绘图
     1. 画板(浏览器窗口)、画笔（context）、坐标介绍
     2. 2个操作： 填充+画线+style， fillStyle + strokeStyle
-    3. 绘图： 矩形、路径、文本、转换、绘制图像（drawImage.html）、
+    3. 绘图： 矩形、路径、文本、转换、绘制图像（rect.html）、
     效果（effect.html, 阴影、渐变、pattern）
     4. 使用图像数据: imageData.html
     5. 合成：globalAlpha, globalCompositionOperation, composition.html

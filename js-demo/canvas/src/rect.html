@@ -32,18 +32,22 @@
     ctx.strokeRect(0, 0, 300, 300);
 
     // clear rect
-    ctx.clearRect(150, 150, 150, 150);
+    // ctx.clearRect(150, 150, 150, 150);
     ctx.closePath();
 
     // path
 
     let center = 150 * 1.5;
     let radius = 300 / 4;
-    ctx.beginPath();
+    // ctx.beginPath();
 
     // 圆：表盘
     ctx.arc(center, center, radius, 0, Math.PI * 2, false);
+    ctx.stroke();
+    ctx.closePath();
+    ctx.beginPath();
     ctx.arc(center, center, radius - 5, 0, Math.PI * 2, false);
+    ctx.arc(center, center, radius - 10, 0, Math.PI * 2, false);
 
     // 直线：指针
     ctx.moveTo(center, center);
@@ -61,7 +65,14 @@
     ctx.font = "bold 14px Arial";
     ctx.textAlign = "center";
     ctx.textBaseline = "top";
-    ctx.fillText("24", center, 156);
+    ctx.fillText("22", center, 156);
+    ctx.textAlign = "center";
+    ctx.textBaseline = "ideographic";
+    ctx.fillText("24", center + 20, 156);
+    ctx.textBaseline = "alphabetic";
+    ctx.fillText("23", center + 40, 156);
+    ctx.textBaseline = "bottom";
+    ctx.fillText("21", center + 60, 156);
     ctx.closePath();
 
 

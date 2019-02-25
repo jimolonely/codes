@@ -12,7 +12,7 @@
 
 <body>
 
-<canvas id="canvas" width="600" height="480">浏览器不支持canvas</canvas>
+<canvas id="canvas" width="800" height="480">浏览器不支持canvas</canvas>
 
 <script>
     let canvas = document.getElementById("canvas");
@@ -23,20 +23,20 @@
     // translate(a,b,c,d,e,f)
 
     // scale(a,d)
-    ctx.setTransform(2, 0, 0, 2, 0, 0);
-    ctx.rect(0, 0, 250, 100);
+    // ctx.setTransform(2, 0, 0, 2, 0, 0);
+    // ctx.rect(100, 100, 250, 100);
 
     // move(dx=e,dy=f)
-    ctx.setTransform(1, 0, 0, 1, 200, 100);
-    ctx.rect(100, 100, 250, 100);
+    // ctx.setTransform(1, 0, 0, 1, 200, 100);
+    // ctx.rect(100, 100, 250, 100);
 
     // 垂直倾斜
-    ctx.setTransform(1, 0.5, 0, 1, 0, 0);
+    ctx.setTransform(0, 1, 1, 0, 0, 0);
     ctx.rect(100, 100, 250, 100);
 
-    // 水平倾斜
-    ctx.setTransform(1, 0, 0.5, 1, 0, 0);
-    ctx.rect(100, 100, 250, 100);
+    // // 水平倾斜
+    // ctx.setTransform(1, 0, 0.5, 1, 0, 0);
+    // ctx.rect(100, 100, 250, 100);
 
     // rotate(r)
     // x1 = x*cos(r) - y*sin(r)

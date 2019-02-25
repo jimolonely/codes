@@ -21,12 +21,12 @@
     ctx.fillStyle = "#f00";
     ctx.fillRect(10, 10, 200, 200);
 
-    ctx.globalAlpha = 0.5;
+    // ctx.globalAlpha = 0.5;
 
-    ctx.globalCompositeOperation = "destination-over";
-    // ctx.globalCompositeOperation = "xor";
+    // ctx.globalCompositeOperation = "destination-over";
+    ctx.globalCompositeOperation = "xor";
 
-    ctx.fillStyle = "#00f";
+    ctx.fillStyle = "#ff0";
     ctx.fillRect(100, 100, 200, 200);
 
 

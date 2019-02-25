@@ -34,9 +34,12 @@
 
             let avg = Math.floor((red + green + blue) / 3);
 
-            data[i] = avg;
+            // data[i] = avg;
+            // data[i + 1] = avg;
+            // data[i + 2] = avg;
+            data[i] = 0;
             data[i + 1] = avg;
-            data[i + 2] = avg;
+            data[i + 2] = 0;
         }
 
         imageData.data = data;
