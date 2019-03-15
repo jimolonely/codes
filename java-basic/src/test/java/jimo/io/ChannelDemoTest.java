@@ -12,4 +12,9 @@ public class ChannelDemoTest {
     public void streamRead() {
         demo.streamRead("java-basic.iml");
     }
+
+    @Test
+    public void nioRead() {
+        demo.nioRead("java-basic.iml");
+    }
 }
