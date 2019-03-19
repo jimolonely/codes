@@ -17,4 +17,9 @@ public class Consumer {
     public void consumes(String msg) {
         logger.info("<<<<<------consumer msg:[{}]", msg);
     }
+
+    @KafkaListener(topics = "${kafka.topic}")
+    public void consumes2(String msg) {
+        logger.info("<<<<<------consumer2 msg:[{}]", msg);
+    }
 }

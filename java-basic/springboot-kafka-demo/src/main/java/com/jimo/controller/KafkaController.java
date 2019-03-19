@@ -23,4 +23,10 @@ public class KafkaController {
         this.producer.sendMessage(msg);
         return "send msg[" + msg + "] success!";
     }
+
+    @GetMapping("/send")
+    public String sendMsgSync(@RequestParam("msg") String msg) {
+        boolean ok = this.producer.sendMsgSync("key", msg);
+        return "send msg[" + msg + "] success=" + ok + "!";
+    }
 }
