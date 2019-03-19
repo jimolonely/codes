@@ -1,0 +1,39 @@
+server:
+  port: 8088
+spring:
+  kafka:
+    consumer:
+      auto-commit-interval: 1000
+      group-id: logdowngroup1
+      bootstrap-servers: hadoop7:9092,hadoop8:9092,hadoop9:9092
+      auto-offset-reset: latest
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      properties:
+        rebalance:
+          backoff:
+            ms: 2000
+          max:
+            retries: 10
+    producer:
+      bootstrap-servers: hadoop7:9092,hadoop8:9092,hadoop9:9092
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.apache.kafka.common.serialization.StringSerializer
+      acks: all
+      retries: 0
+      batch-size: 16384
+      buffer-memory: 33554432
+      properties:
+        metadata:
+          broker:
+            list: hadoop7:9092,hadoop8:9092,hadoop9:9092
+        message:
+          send:
+            max:
+              retries: 3
+        linger:
+          ms: 1
+        ssl:
+          client:
+            auth: required
+
