@@ -1,12 +1,13 @@
 package com.jimo;
 
 /**
- * redis操作定义的接口方法
+ * 缓存操作定义的接口方法，之所以不指定某个缓存（Redis，Memcached等），
+ * 因为以后可能会换成其他缓存
  *
  * @author jimo
  * @date 19-3-20 上午11:29
  */
-public interface IRedisService<K, V> {
+public interface ICacheService<K, V> {
 
     /**
      * <p>
@@ -18,7 +19,7 @@ public interface IRedisService<K, V> {
      * @author jimo
      * @date 19-3-20 上午11:30
      */
-    Long del(K... keys);
+    long del(K... keys);
 
     /**
      * <p>

@@ -2,17 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7ee26faa-d5f7-4a1c-b8dc-9e5982404e45" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/jimo/algo/BigEyeball.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/jimo/io/ChannelDemo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/jimo/order/Base.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/jimo/order/Init.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/jimo/order/Sub.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/jimo/order/Test.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-redis-demo/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-redis-demo/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-redis-demo/src/main/java/com/jimo/IRedisService.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-redis-demo/src/main/java/com/jimo/ICacheService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-redis-demo/src/main/java/com/jimo/StringRedisServiceImpl.java" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -43,8 +36,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/springboot-redis-demo/src/main/resources/application.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="10" column="21" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
+            <state relative-caret-position="114">
+              <caret line="6" column="10" selection-start-line="6" selection-start-column="10" selection-end-line="6" selection-end-column="10" />
             </state>
           </provider>
         </entry>
@@ -53,38 +46,65 @@
         <entry file="file://$PROJECT_DIR$/springboot-redis-demo/pom.xml">
           <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
-              <caret line="16" column="16" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="16" />
+            <state relative-caret-position="570">
+              <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/springboot-redis-demo/src/main/java/com/jimo/ICacheService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="513">
+              <caret line="27" column="6" selection-start-line="27" selection-start-column="6" selection-end-line="27" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/springboot-redis-demo/src/test/java/com/jimo/ICacheServiceTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="323">
+              <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#511#512#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/springboot-redis-demo/src/main/java/com/jimo/StringRedisServiceImpl.java">
+        <entry file="file://$PROJECT_DIR$/springboot-redis-demo/src/main/java/com/jimo/RedisServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="665">
-              <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
+            <state relative-caret-position="456">
+              <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#725#726#0" expanded="true" />
-                <element signature="e#776#777#0" expanded="true" />
-                <element signature="e#1572#1573#0" expanded="true" />
-                <element signature="e#1592#1593#0" expanded="true" />
-                <element signature="e#1677#1678#0" expanded="true" />
-                <element signature="e#1708#1709#0" expanded="true" />
-                <element signature="e#2773#2774#0" expanded="true" />
-                <element signature="e#2815#2816#0" expanded="true" />
-                <element signature="e#3332#3333#0" expanded="true" />
+                <element signature="e#406#407#0" expanded="true" />
+                <element signature="e#480#481#0" expanded="true" />
+                <element signature="e#1135#1136#0" expanded="true" />
+                <element signature="e#1176#1177#0" expanded="true" />
+                <element signature="e#1247#1248#0" expanded="true" />
+                <element signature="e#1293#1294#0" expanded="true" />
+                <element signature="e#2336#2337#0" expanded="true" />
+                <element signature="e#2393#2394#0" expanded="true" />
+                <element signature="e#2849#2850#0" expanded="true" />
+                <element signature="e#2895#2896#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/springboot-redis-demo/src/main/java/com/jimo/IRedisService.java">
+        <entry file="file://$PROJECT_DIR$/springboot-redis-demo/src/main/java/com/jimo/CacheBeanConfiguration.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="478">
-              <caret line="62" column="24" selection-start-line="62" selection-start-column="24" selection-end-line="62" selection-end-column="24" />
+            <state relative-caret-position="456">
+              <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#516#517#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -94,8 +114,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JUnit4 Test Class" />
         <option value="Class" />
+        <option value="JUnit4 Test Class" />
       </list>
     </option>
   </component>
@@ -128,11 +148,16 @@
         <option value="$PROJECT_DIR$/springboot-kafka-demo/src/main/java/com/jimo/kafka/Producer.java" />
         <option value="$PROJECT_DIR$/springboot-kafka-demo/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/springboot-kafka-demo/src/main/java/com/jimo/controller/KafkaController.java" />
-        <option value="$PROJECT_DIR$/springboot-redis-demo/pom.xml" />
         <option value="$PROJECT_DIR$/springboot-redis-demo/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/springboot-redis-demo/src/main/java/com/jimo/StringRedisService.java" />
-        <option value="$PROJECT_DIR$/springboot-redis-demo/src/main/java/com/jimo/IRedisService.java" />
         <option value="$PROJECT_DIR$/springboot-redis-demo/src/main/java/com/jimo/StringRedisServiceImpl.java" />
+        <option value="$PROJECT_DIR$/springboot-redis-demo/src/main/java/com/jimo/IRedisService.java" />
+        <option value="$PROJECT_DIR$/springboot-redis-demo/src/main/java/com/jimo/ICacheService.java" />
+        <option value="$PROJECT_DIR$/springboot-redis-demo/src/main/java/com/jimo/ObjectRedisServiceImpl.java" />
+        <option value="$PROJECT_DIR$/springboot-redis-demo/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot-redis-demo/src/test/java/com/jimo/ICacheServiceTest.java" />
+        <option value="$PROJECT_DIR$/springboot-redis-demo/src/main/java/com/jimo/CacheBeanConfiguration.java" />
+        <option value="$PROJECT_DIR$/springboot-redis-demo/src/main/java/com/jimo/RedisServiceImpl.java" />
       </list>
     </option>
   </component>
@@ -144,8 +169,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="2291" />
-    <option name="y" value="89" />
+    <option name="x" value="2703" />
+    <option name="y" value="109" />
     <option name="width" value="2156" />
     <option name="height" value="1971" />
   </component>
@@ -291,7 +316,7 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553062242690" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553076515987" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="extract.method.default.visibility" value="private" />
@@ -305,13 +330,14 @@
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
-      <recent name="jimo.io" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.jimo" />
       <recent name="jimo.io" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="jimo.io" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -326,7 +352,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.SpringbootKafkaDemoApplication">
+  <component name="RunManager" selected="JUnit.ICacheServiceTest.set">
     <configuration name="SocketChannelClientDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="jimo.io.SocketChannelClientDemo" />
       <module name="java-basic" />
@@ -346,19 +372,6 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="jimo.io.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="jimo.order.Test" />
-      <module name="java-basic" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="jimo.order.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -398,6 +411,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ICacheServiceTest.set" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="springboot-redis-demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.jimo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.jimo" />
+      <option name="MAIN_CLASS_NAME" value="com.jimo.ICacheServiceTest" />
+      <option name="METHOD_NAME" value="set" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="SpringbootKafkaDemoApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="springboot-kafka-demo" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.jimo.SpringbootKafkaDemoApplication" />
@@ -414,11 +443,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ICacheServiceTest.set" />
         <item itemvalue="Application.SocketChannelClientDemo" />
         <item itemvalue="Application.SocketChannelServerDemo" />
         <item itemvalue="JUnit.ChannelDemoTest.nioRead" />
         <item itemvalue="JUnit.ChannelDemoTest.streamRead" />
-        <item itemvalue="Application.Test" />
       </list>
     </recent_temporary>
   </component>
@@ -437,7 +466,7 @@
       <workItem from="1548722938900" duration="124000" />
       <workItem from="1552611337036" duration="7093000" />
       <workItem from="1552973982464" duration="9415000" />
-      <workItem from="1553050602938" duration="7033000" />
+      <workItem from="1553050602938" duration="10925000" />
     </task>
     <servers />
   </component>
@@ -451,12 +480,33 @@
     <history-entry file="ChannelDemoTest_nioRead - 2019.03.15 at 09h 21m 28s.xml">
       <configuration name="ChannelDemoTest.nioRead" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="ICacheServiceTest_set - 2019.03.20 at 17h 57m 10s.xml">
+      <configuration name="ICacheServiceTest.set" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ICacheServiceTest_set - 2019.03.20 at 18h 02m 03s.xml">
+      <configuration name="ICacheServiceTest.set" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ICacheServiceTest_set - 2019.03.20 at 18h 02m 56s.xml">
+      <configuration name="ICacheServiceTest.set" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ICacheServiceTest_set - 2019.03.20 at 18h 04m 18s.xml">
+      <configuration name="ICacheServiceTest.set" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ICacheServiceTest_set - 2019.03.20 at 18h 06m 09s.xml">
+      <configuration name="ICacheServiceTest.set" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ICacheServiceTest_set - 2019.03.20 at 18h 07m 52s.xml">
+      <configuration name="ICacheServiceTest.set" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ICacheServiceTest_set - 2019.03.20 at 18h 08m 45s.xml">
+      <configuration name="ICacheServiceTest.set" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="32719000" />
+    <option name="totallyTimeSpent" value="36611000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="2291" y="89" width="2156" height="1971" extended-state="0" />
+    <frame x="2703" y="109" width="2156" height="1971" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16318786" />
@@ -469,7 +519,7 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32916892" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32916892" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39978272" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -762,13 +812,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/springboot-redis-demo/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" column="21" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-autoconfigure/2.1.3.RELEASE/spring-boot-autoconfigure-2.1.3.RELEASE-sources.jar!/org/springframework/boot/autoconfigure/data/redis/RedisProperties.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="554">
@@ -778,14 +821,6 @@
             <element signature="e#4203#4204#0" expanded="true" />
             <element signature="e#4238#4239#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/springboot-redis-demo/pom.xml">
-      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="16" column="16" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="16" />
         </state>
       </provider>
     </entry>
@@ -828,13 +863,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/springboot-redis-demo/src/main/java/com/jimo/IRedisService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="478">
-          <caret line="62" column="24" selection-start-line="62" selection-start-column="24" selection-end-line="62" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-redis/2.1.5.RELEASE/spring-data-redis-2.1.5.RELEASE.jar!/org/springframework/data/redis/core/ListOperations.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="361">
@@ -849,17 +877,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-redis/2.1.5.RELEASE/spring-data-redis-2.1.5.RELEASE-sources.jar!/org/springframework/data/redis/core/RedisTemplate.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-autoconfigure/2.1.3.RELEASE/spring-boot-autoconfigure-2.1.3.RELEASE-sources.jar!/org/springframework/boot/autoconfigure/condition/ConditionalOnMissingBean.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="653">
-          <caret line="779" lean-forward="true" selection-start-line="779" selection-end-line="779" />
+        <state relative-caret-position="437">
+          <caret line="45" column="2" lean-forward="true" selection-start-line="45" selection-start-column="2" selection-end-line="45" selection-end-column="2" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/springboot-redis-demo/src/main/java/com/jimo/StringRedisServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="665">
-          <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
+        <state relative-caret-position="1729">
+          <caret line="91" column="5" lean-forward="true" selection-start-line="91" selection-start-column="5" selection-end-line="91" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#725#726#0" expanded="true" />
@@ -870,7 +898,85 @@
             <element signature="e#1708#1709#0" expanded="true" />
             <element signature="e#2773#2774#0" expanded="true" />
             <element signature="e#2815#2816#0" expanded="true" />
-            <element signature="e#3332#3333#0" expanded="true" />
+            <element signature="e#3350#3351#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springboot-redis-demo/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="6" column="10" selection-start-line="6" selection-start-column="10" selection-end-line="6" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-redis/2.1.5.RELEASE/spring-data-redis-2.1.5.RELEASE-sources.jar!/org/springframework/data/redis/core/RedisTemplate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="87" column="53" lean-forward="true" selection-start-line="87" selection-start-column="53" selection-end-line="87" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-autoconfigure/2.1.3.RELEASE/spring-boot-autoconfigure-2.1.3.RELEASE-sources.jar!/org/springframework/boot/autoconfigure/data/redis/RedisAutoConfiguration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="627">
+          <caret line="59" lean-forward="true" selection-start-line="59" selection-end-line="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springboot-redis-demo/src/test/java/com/jimo/ICacheServiceTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#511#512#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springboot-redis-demo/src/main/java/com/jimo/ICacheService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="513">
+          <caret line="27" column="6" selection-start-line="27" selection-start-column="6" selection-end-line="27" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springboot-redis-demo/pom.xml">
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springboot-redis-demo/src/main/java/com/jimo/CacheBeanConfiguration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#516#517#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springboot-redis-demo/src/main/java/com/jimo/RedisServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#406#407#0" expanded="true" />
+            <element signature="e#480#481#0" expanded="true" />
+            <element signature="e#1135#1136#0" expanded="true" />
+            <element signature="e#1176#1177#0" expanded="true" />
+            <element signature="e#1247#1248#0" expanded="true" />
+            <element signature="e#1293#1294#0" expanded="true" />
+            <element signature="e#2336#2337#0" expanded="true" />
+            <element signature="e#2393#2394#0" expanded="true" />
+            <element signature="e#2849#2850#0" expanded="true" />
+            <element signature="e#2895#2896#0" expanded="true" />
           </folding>
         </state>
       </provider>
