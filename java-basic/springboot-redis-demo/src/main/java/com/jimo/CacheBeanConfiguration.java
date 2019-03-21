@@ -2,6 +2,8 @@ package com.jimo;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.data.redis.connection.RedisConnectionFactory;
+import org.springframework.data.redis.core.RedisTemplate;
 
 import javax.annotation.Resource;
 
@@ -19,8 +21,16 @@ public class CacheBeanConfiguration {
     private RedisServiceImpl<Object, Object> redisService;
 
     @Bean
-    public ICacheService<Object, Object> cacheService() {
+    public CacheService<Object, Object> cacheService() {
         return redisService;
+    }
+
+    @Bean(name = "redisTemplate")
+    public RedisTemplate<Object, Object> redisTemplate(
+            RedisConnectionFactory redisConnectionFactory) {
+        RedisTemplate<Object, Object> template = new RedisTemplate<>();
+        template.setConnectionFactory(redisConnectionFactory);
+        return template;
     }
 
     ///

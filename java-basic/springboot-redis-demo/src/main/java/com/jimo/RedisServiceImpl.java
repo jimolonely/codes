@@ -14,7 +14,7 @@ import java.util.concurrent.TimeUnit;
  * @date 19-3-20 下午5:23
  */
 @Service
-public class RedisServiceImpl<K, V> implements ICacheService<K, V> {
+public class RedisServiceImpl<K, V> implements CacheService<K, V> {
     private final static Logger logger = LoggerFactory.getLogger(RedisServiceImpl.class);
 
     /**

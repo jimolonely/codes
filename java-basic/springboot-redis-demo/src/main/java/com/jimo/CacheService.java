@@ -7,7 +7,7 @@ package com.jimo;
  * @author jimo
  * @date 19-3-20 上午11:29
  */
-public interface ICacheService<K, V> {
+public interface CacheService<K, V> {
 
     /**
      * <p>

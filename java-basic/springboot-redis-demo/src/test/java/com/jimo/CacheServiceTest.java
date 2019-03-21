@@ -11,10 +11,10 @@ import static org.junit.Assert.*;
 
 @SpringBootTest
 @RunWith(SpringRunner.class)
-public class ICacheServiceTest {
+public class CacheServiceTest {
 
     @Resource
-    private ICacheService<String, String> service;
+    private CacheService<String, String> service;
 
     @Test
     public void set() {
