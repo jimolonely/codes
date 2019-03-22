@@ -6,6 +6,9 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/springboot-kafka-demo/pom.xml" />
         <option value="$PROJECT_DIR$/springboot-redis-demo/pom.xml" />
+        <option value="$PROJECT_DIR$/es-springboot-data-demo/pom.xml" />
+        <option value="$PROJECT_DIR$/es-rest-client-demo/pom.xml" />
+        <option value="$PROJECT_DIR$/es-transport-demo/pom.xml" />
       </list>
     </option>
   </component>

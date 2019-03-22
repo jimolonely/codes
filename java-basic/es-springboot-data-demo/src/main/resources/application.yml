@@ -1,0 +1,6 @@
+
+spring:
+  data:
+    elasticsearch:
+      clusterName: sinorail
+      clusterNodes: 192.168.17.70:9300,192.168.17.57:9300
