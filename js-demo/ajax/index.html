@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ajax</title>
+</head>
+<body>
+
+
+<script>
+
+    function createXHR() {
+        return new XMLHttpRequest();
+    }
+
+    let xhr = createXHR();
+    xhr.open("get","http://www.baidu.com",true);
+    xhr.send();
+</script>
+</body>
+</html>
