@@ -14,7 +14,7 @@ jquery的ajax()方法是对Ajax技术（XHR）的封装，更易用。(观摩源
 <details>
 <summary>2. 什么时候出现？谁让它出现的？为什么会出现Ajax？（1min）</summary>
 
-1. 2005年，Jesse James Garrett发表的文章： 
+1. 2005年，[Jesse James Garrett发表的文章](https://adaptivepath.org/ideas/ajax-new-approach-web-applications/)
 2. 因为同步等待的时光一去不返，值得留恋
 </details>
 
@@ -158,9 +158,9 @@ process:
 
 1. 实现CORS： 见书
 2. 示例演示OPTIONS预检请求的出现(见示例5): [参考](https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Access_control_CORS#%E5%8A%9F%E8%83%BD%E6%A6%82%E8%BF%B0)
-        1. 自定义header
-        2. 简单请求之外的请求
-        3. 不同类型的body
+    1. 自定义header
+    2. 简单请求之外的请求
+    3. 不同类型的body
 </details>
 
 <details>
@@ -170,6 +170,37 @@ process:
 2. JSONP: http://freegeoip.net/json/?callback=handleResponse, 
 3. Comet: 轮询；长连接。[demo](https://www.cnblogs.com/xiaoMzjm/p/3896108.html)，[demo2](https://blog.csdn.net/xiao__gui/article/details/38331225)
 4. websocket: 双向通信（比如聊天室）
+```js
+<label for="text">input</label><input type="text" id="text">
+<button id="btnSend">send message</button>
+<div id="msg"></div>
+<script>
+    let output = document.getElementById("msg");
+
+    let userId = "jimo";
+    let websocket = new WebSocket("ws://localhost:8088/api/ID=" + userId);
+
+    websocket.onopen = function () {
+        console.log("connected");
+    };
+    websocket.onclose = function () {
+        console.log("closing");
+    };
+    websocket.onmessage = function (msg) {
+        console.log(msg);
+        let old = output.innerText;
+        output.innerText = old + "\n >>> " + msg.data;
+    };
+
+    let btnSend = document.getElementById("btnSend");
+    let input = document.getElementById("text");
+    btnSend.onclick = function () {
+        if (input) {
+            websocket.send(input.value);
+        }
+    };
+</script>
+```
 </details>
 
 <details>

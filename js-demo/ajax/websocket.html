@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>websocket</title>
+</head>
+<body>
+<label for="text">input</label><input type="text" id="text">
+<button id="btnSend">send message</button>
+<div id="msg"></div>
+<script>
+    let output = document.getElementById("msg");
+
+    let userId = "jimo";
+    let websocket = new WebSocket("ws://localhost:8088/api/ID=" + userId);
+
+    websocket.onopen = function () {
+        console.log("connected");
+    };
+    websocket.onclose = function () {
+        console.log("closing");
+    };
+    websocket.onmessage = function (msg) {
+        console.log(msg);
+        let old = output.innerText;
+        output.innerText = old + "\n >>> " + msg.data;
+    };
+
+    let btnSend = document.getElementById("btnSend");
+    let input = document.getElementById("text");
+    btnSend.onclick = function () {
+        if (input) {
+            websocket.send(input.value);
+        }
+    };
+</script>
+</body>
+</html>
