@@ -4,7 +4,8 @@
     <list default="true" id="a9b37ba8-1798-45a0-a9df-6974479ebbfb" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ajax/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/ajax/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-backend/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/api-backend/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ajax/testAjax.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-backend/src/main/java/com/jimo/api/ApiController.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-backend/src/main/java/com/jimo/api/ApiController.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/api-backend/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -15,77 +16,36 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/api-backend/src/main/java/com/jimo/api/ApiController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="17" column="9" lean-forward="true" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
+            <state relative-caret-position="304">
+              <caret line="16" column="30" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="30" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#505#506#0" expanded="true" />
-                <element signature="e#574#575#0" expanded="true" />
-                <element signature="e#601#602#0" expanded="true" />
+                <element signature="e#500#501#0" expanded="true" />
+                <element signature="e#547#548#0" expanded="true" />
+                <element signature="e#578#579#0" expanded="true" />
+                <element signature="e#605#606#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.1.5.RELEASE/spring-web-5.1.5.RELEASE.jar!/org/springframework/web/bind/annotation/GetMapping.class">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/ajax/send-ajax.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="117">
-              <caret line="29" column="16" selection-start-line="29" selection-start-column="16" selection-end-line="29" selection-end-column="16" />
+            <state relative-caret-position="684">
+              <caret line="36" column="49" lean-forward="true" selection-start-line="36" selection-start-column="49" selection-end-line="36" selection-end-column="49" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ajax/5.html">
+        <entry file="file://$PROJECT_DIR$/ajax/allajax.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="260">
-              <caret line="63" column="5" selection-start-line="63" selection-start-column="5" selection-end-line="63" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ajax/websocket.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="646">
-              <caret line="34" column="6" lean-forward="true" selection-start-line="34" selection-start-column="6" selection-end-line="34" selection-end-column="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ajax/8.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="203">
-              <caret line="57" column="60" selection-start-line="57" selection-start-column="60" selection-end-line="57" selection-end-column="60" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/api-backend/src/main/java/com/jimo/api/websocket/SocketDataHandler.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
-              <caret line="14" column="46" lean-forward="true" selection-start-line="14" selection-start-column="46" selection-end-line="14" selection-end-column="46" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/api-backend/src/main/java/com/jimo/api/websocket/WebSocketConfig.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="399">
-              <caret line="21" column="1" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="380">
+              <caret line="68" column="23" lean-forward="true" selection-start-line="68" selection-start-column="23" selection-end-line="68" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -95,9 +55,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="JavaScript File" />
         <option value="Class" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -105,7 +65,14 @@
     <findStrings>
       <find>drawImage</find>
       <find>XMLHttpRequest</find>
+      <find>urlPathHelper</find>
+      <find>net.handleResult(result, callback);</find>
+      <find>apiType,</find>
+      <find>const baseUrl = net.constructUrl(apiType);</find>
     </findStrings>
+    <replaceStrings>
+      <replace>callback(result);</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -133,13 +100,15 @@
         <option value="$PROJECT_DIR$/api-backend/src/main/java/com/jimo/api/model/User.java" />
         <option value="$PROJECT_DIR$/ajax/testAjax.js" />
         <option value="$PROJECT_DIR$/api-backend/src/main/java/com/jimo/api/ApiBackendApplication.java" />
-        <option value="$PROJECT_DIR$/api-backend/src/main/java/com/jimo/api/ApiController.java" />
         <option value="$PROJECT_DIR$/ajax/5.html" />
         <option value="$PROJECT_DIR$/ajax/8.html" />
         <option value="$PROJECT_DIR$/api-backend/src/main/java/com/jimo/api/websocket/WebSocketConfig.java" />
         <option value="$PROJECT_DIR$/api-backend/pom.xml" />
         <option value="$PROJECT_DIR$/api-backend/src/main/java/com/jimo/api/websocket/SocketDataHandler.java" />
         <option value="$PROJECT_DIR$/ajax/websocket.html" />
+        <option value="$PROJECT_DIR$/ajax/allajax.js" />
+        <option value="$PROJECT_DIR$/api-backend/src/main/java/com/jimo/api/ApiController.java" />
+        <option value="$PROJECT_DIR$/ajax/send-ajax.html" />
       </list>
     </option>
   </component>
@@ -153,8 +122,8 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="2366" />
     <option name="y" value="178" />
-    <option name="width" value="1466" />
-    <option name="height" value="1504" />
+    <option name="width" value="1994" />
+    <option name="height" value="1979" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
@@ -239,7 +208,7 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553483582058" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553499323190" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/Ajax" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -293,18 +262,18 @@
       <workItem from="1551053362615" duration="3227000" />
       <workItem from="1551091498122" duration="5267000" />
       <workItem from="1553332875421" duration="6719000" />
-      <workItem from="1553472580123" duration="11473000" />
+      <workItem from="1553472580123" duration="21811000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="46507000" />
+    <option name="totallyTimeSpent" value="56845000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="2366" y="178" width="1466" height="1504" extended-state="0" />
+    <frame x="2366" y="178" width="1994" height="1979" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22496474" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.163926" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -316,7 +285,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32992503" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.3995633" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.39913467" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -344,67 +313,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/canvas/src/js/basic.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/canvas/src/js/main.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/canvas/src/3d/index1.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="551">
-          <caret line="29" column="7" lean-forward="true" selection-start-line="29" selection-start-column="7" selection-end-line="29" selection-end-column="7" />
-          <folding>
-            <element signature="e#237#241#0" expanded="true" />
-            <element signature="e#247#251#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/canvas/src/basic.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/canvas/src/drawImage.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
-          <folding>
-            <element signature="n#style#0;n#img#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/canvas/src/img/lamp.gif">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/canvas/src/effect.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="57" column="5" lean-forward="true" selection-start-line="57" selection-start-column="5" selection-end-line="57" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/canvas/src/img/jimo.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/canvas/src/imageData.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/canvas/src/rect.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="326">
-          <caret line="99" lean-forward="true" selection-start-line="99" selection-end-line="99" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/canvas/src/transform.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="212">
@@ -470,20 +378,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ajax/jquery-3.3.1.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="177">
-          <caret line="8889" column="13" selection-start-line="8889" selection-start-column="13" selection-end-line="8889" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ajax/testAjax.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="1" column="9" lean-forward="true" selection-start-line="1" selection-start-column="9" selection-end-line="1" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-autoconfigure/2.1.3.RELEASE/spring-boot-autoconfigure-2.1.3.RELEASE-sources.jar!/org/springframework/boot/autoconfigure/SpringBootApplication.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="359">
@@ -512,13 +406,6 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ajax/8.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="203">
-          <caret line="57" column="60" selection-start-line="57" selection-start-column="60" selection-end-line="57" selection-end-column="60" />
         </state>
       </provider>
     </entry>
@@ -579,13 +466,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ajax/5.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="63" column="5" selection-start-line="63" selection-start-column="5" selection-end-line="63" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ajax/websocket.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="646">
@@ -607,16 +487,389 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api-backend/src/main/java/com/jimo/api/ApiController.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/5.1.5.RELEASE/spring-webmvc-5.1.5.RELEASE.jar!/org/springframework/web/servlet/handler/AbstractHandlerMapping.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="178" lean-forward="true" selection-start-line="178" selection-end-line="178" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.1.5.RELEASE/spring-web-5.1.5.RELEASE.jar!/org/springframework/web/context/request/RequestContextHolder.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.1.5.RELEASE/spring-web-5.1.5.RELEASE.jar!/org/springframework/web/context/request/ServletRequestAttributes.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="533">
+          <caret line="166" column="9" lean-forward="true" selection-start-line="166" selection-start-column="9" selection-end-line="166" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/5.1.5.RELEASE/spring-webmvc-5.1.5.RELEASE.jar!/org/springframework/web/servlet/FrameworkServlet.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="779">
+          <caret line="540" column="47" lean-forward="true" selection-start-line="540" selection-start-column="47" selection-end-line="540" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/5.1.5.RELEASE/spring-webmvc-5.1.5.RELEASE.jar!/org/springframework/web/servlet/DispatcherServlet.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="53" column="48" lean-forward="true" selection-start-line="53" selection-start-column="48" selection-end-line="53" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/5.1.5.RELEASE/spring-webmvc-5.1.5.RELEASE.jar!/org/springframework/web/servlet/HandlerMapping.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/net/bytebuddy/byte-buddy/1.9.10/byte-buddy-1.9.10.jar!/net/bytebuddy/build/Plugin.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="417">
+          <caret line="2389" lean-forward="true" selection-start-line="2389" selection-end-line="2389" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-messaging/5.1.5.RELEASE/spring-messaging-5.1.5.RELEASE.jar!/org/springframework/messaging/handler/annotation/support/AbstractNamedValueMethodArgumentResolver.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
-          <caret line="17" column="9" lean-forward="true" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
+          <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/5.1.5.RELEASE/spring-webmvc-5.1.5.RELEASE.jar!/org/springframework/web/servlet/mvc/method/annotation/RequestResponseBodyMethodProcessor.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="33" column="74" lean-forward="true" selection-start-line="33" selection-start-column="74" selection-end-line="33" selection-end-column="74" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-messaging/5.1.5.RELEASE/spring-messaging-5.1.5.RELEASE.jar!/org/springframework/messaging/handler/invocation/HandlerMethodArgumentResolver.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-messaging/5.1.5.RELEASE/spring-messaging-5.1.5.RELEASE.jar!/org/springframework/messaging/handler/annotation/support/HeadersMethodArgumentResolver.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="30" column="52" selection-start-line="30" selection-start-column="52" selection-end-line="30" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/5.1.5.RELEASE/spring-webmvc-5.1.5.RELEASE.jar!/org/springframework/web/servlet/mvc/method/annotation/AbstractMessageConverterMethodProcessor.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="836">
+          <caret line="212" column="13" lean-forward="true" selection-start-line="212" selection-start-column="13" selection-end-line="212" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.1.5.RELEASE/spring-web-5.1.5.RELEASE.jar!/org/springframework/http/HttpHeaders.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2470">
+          <caret line="69" column="65" lean-forward="true" selection-start-line="69" selection-start-column="65" selection-end-line="69" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-messaging/5.1.5.RELEASE/spring-messaging-5.1.5.RELEASE.jar!/org/springframework/messaging/handler/annotation/support/HeaderMethodArgumentResolver.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="30" column="5" lean-forward="true" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.1.5.RELEASE/spring-web-5.1.5.RELEASE-sources.jar!/org/springframework/http/converter/HttpMessageConverter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="29" column="24" lean-forward="true" selection-start-line="29" selection-start-column="24" selection-end-line="29" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.1.5.RELEASE/spring-web-5.1.5.RELEASE-sources.jar!/org/springframework/http/HttpHeaders.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="105" column="7" lean-forward="true" selection-start-line="105" selection-start-column="7" selection-end-line="105" selection-end-column="7" />
+          <folding>
+            <element signature="docComment;class#HttpHeaders#0" />
+            <element signature="e#2731#2884#0" />
+            <element signature="e#2933#3094#0" />
+            <element signature="e#3159#3321#0" />
+            <element signature="e#3388#3550#0" />
+            <element signature="e#3617#3775#0" />
+            <element signature="e#3838#4002#0" />
+            <element signature="e#4103#4263#0" />
+            <element signature="e#4356#4516#0" />
+            <element signature="e#4609#4768#0" />
+            <element signature="e#4859#5020#0" />
+            <element signature="e#5115#5269#0" />
+            <element signature="e#5350#5511#0" />
+            <element signature="e#5608#5768#0" />
+            <element signature="e#5863#6009#0" />
+            <element signature="e#6052#6204#0" />
+            <element signature="e#6251#6407#0" />
+            <element signature="e#6470#6626#0" />
+            <element signature="e#6689#6842#0" />
+            <element signature="e#6899#7066#0" />
+            <element signature="e#7135#7270#0" />
+            <element signature="e#7345#7512#0" />
+            <element signature="e#7581#7742#0" />
+            <element signature="e#7807#7974#0" />
+            <element signature="e#8043#8199#0" />
+            <element signature="e#8262#8425#0" />
+            <element signature="e#8486#8639#0" />
+            <element signature="e#8688#8843#0" />
+            <element signature="e#8888#9035#0" />
+            <element signature="e#9080#9233#0" />
+            <element signature="e#9282#9432#0" />
+            <element signature="e#9483#9634#0" />
+            <element signature="e#9679#9826#0" />
+            <element signature="e#9871#10022#0" />
+            <element signature="e#10075#10235#0" />
+            <element signature="e#10306#10462#0" />
+            <element signature="e#10525#10676#0" />
+            <element signature="e#10729#10891#0" />
+            <element signature="e#10966#11122#0" />
+            <element signature="e#11185#11305#0" />
+            <element signature="e#11350#11505#0" />
+            <element signature="e#11558#11717#0" />
+            <element signature="e#11778#11900#0" />
+            <element signature="e#11949#12098#0" />
+            <element signature="e#12147#12308#0" />
+            <element signature="e#12381#12543#0" />
+            <element signature="e#12618#12766#0" />
+            <element signature="e#12813#12967#0" />
+            <element signature="e#13018#13176#0" />
+            <element signature="e#13235#13388#0" />
+            <element signature="e#13437#13594#0" />
+            <element signature="e#13651#13778#0" />
+            <element signature="e#13837#13982#0" />
+            <element signature="e#14023#14173#0" />
+            <element signature="e#14224#14388#0" />
+            <element signature="e#14459#14609#0" />
+            <element signature="e#14660#14817#0" />
+            <element signature="e#14874#15025#0" />
+            <element signature="e#15070#15220#0" />
+            <element signature="e#15263#15413#0" />
+            <element signature="e#15464#15623#0" />
+            <element signature="e#15694#15772#0" />
+            <element signature="e#15888#16087#0" />
+            <element signature="e#16369#16542#0" />
+            <element signature="e#16883#16962#0" />
+            <element signature="e#17084#17183#0" />
+            <element signature="e#17338#17460#0" />
+            <element signature="e#17586#17789#0" />
+            <element signature="e#17882#18004#0" />
+            <element signature="e#18535#18971#0" />
+            <element signature="e#19179#19274#0" />
+            <element signature="e#19486#19761#0" />
+            <element signature="e#20130#20227#0" />
+            <element signature="e#20384#20478#0" />
+            <element signature="e#20612#20705#0" />
+            <element signature="e#20861#20951#0" />
+            <element signature="e#21067#21160#0" />
+            <element signature="e#21342#21432#0" />
+            <element signature="e#21864#21956#0" />
+            <element signature="e#22096#22185#0" />
+            <element signature="e#22303#22397#0" />
+            <element signature="e#22555#22646#0" />
+            <element signature="e#22764#22851#0" />
+            <element signature="e#22962#23093#0" />
+            <element signature="e#23245#23339#0" />
+            <element signature="e#23499#23590#0" />
+            <element signature="e#23710#23803#0" />
+            <element signature="e#23991#24081#0" />
+            <element signature="e#24221#24346#0" />
+            <element signature="e#24763#24891#0" />
+            <element signature="e#25516#25630#0" />
+            <element signature="e#25768#25955#0" />
+            <element signature="e#26445#27061#0" />
+            <element signature="e#27171#27775#0" />
+            <element signature="e#28583#28821#0" />
+            <element signature="e#28911#29045#0" />
+            <element signature="e#29170#29239#0" />
+            <element signature="e#29351#29417#0" />
+            <element signature="e#29509#29575#0" />
+            <element signature="e#29660#29726#0" />
+            <element signature="e#29841#29904#0" />
+            <element signature="e#29987#30515#0" />
+            <element signature="e#30861#31281#0" />
+            <element signature="e#31422#31578#0" />
+            <element signature="e#31831#32067#0" />
+            <element signature="e#32215#32534#0" />
+            <element signature="e#32715#32819#0" />
+            <element signature="e#32930#33091#0" />
+            <element signature="e#33229#33349#0" />
+            <element signature="e#33727#33912#0" />
+            <element signature="e#34089#34299#0" />
+            <element signature="e#34362#34684#0" />
+            <element signature="e#34744#34835#0" />
+            <element signature="e#35157#35245#0" />
+            <element signature="e#35314#35452#0" />
+            <element signature="e#35545#35765#0" />
+            <element signature="e#35840#36132#0" />
+            <element signature="e#36205#36464#0" />
+            <element signature="e#36737#36976#0" />
+            <element signature="e#37593#37672#0" />
+            <element signature="e#37746#37825#0" />
+            <element signature="e#37937#38013#0" />
+            <element signature="e#38095#38222#0" />
+            <element signature="e#38374#38501#0" />
+            <element signature="e#38616#38786#0" />
+            <element signature="e#38895#39131#0" />
+            <element signature="e#39222#39291#0" />
+            <element signature="e#39382#39452#0" />
+            <element signature="e#39581#39647#0" />
+            <element signature="e#39738#39865#0" />
+            <element signature="e#40025#40152#0" />
+            <element signature="e#40275#40462#0" />
+            <element signature="e#40579#40832#0" />
+            <element signature="e#40927#41054#0" />
+            <element signature="e#41193#41320#0" />
+            <element signature="e#41422#41629#0" />
+            <element signature="e#41725#42004#0" />
+            <element signature="e#42088#42187#0" />
+            <element signature="e#42323#42482#0" />
+            <element signature="e#42617#42679#0" />
+            <element signature="e#42766#42825#0" />
+            <element signature="e#42898#42960#0" />
+            <element signature="e#43047#43106#0" />
+            <element signature="e#43179#43241#0" />
+            <element signature="e#43361#43475#0" />
+            <element signature="e#43591#43654#0" />
+            <element signature="e#43745#43805#0" />
+            <element signature="e#43880#44136#0" />
+            <element signature="e#44247#44338#0" />
+            <element signature="e#44409#44632#0" />
+            <element signature="e#44761#44986#0" />
+            <element signature="e#45119#45394#0" />
+            <element signature="e#45507#45853#0" />
+            <element signature="e#45947#46542#0" />
+            <element signature="e#46783#47107#0" />
+            <element signature="e#47239#47815#0" />
+            <element signature="e#48882#49070#0" />
+            <element signature="e#49448#49614#0" />
+            <element signature="e#50325#50496#0" />
+            <element signature="e#50693#50877#0" />
+            <element signature="e#51240#51422#0" />
+            <element signature="e#51642#51817#0" />
+            <element signature="e#51934#52216#0" />
+            <element signature="e#52568#52850#0" />
+            <element signature="e#54721#54808#0" />
+            <element signature="e#55071#55169#0" />
+            <element signature="e#55496#55811#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.1.5.RELEASE/spring-web-5.1.5.RELEASE-sources.jar!/org/springframework/http/converter/GenericHttpMessageConverter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="37" column="3" lean-forward="true" selection-start-line="37" selection-start-column="3" selection-end-line="37" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.1.5.RELEASE/spring-web-5.1.5.RELEASE-sources.jar!/org/springframework/web/method/support/HandlerMethodArgumentResolver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/5.1.5.RELEASE/spring-webmvc-5.1.5.RELEASE-sources.jar!/org/springframework/web/servlet/mvc/method/annotation/AbstractMessageConverterMethodArgumentResolver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="75" lean-forward="true" selection-start-line="75" selection-end-line="75" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.1.5.RELEASE/spring-web-5.1.5.RELEASE-sources.jar!/org/springframework/web/method/support/HandlerMethodReturnValueHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="36" column="72" selection-start-line="36" selection-start-column="72" selection-end-line="36" selection-end-column="72" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/5.1.5.RELEASE/spring-webmvc-5.1.5.RELEASE-sources.jar!/org/springframework/web/servlet/mvc/method/annotation/AbstractMessageConverterMethodProcessor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="67" column="28" lean-forward="true" selection-start-line="67" selection-start-column="28" selection-end-line="67" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/5.1.5.RELEASE/spring-webmvc-5.1.5.RELEASE-sources.jar!/org/springframework/web/servlet/mvc/method/annotation/RequestResponseBodyMethodProcessor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="64" column="69" lean-forward="true" selection-start-line="64" selection-start-column="69" selection-end-line="64" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ajax/jquery-3.3.1.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="8724" lean-forward="true" selection-start-line="8724" selection-end-line="8724" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.1.5.RELEASE/spring-web-5.1.5.RELEASE-sources.jar!/org/springframework/web/bind/annotation/RequestParam.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="494">
+          <caret line="70" lean-forward="true" selection-start-line="70" selection-end-line="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ajax/testAjax.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="1" column="9" lean-forward="true" selection-start-line="1" selection-start-column="9" selection-end-line="1" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ajax/8.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="761">
+          <caret line="49" lean-forward="true" selection-start-line="49" selection-end-line="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ajax/5.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="799">
+          <caret line="75" lean-forward="true" selection-start-line="75" selection-end-line="75" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ajax/allajax.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="68" column="23" lean-forward="true" selection-start-line="68" selection-start-column="23" selection-end-line="68" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api-backend/src/main/java/com/jimo/api/ApiController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="16" column="30" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="30" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#505#506#0" expanded="true" />
-            <element signature="e#574#575#0" expanded="true" />
-            <element signature="e#601#602#0" expanded="true" />
+            <element signature="e#500#501#0" expanded="true" />
+            <element signature="e#547#548#0" expanded="true" />
+            <element signature="e#578#579#0" expanded="true" />
+            <element signature="e#605#606#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ajax/send-ajax.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="684">
+          <caret line="36" column="49" lean-forward="true" selection-start-line="36" selection-start-column="49" selection-end-line="36" selection-end-column="49" />
         </state>
       </provider>
     </entry>

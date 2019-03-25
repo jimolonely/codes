@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>send-ajax</title>
+</head>
+<body>
+<form id="form">
+    name:<input type="text" name="username">
+    pass:<input type="text" name="password">
+</form>
+<button id="btnSend">send ajax</button>
+<script src="jquery-3.3.1.js"></script>
+<script>
+
+    let btnSend = document.getElementById("btnSend");
+
+    btnSend.onclick = function () {
+        // 0.
+        getDefault();
+        getRestful();
+
+        // 1.
+        // sendFormType("/user");
+
+        // 2. 后台加上@RequestParam
+        // sendFormType2("/userRequest");
+
+        // 3.
+        // sendFormType("/userBody");
+
+        // 4.
+        // sendJsonType("/userBody");
+    };
+
+    function getDefault() {
+        net.get("/user/jimojimo", {name: "kkkkk"}, function (data) {
+            console.log(data);
+        });
+    }
+
+    function getRestful() {
+
+    }
+
+    function sendFormType(url) {
+        // 默认格式，发送js对象
+        net.post(url, {username: "hehe", password: "123324324", other: "hehehehe"}, function (data) {
+            console.log(data);
+        });
+
+        // 默认格式，发送form序列化结果
+        let serialize = $("#form").serialize();
+        console.log(serialize);
+        net.post(url, serialize, function (data) {
+            console.log(data);
+        });
+    }
+
+    function sendFormType2(url) {
+        // 默认格式，发送js对象
+        net.post(url, {user: {username: "hehe", password: "123324324"}}, function (data) {
+            console.log(data);
+        });
+
+        // 默认格式，发送form序列化结果
+        let serialize = $("#form").serialize();
+        console.log(serialize);
+        net.post(url, serialize, function (data) {
+            console.log(data);
+        });
+    }
+
+    function sendJsonType(url) {
+        // 传对象
+        net.postJson(url, {username: "hehe", password: "123324324"}, function (data) {
+            console.log(data);
+        });
+
+        // 传序列化后的字符串
+        let param = JSON.stringify({username: "hehe", password: "123324324"});
+        console.log(param);
+        net.postJson(url, param, function (data) {
+            console.log(data);
+        });
+    }
+</script>
+<script src="allajax.js"></script>
+</body>
+</html>

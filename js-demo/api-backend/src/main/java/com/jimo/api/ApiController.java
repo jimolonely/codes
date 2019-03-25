@@ -19,8 +19,19 @@ public class ApiController {
         return new User(name, "123456");
     }
 
+    @GetMapping("/user/{name}")
+    public User getUser2(@PathVariable String name) {
+        return new User(name, "123456");
+    }
+
     @PostMapping("/user")
-    public User postUser(User user) {
+    public User postUser(User user, String other) {
+        System.out.println("------------" + other);
+        return user;
+    }
+
+    @PostMapping("/userRequest")
+    public User postUserRequest(@RequestParam(name = "user") User user) {
         return user;
     }
 
