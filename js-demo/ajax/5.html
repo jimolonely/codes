@@ -44,6 +44,7 @@
     function sendPost(url, contentType, body, callback) {
         let xhr = createXHR();
         xhr.onreadystatechange = function () {
+            console.log(xhr.status);
             if (xhr.readyState === XMLHttpRequest.DONE) {
                 if (xhr.status === 200) {
                     console.log(xhr);

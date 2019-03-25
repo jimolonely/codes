@@ -19,7 +19,7 @@ public class ApiController {
         return new User(name, "123456");
     }
 
-    @GetMapping("/user/{name}")
+    @GetMapping("/user/{name}/")
     public User getUser2(@PathVariable String name) {
         return new User(name, "123456");
     }

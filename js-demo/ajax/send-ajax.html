@@ -17,8 +17,8 @@
 
     btnSend.onclick = function () {
         // 0.
-        getDefault();
-        getRestful();
+        // getDefault();
+        // getRestful();
 
         // 1.
         // sendFormType("/user");
@@ -30,17 +30,19 @@
         // sendFormType("/userBody");
 
         // 4.
-        // sendJsonType("/userBody");
+        sendJsonType("/userBody");
     };
 
     function getDefault() {
-        net.get("/user/jimojimo", {name: "kkkkk"}, function (data) {
+        net.get("/user", {name: "kkkkk"}, function (data) {
             console.log(data);
         });
     }
 
     function getRestful() {
-
+        net.get("/user/jimojimo", {name: "kkkkk"}, function (data) {
+            console.log(data);
+        });
     }
 
     function sendFormType(url) {
