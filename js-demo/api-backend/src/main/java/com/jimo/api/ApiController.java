@@ -12,17 +12,25 @@ import org.springframework.web.bind.annotation.*;
 public class ApiController {
 
     @GetMapping("/user")
-    public User getUser() {
-        return new User("jimo", "123456");
+    public User getUser(String name) {
+        if (name == null) {
+            return new User("hehe", "wuqyeewiu");
+        }
+        return new User(name, "123456");
     }
 
     @PostMapping("/user")
-    public User postUser(User user){
+    public User postUser(User user) {
+        return user;
+    }
+
+    @PostMapping("/userBody")
+    public User postUserBody(@RequestBody User user) {
         return user;
     }
 
     @PostMapping("/user2")
-    public User postUser2(@RequestParam User user){
+    public User postUser2(@RequestParam User user) {
         return user;
     }
 }

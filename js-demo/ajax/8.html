@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ajax</title>
+</head>
+<body>
+
+<button id="btnGet">send onload</button>
+<button id="btnProcess">send process</button>
+<h3 id="process"></h3>
+<script>
+
+    function createXHR() {
+        return new XMLHttpRequest();
+    }
+
+    let btnGet = document.getElementById("btnGet");
+    btnGet.onclick = function () {
+        sendGet("http://localhost:8088/user", function (data) {
+            console.log(data);
+        });
+        sendGet("http://localhost:8088/user?name=jimo", function (data) {
+            console.log(data);
+        });
+    };
+
+    function sendGet(url, callback) {
+        let xhr = createXHR();
+        xhr.onload = function () {
+            if (xhr.status === 200) {
+                callback(xhr.responseText);
+            } else {
+                console.error("Failed Get: ", xhr.status);
+            }
+        };
+        xhr.open("get", url, true);
+        xhr.send(null);
+    }
+
+    ///////////////////////////////////////////
+
+    let btnProcess = document.getElementById("btnProcess");
+
+    btnProcess.onclick = function () {
+        sendProcess("http://localhost:8088/user", function (data) {
+            console.log(data);
+        })
+    };
+
+    let process = document.getElementById("process");
+
+    function sendProcess() {
+        let xhr = createXHR();
+        xhr.onload = function () {
+            if (xhr.status === 200) {
+                let data = xhr.response;
+                let audio = document.createElement('audio');
+                audio.onload = function () {
+                    URL.revokeObjectURL(audio.src);
+                };
+                audio.src = window.URL.createObjectURL(data);
+                console.log(audio);
+                audio.setAttribute('controls', '');
+                document.getElementsByTagName("body")[0].appendChild(audio);
+            } else {
+                console.error("Failed Get: ", xhr.status);
+            }
+        };
+        xhr.onprogress = function (event) {
+            process.innerHTML = "lengthComputable:" + event.lengthComputable +
+                "position:" + event.loaded + "totalSize:" + event.total;
+            /*console.log("lengthComputable:", event.lengthComputable,
+                "position:", event.position, "totalSize:", event.totalSize);*/
+        };
+        xhr.open("get", "https://demo.xiaohuochai.site/myocean.mp3", true);
+        xhr.responseType = 'blob';
+        xhr.send(null);
+    }
+</script>
+</body>
+</html>

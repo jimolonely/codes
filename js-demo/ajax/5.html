@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ajax</title>
+</head>
+<body>
+
+<button id="btnGet">send Get</button>
+<button id="btnPost">send Post</button>
+<script>
+
+    function createXHR() {
+        return new XMLHttpRequest();
+    }
+
+    let btnGet = document.getElementById("btnGet");
+    btnGet.onclick = function () {
+        sendGet("http://localhost:8088/user", function (data) {
+            console.log(data);
+        });
+        sendGet("http://localhost:8088/user?name=jimo", function (data) {
+            console.log(data);
+        });
+    };
+
+    function sendGet(url, callback) {
+        let xhr = createXHR();
+        xhr.onreadystatechange = function () {
+            if (xhr.readyState === XMLHttpRequest.DONE) {
+                if (xhr.status === 200) {
+                    console.log(xhr);
+                    callback(xhr.responseText);
+                } else {
+                    console.error("Failed Get: ", xhr.status);
+                }
+            }
+        };
+        xhr.open("get", url, true);
+        xhr.send(null);
+    }
+
+    ///////////////////////////////////////////////////////
+    function sendPost(url, contentType, body, callback) {
+        let xhr = createXHR();
+        xhr.onreadystatechange = function () {
+            if (xhr.readyState === XMLHttpRequest.DONE) {
+                if (xhr.status === 200) {
+                    console.log(xhr);
+                    callback(xhr.responseText);
+                } else {
+                    console.error("Failed Get: ", xhr.status);
+                }
+            }
+        };
+
+        xhr.open("post", url, true);
+        if (contentType) {
+            xhr.setRequestHeader("Content-Type", contentType);
+        } else {
+            // default: text/plain
+        }
+        xhr.send(body);
+    }
+
+    let btnPost = document.getElementById("btnPost");
+
+    btnPost.onclick = function () {
+        sendPost("http://localhost:8088/user", null, "xxx", function (data) {
+            console.log("default", data);
+        });
+        sendPost("http://localhost:8088/user", "application/x-www-form-urlencoded",
+            "username=lily&password=75834", function (data) {
+                console.log("form", data);
+            });
+
+        let body = JSON.stringify({username: "kkkk", password: "12345555"});
+        sendPost("http://localhost:8088/userBody", "application/json", body
+            , function (data) {
+                console.log("json", data);
+            });
+    }
+</script>
+</body>
+</html>

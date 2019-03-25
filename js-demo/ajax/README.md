@@ -1,7 +1,8 @@
 # Ajax
-目的： 
-1. 学会写交互代码
-2. 学会前后端参数传递
+今天将学会什么： 
+1. 如何使用原生js代码写Ajax
+2. 为什么我们前端会发2次请求，附带的OPTIONS ？
+3. 学会前后端参数传递，这不是一个人的事
 
 <details>
 <summary>1. 什么是Ajax？ 和jquery的ajax()方法有什么关系？（1min）</summary>
@@ -47,7 +48,51 @@ XMLHttpRequest 对象是 W3C 的标准吗？
 <details>
 <summary>5. 如何使用XHR发送Get，Post等请求？（5min）</summary>
 
+Get:
+```js
+    function sendGet(url, callback) {
+        let xhr = createXHR();
+        xhr.onreadystatechange = function () {
+            if (xhr.readyState === XMLHttpRequest.DONE) {
+                if (xhr.status === 200) {
+                    console.log(xhr);
+                    callback(xhr.responseText);
+                } else {
+                    console.error("Failed Get: ", xhr.status);
+                }
+            }
+        };
+        xhr.open("get", url, true);
+        xhr.send(null);
+    }
+```
+Post:
+```js
+    function sendPost(url, contentType, body, callback) {
+        let xhr = createXHR();
+        xhr.onreadystatechange = function () {
+            if (xhr.readyState === XMLHttpRequest.DONE) {
+                if (xhr.status === 200) {
+                    console.log(xhr);
+                    callback(xhr.responseText);
+                } else {
+                    console.error("Failed Get: ", xhr.status);
+                }
+            }
+        };
 
+        xhr.open("post", url, true);
+        if (contentType) {
+            xhr.setRequestHeader("Content-Type", contentType);
+        } else {
+            // default: text/plain
+        }
+        xhr.send(body);
+    }
+```
+注意点： onreadystatechange会反复触发。
+
+注意： 常见的3种前后端传参类型。
 </details>
 
 <details>
@@ -65,14 +110,57 @@ XMLHttpRequest 对象是 W3C 的标准吗？
 <details>
 <summary>8.进度事件：load, process</summary>
 
-
+load:
+```js
+let xhr = createXHR();
+xhr.onload = function () {
+    if (xhr.status === 200) {
+        callback(xhr.responseText);
+    } else {
+        console.error("Failed Get: ", xhr.status);
+    }
+};
+```
+process:
+```js
+    function sendProcess() {
+        let xhr = createXHR();
+        xhr.onload = function () {
+            if (xhr.status === 200) {
+                let data = xhr.response;
+                let audio = document.createElement('audio');
+                audio.onload = function () {
+                    URL.revokeObjectURL(audio.src);
+                };
+                audio.src = window.URL.createObjectURL(data);
+                console.log(audio);
+                audio.setAttribute('controls', '');
+                document.getElementsByTagName("body")[0].appendChild(audio);
+            } else {
+                console.error("Failed Get: ", xhr.status);
+            }
+        };
+        xhr.onprogress = function (event) {
+            process.innerHTML = "lengthComputable:" + event.lengthComputable +
+                "position:" + event.loaded + "totalSize:" + event.total;
+            /*console.log("lengthComputable:", event.lengthComputable,
+                "position:", event.position, "totalSize:", event.totalSize);*/
+        };
+        xhr.open("get", "https://demo.xiaohuochai.site/myocean.mp3", true);
+        xhr.responseType = 'blob';
+        xhr.send(null);
+    }
+```
 </details>
 
 <details>
 <summary>9. CORS的实现， 什么是Preflight技术？ 为什么、什么时候出现OPTIONS请求？</summary>
 
 1. 实现CORS： 见书
-2. 示例演示OPTIONS预检请求的出现
+2. 示例演示OPTIONS预检请求的出现(见示例5): [参考](https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Access_control_CORS#%E5%8A%9F%E8%83%BD%E6%A6%82%E8%BF%B0)
+        1. 自定义header
+        2. 简单请求之外的请求
+        3. 不同类型的body
 </details>
 
 <details>
