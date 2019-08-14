@@ -1,20 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7ee26faa-d5f7-4a1c-b8dc-9e5982404e45" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-basic.iml" beforeDir="false" afterPath="$PROJECT_DIR$/java-basic.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jvm-demo/jvm-demo.iml" beforeDir="false" afterPath="$PROJECT_DIR$/jvm-demo/jvm-demo.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jvm-demo/target/classes/com/jimo/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/jvm-demo/target/classes/com/jimo/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jvm-demo/target/classes/com/jimo/cmd/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/jvm-demo/target/classes/com/jimo/cmd/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jvm-demo/target/classes/com/jimo/cmd/SplashDemo$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/jvm-demo/target/classes/com/jimo/cmd/SplashDemo$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jvm-demo/target/classes/com/jimo/cmd/SplashDemo.class" beforeDir="false" afterPath="$PROJECT_DIR$/jvm-demo/target/classes/com/jimo/cmd/SplashDemo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jvm-demo/target/classes/com/jimo/load/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/jvm-demo/target/classes/com/jimo/load/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jvm-demo/target/classes/com/jimo/load/SubClass.class" beforeDir="false" afterPath="$PROJECT_DIR$/jvm-demo/target/classes/com/jimo/load/SubClass.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jvm-demo/target/classes/com/jimo/load/SuperClass.class" beforeDir="false" afterPath="$PROJECT_DIR$/jvm-demo/target/classes/com/jimo/load/SuperClass.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/quartz-demo/quartz-demo.iml" beforeDir="false" afterPath="$PROJECT_DIR$/quartz-demo/quartz-demo.iml" afterDir="false" />
-    </list>
+    <list default="true" id="7ee26faa-d5f7-4a1c-b8dc-9e5982404e45" name="Default Changelist" comment="" />
+    <ignored path="$PROJECT_DIR$/quartz-demo/target/" />
+    <ignored path="$PROJECT_DIR$/es-springboot-data-demo/target/" />
+    <ignored path="$PROJECT_DIR$/springboot-redis-demo/target/" />
+    <ignored path="$PROJECT_DIR$/jvm-demo/target/" />
+    <ignored path="$PROJECT_DIR$/springboot-kafka-demo/target/" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <ignored path="$PROJECT_DIR$/es-transport-demo/target/" />
+    <ignored path="$PROJECT_DIR$/es-rest-client-demo/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,6 +32,19 @@
   </component>
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/jvm-demo/src/main/java/com/jimo/Main.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="76">
+              <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -62,9 +70,80 @@
       </MavenImportingSettings>
     </option>
   </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="2400" />
+    <option name="y" value="179" />
+    <option name="width" value="2880" />
+    <option name="height" value="1620" />
+  </component>
   <component name="ProjectId" id="1P3NnBBbBYeBhVdN7Ln7tpYFbNi" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="java-basic" type="b2602c69:ProjectViewProjectNode" />
+              <item name="java-basic" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="java-basic" type="b2602c69:ProjectViewProjectNode" />
+              <item name="java-basic" type="462c0819:PsiDirectoryNode" />
+              <item name="jvm-demo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="java-basic" type="b2602c69:ProjectViewProjectNode" />
+              <item name="java-basic" type="462c0819:PsiDirectoryNode" />
+              <item name="jvm-demo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="java-basic" type="b2602c69:ProjectViewProjectNode" />
+              <item name="java-basic" type="462c0819:PsiDirectoryNode" />
+              <item name="jvm-demo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="java-basic" type="b2602c69:ProjectViewProjectNode" />
+              <item name="java-basic" type="462c0819:PsiDirectoryNode" />
+              <item name="jvm-demo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="java-basic" type="b2602c69:ProjectViewProjectNode" />
+              <item name="java-basic" type="462c0819:PsiDirectoryNode" />
+              <item name="jvm-demo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="jimo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="java-basic" type="b2602c69:ProjectViewProjectNode" />
+              <item name="java-basic" type="462c0819:PsiDirectoryNode" />
+              <item name="jvm-demo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="jimo" type="462c0819:PsiDirectoryNode" />
+              <item name="mem" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+    </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="RequestMappingsPanelOrder0" value="0" />
@@ -236,12 +315,12 @@
       <item itemvalue="Application.Lesson2" />
       <item itemvalue="Application.Main-1" />
       <item itemvalue="Application.SplashDemo" />
+      <item itemvalue="Application.RuntimeConstantPoolOOM" />
       <item itemvalue="Spring Boot.EsRestClientDemoApplication" />
       <item itemvalue="Spring Boot.EsSpringbootDataDemoApplication" />
       <item itemvalue="Spring Boot.EsTransportDemoApplication" />
       <item itemvalue="Spring Boot.SpringbootKafkaDemoApplication" />
       <item itemvalue="Spring Boot.SpringbootRedisDemoApplication" />
-      <item itemvalue="Application.RuntimeConstantPoolOOM" />
     </list>
     <recent_temporary>
       <list>
@@ -276,6 +355,7 @@
       <workItem from="1559215399865" duration="324000" />
       <workItem from="1565098986717" duration="919000" />
       <workItem from="1565099934378" duration="1547000" />
+      <workItem from="1565137790245" duration="1871000" />
     </task>
     <servers />
   </component>
@@ -311,6 +391,48 @@
       <configuration name="CacheServiceTest.set" configurationId="JUnit" />
     </history-entry>
   </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="1871000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="2400" y="179" width="2880" height="1620" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Designer" />
+      <window_info id="Image Layers" />
+      <window_info id="Capture Tool" />
+      <window_info id="UI Designer" />
+      <window_info id="Favorites" side_tool="true" />
+      <window_info id="Web" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16242038" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Spring" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Java Enterprise" />
+      <window_info anchor="bottom" id="Database Changes" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Maven" />
+      <window_info anchor="right" id="Palette" />
+      <window_info anchor="right" id="Capture Analysis" />
+      <window_info anchor="right" id="SciView" />
+      <window_info anchor="right" id="Database" />
+      <window_info anchor="right" id="Palette&#9;" />
+      <window_info anchor="right" id="Theme Preview" />
+      <window_info anchor="right" id="Bean Validation" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
@@ -320,11 +442,40 @@
         <entry key="MAIN">
           <value>
             <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
               <option name="COLUMN_ORDER" />
             </State>
           </value>
         </entry>
       </map>
     </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list />
+          </value>
+        </entry>
+        <entry key="User">
+          <value>
+            <list />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/jvm-demo/src/main/java/com/jimo/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
   </component>
 </project>
