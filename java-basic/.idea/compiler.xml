@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="springboot-redis-demo" />
         <module name="es-rest-client-demo" />
+        <module name="rxjava-demo" />
         <module name="es-springboot-data-demo" />
         <module name="jvm-demo" />
         <module name="es-transport-demo" />
@@ -15,13 +16,14 @@
         <module name="springboot-kafka-demo" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
+    <bytecodeTargetLevel target="8">
       <module name="es-rest-client-demo" target="1.8" />
       <module name="es-springboot-data-demo" target="1.8" />
       <module name="es-transport-demo" target="1.8" />
       <module name="java-basic" target="1.5" />
       <module name="jvm-demo" target="6" />
       <module name="quartz-demo" target="1.5" />
+      <module name="rxjava-demo" target="8" />
       <module name="springboot-kafka-demo" target="1.8" />
       <module name="springboot-redis-demo" target="1.8" />
     </bytecodeTargetLevel>

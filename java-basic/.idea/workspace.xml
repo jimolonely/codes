@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7ee26faa-d5f7-4a1c-b8dc-9e5982404e45" name="Default Changelist" comment="" />
+    <list default="true" id="7ee26faa-d5f7-4a1c-b8dc-9e5982404e45" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/quartz-demo/quartz-demo.iml" beforeDir="false" afterPath="$PROJECT_DIR$/quartz-demo/quartz-demo.iml" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/quartz-demo/target/" />
     <ignored path="$PROJECT_DIR$/es-springboot-data-demo/target/" />
     <ignored path="$PROJECT_DIR$/springboot-redis-demo/target/" />
@@ -10,6 +16,7 @@
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/es-transport-demo/target/" />
     <ignored path="$PROJECT_DIR$/es-rest-client-demo/target/" />
+    <ignored path="$PROJECT_DIR$/rxjava-demo/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,12 +41,73 @@
     <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/jvm-demo/src/main/java/com/jimo/Main.java">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/rxjava-demo/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="76">
-              <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+            <state relative-caret-position="399">
+              <caret line="21" column="21" selection-start-line="21" selection-start-column="21" selection-end-line="21" selection-end-column="21" />
+            </state>
+          </provider>
+          <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/rxjava-demo/src/main/java/com/jimo/TestRx.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="228">
+              <caret line="12" column="5" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
+              <folding>
+                <element signature="e#164#165#0" expanded="true" />
+                <element signature="e#229#230#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/rxjava-demo/src/test/java/com/jimo/TestRxTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1375">
+              <caret line="150" column="29" selection-start-line="150" selection-start-column="29" selection-end-line="150" selection-end-column="29" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#779#780#0" expanded="true" />
+                <element signature="e#848#849#0" expanded="true" />
+                <element signature="e#942#943#0" expanded="true" />
+                <element signature="e#1017#1018#0" expanded="true" />
+                <element signature="e#1496#1497#0" expanded="true" />
+                <element signature="e#1565#1566#0" expanded="true" />
+                <element signature="e#1651#1652#0" expanded="true" />
+                <element signature="e#1718#1719#0" expanded="true" />
+                <element signature="e#1796#1797#0" expanded="true" />
+                <element signature="e#1870#1871#0" expanded="true" />
+                <element signature="e#2417#2418#0" expanded="true" />
+                <element signature="e#2491#2492#0" expanded="true" />
+                <element signature="e#2577#2578#0" expanded="true" />
+                <element signature="e#2644#2645#0" expanded="true" />
+                <element signature="e#2722#2723#0" expanded="true" />
+                <element signature="e#2797#2798#0" expanded="true" />
+                <element signature="e#3370#3371#0" expanded="true" />
+                <element signature="e#3439#3440#0" expanded="true" />
+                <element signature="e#3533#3534#0" expanded="true" />
+                <element signature="e#3608#3609#0" expanded="true" />
+                <element signature="e#3929#3930#0" expanded="true" />
+                <element signature="e#3998#3999#0" expanded="true" />
+                <element signature="e#4084#4085#0" expanded="true" />
+                <element signature="e#4151#4152#0" expanded="true" />
+                <element signature="e#4229#4230#0" expanded="true" />
+                <element signature="e#4303#4304#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/io/reactivex/rxjava2/rxjava/2.2.8/rxjava-2.2.8-sources.jar!/io/reactivex/internal/disposables/DisposableHelper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="436">
+              <caret line="115" column="7" lean-forward="true" selection-start-line="115" selection-start-column="7" selection-end-line="115" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -49,8 +117,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JUnit4 Test Class" />
         <option value="Class" />
+        <option value="JUnit4 Test Class" />
       </list>
     </option>
   </component>
@@ -62,6 +130,15 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/rxjava-demo/pom.xml" />
+        <option value="$PROJECT_DIR$/rxjava-demo/src/main/java/com/jimo/TestRx.java" />
+        <option value="$PROJECT_DIR$/rxjava-demo/src/test/java/com/jimo/TestRxTest.java" />
+      </list>
+    </option>
   </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
@@ -85,6 +162,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -137,12 +216,36 @@
               <item name="jimo" type="462c0819:PsiDirectoryNode" />
               <item name="mem" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="java-basic" type="b2602c69:ProjectViewProjectNode" />
+              <item name="java-basic" type="462c0819:PsiDirectoryNode" />
+              <item name="rxjava-demo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="java-basic" type="b2602c69:ProjectViewProjectNode" />
+              <item name="java-basic" type="462c0819:PsiDirectoryNode" />
+              <item name="rxjava-demo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="java-basic" type="b2602c69:ProjectViewProjectNode" />
+              <item name="java-basic" type="462c0819:PsiDirectoryNode" />
+              <item name="rxjava-demo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="java-basic" type="b2602c69:ProjectViewProjectNode" />
+              <item name="java-basic" type="462c0819:PsiDirectoryNode" />
+              <item name="rxjava-demo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -163,19 +266,19 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
       <recent name="com.jimo" />
       <recent name="jimo.io" />
     </key>
-    <key name="CreateTestDialog.Recents.Supers">
-      <recent name="" />
-    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.jimo" />
       <recent name="jimo.io" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/jvm-demo/src/main/resources" />
@@ -196,21 +299,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.RuntimeConstantPoolOOM">
-    <configuration name="HeapOOM" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="com.jimo.mem.HeapOOM" />
-      <module name="jvm-demo" />
-      <option name="VM_PARAMETERS" value="-Xms20m -Xmx20m -XX:+HeapDumpOnOutOfMemoryError" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.jimo.load.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.TestRxTest.testComposite">
     <configuration name="JvmStackSOF" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="com.jimo.mem.JvmStackSOF" />
       <module name="jvm-demo" />
@@ -219,57 +308,82 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Lesson2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.jimo.Lesson2" />
-      <module name="quartz-demo" />
+    <configuration name="TestRxTest.testComplete" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="rxjava-demo" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.jimo.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="com.jimo" />
+      <option name="MAIN_CLASS_NAME" value="com.jimo.TestRxTest" />
+      <option name="METHOD_NAME" value="testComplete" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main-1" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="com.jimo.cmd.Main" />
-      <module name="jvm-demo" />
-      <option name="PROGRAM_PARAMETERS" value="1" />
-      <option name="VM_PARAMETERS" value="-ea -Dname=jimo" />
+    <configuration name="TestRxTest.testComposite" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="rxjava-demo" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.jimo.cmd.*" />
+          <option name="PATTERN" value="com.jimo.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="com.jimo" />
+      <option name="MAIN_CLASS_NAME" value="com.jimo.TestRxTest" />
+      <option name="METHOD_NAME" value="testComposite" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RuntimeConstantPoolOOM" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.jimo.mem.RuntimeConstantPoolOOM" />
-      <module name="jvm-demo" />
+    <configuration name="TestRxTest.testMayBe (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="rxjava-demo" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.jimo.mem.*" />
+          <option name="PATTERN" value="com.jimo.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="com.jimo" />
+      <option name="MAIN_CLASS_NAME" value="com.jimo.TestRxTest" />
+      <option name="METHOD_NAME" value="testMayBe" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SplashDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.jimo.cmd.SplashDemo" />
-      <module name="jvm-demo" />
-      <option name="VM_PARAMETERS" value="-splash:image/splash.gif" />
+    <configuration name="TestRxTest.testMayBe (2)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="rxjava-demo" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.jimo.cmd.*" />
+          <option name="PATTERN" value="com.jimo.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="com.jimo" />
+      <option name="MAIN_CLASS_NAME" value="com.jimo.TestRxTest" />
+      <option name="METHOD_NAME" value="testMayBe" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestRxTest.testMayBe" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="rxjava-demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.jimo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.jimo" />
+      <option name="MAIN_CLASS_NAME" value="com.jimo.TestRxTest" />
+      <option name="METHOD_NAME" value="testMayBe" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -311,24 +425,24 @@
     </configuration>
     <list>
       <item itemvalue="Application.JvmStackSOF" />
-      <item itemvalue="Application.HeapOOM" />
-      <item itemvalue="Application.Lesson2" />
-      <item itemvalue="Application.Main-1" />
-      <item itemvalue="Application.SplashDemo" />
-      <item itemvalue="Application.RuntimeConstantPoolOOM" />
       <item itemvalue="Spring Boot.EsRestClientDemoApplication" />
       <item itemvalue="Spring Boot.EsSpringbootDataDemoApplication" />
       <item itemvalue="Spring Boot.EsTransportDemoApplication" />
       <item itemvalue="Spring Boot.SpringbootKafkaDemoApplication" />
       <item itemvalue="Spring Boot.SpringbootRedisDemoApplication" />
+      <item itemvalue="JUnit.TestRxTest.testMayBe" />
+      <item itemvalue="JUnit.TestRxTest.testMayBe (1)" />
+      <item itemvalue="JUnit.TestRxTest.testMayBe (2)" />
+      <item itemvalue="JUnit.TestRxTest.testComplete" />
+      <item itemvalue="JUnit.TestRxTest.testComposite" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.RuntimeConstantPoolOOM" />
-        <item itemvalue="Application.HeapOOM" />
-        <item itemvalue="Application.SplashDemo" />
-        <item itemvalue="Application.Main-1" />
-        <item itemvalue="Application.Lesson2" />
+        <item itemvalue="JUnit.TestRxTest.testComposite" />
+        <item itemvalue="JUnit.TestRxTest.testComplete" />
+        <item itemvalue="JUnit.TestRxTest.testMayBe (2)" />
+        <item itemvalue="JUnit.TestRxTest.testMayBe (1)" />
+        <item itemvalue="JUnit.TestRxTest.testMayBe" />
       </list>
     </recent_temporary>
   </component>
@@ -356,81 +470,85 @@
       <workItem from="1565098986717" duration="919000" />
       <workItem from="1565099934378" duration="1547000" />
       <workItem from="1565137790245" duration="1871000" />
+      <workItem from="1565772152248" duration="786000" />
+      <workItem from="1566206561973" duration="2872000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ChannelDemoTest_streamRead - 2019.03.15 at 09h 11m 35s.xml">
-      <configuration name="ChannelDemoTest.streamRead" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ChannelDemoTest_nioRead - 2019.03.15 at 09h 21m 28s.xml">
-      <configuration name="ChannelDemoTest.nioRead" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ICacheServiceTest_set - 2019.03.20 at 17h 57m 10s.xml">
-      <configuration name="ICacheServiceTest.set" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ICacheServiceTest_set - 2019.03.20 at 18h 02m 03s.xml">
-      <configuration name="ICacheServiceTest.set" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ICacheServiceTest_set - 2019.03.20 at 18h 02m 56s.xml">
-      <configuration name="ICacheServiceTest.set" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ICacheServiceTest_set - 2019.03.20 at 18h 04m 18s.xml">
-      <configuration name="ICacheServiceTest.set" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ICacheServiceTest_set - 2019.03.20 at 18h 06m 09s.xml">
-      <configuration name="ICacheServiceTest.set" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ICacheServiceTest_set - 2019.03.20 at 18h 07m 52s.xml">
-      <configuration name="ICacheServiceTest.set" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ICacheServiceTest_set - 2019.03.20 at 18h 08m 45s.xml">
-      <configuration name="ICacheServiceTest.set" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="CacheServiceTest_set - 2019.03.21 at 09h 31m 54s.xml">
       <configuration name="CacheServiceTest.set" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="TestRxTest_testSingle - 2019.08.19 at 17h 46m 43s.xml">
+      <configuration name="TestRxTest.testSingle" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestRxTest_testSingle_(1) - 2019.08.19 at 17h 49m 05s.xml">
+      <configuration name="TestRxTest.testSingle (1)" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestRxTest_testSingle - 2019.08.19 at 17h 50m 45s.xml">
+      <configuration name="TestRxTest.testSingle" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestRxTest_testSingle - 2019.08.19 at 17h 51m 21s.xml">
+      <configuration name="TestRxTest.testSingle" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestRxTest_testSingle_(2) - 2019.08.19 at 17h 51m 37s.xml">
+      <configuration name="TestRxTest.testSingle (2)" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestRxTest_testMayBe - 2019.08.19 at 17h 56m 19s.xml">
+      <configuration name="TestRxTest.testMayBe" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestRxTest_testMayBe_(1) - 2019.08.19 at 17h 56m 56s.xml">
+      <configuration name="TestRxTest.testMayBe (1)" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestRxTest_testMayBe_(2) - 2019.08.19 at 17h 57m 14s.xml">
+      <configuration name="TestRxTest.testMayBe (2)" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestRxTest_testComplete - 2019.08.19 at 18h 06m 26s.xml">
+      <configuration name="TestRxTest.testComplete" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1871000" />
+    <option name="totallyTimeSpent" value="5529000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="2400" y="179" width="2880" height="1620" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Designer" />
-      <window_info id="Image Layers" />
-      <window_info id="Capture Tool" />
-      <window_info id="UI Designer" />
-      <window_info id="Favorites" side_tool="true" />
-      <window_info id="Web" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16242038" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16525124" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Spring" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="bottom" id="Java Enterprise" />
-      <window_info anchor="bottom" id="Database Changes" />
-      <window_info anchor="bottom" id="Version Control" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info id="Web" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" weight="0.32949153" />
+      <window_info anchor="bottom" id="MyBatis Log" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32949153" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Maven" />
-      <window_info anchor="right" id="Palette" />
-      <window_info anchor="right" id="Capture Analysis" />
-      <window_info anchor="right" id="SciView" />
-      <window_info anchor="right" id="Database" />
-      <window_info anchor="right" id="Palette&#9;" />
-      <window_info anchor="right" id="Theme Preview" />
-      <window_info anchor="right" id="Bean Validation" />
+      <window_info anchor="bottom" id="Spring" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Java Enterprise" order="11" />
+      <window_info anchor="bottom" id="Database Changes" order="12" />
+      <window_info anchor="bottom" id="Version Control" order="13" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="3" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="SciView" order="6" />
+      <window_info anchor="right" id="Database" order="7" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
+      <window_info anchor="right" id="Theme Preview" order="9" />
+      <window_info anchor="right" id="Bean Validation" order="10" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -469,13 +587,260 @@
       </map>
     </option>
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/rxjava-demo/src/test/java/com/jimo/TestRxTest.java</url>
+          <line>44</line>
+          <properties />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/jvm-demo/src/main/java/com/jimo/Main.java">
+    <entry file="file://$PROJECT_DIR$/jvm-demo/src/main/java/com/jimo/mem/HeapOOM.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+        <state relative-caret-position="361">
+          <caret line="20" column="28" lean-forward="true" selection-start-line="20" selection-start-column="28" selection-end-line="20" selection-end-column="28" />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/jvm-demo/src/main/java/com/jimo/mem/RuntimeConstantPoolOOM.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="15" column="1" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jvm-demo/src/main/java/com/jimo/mem/JvmStackSOF.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jvm-demo/src/main/java/com/jimo/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rxjava-demo/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="21" column="21" selection-start-line="21" selection-start-column="21" selection-end-line="21" selection-end-column="21" />
+        </state>
+      </provider>
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/io/reactivex/rxjava2/rxjava/2.2.8/rxjava-2.2.8.jar!/io/reactivex/internal/operators/flowable/FlowableJust.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="15" column="11" selection-start-line="15" selection-start-column="11" selection-end-line="15" selection-end-column="11" />
+          <folding>
+            <element signature="e#491#492#0" expanded="true" />
+            <element signature="e#525#526#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/io/reactivex/rxjava2/rxjava/2.2.8/rxjava-2.2.8.jar!/io/reactivex/internal/functions/ObjectHelper.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="16" column="24" selection-start-line="16" selection-start-column="24" selection-end-line="16" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/io/reactivex/rxjava2/rxjava/2.2.8/rxjava-2.2.8.jar!/io/reactivex/plugins/RxJavaPlugins.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="335">
+          <caret line="65" column="65" selection-start-line="65" selection-start-column="65" selection-end-line="65" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/io/reactivex/rxjava2/rxjava/2.2.8/rxjava-2.2.8.jar!/io/reactivex/Flowable.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="335">
+          <caret line="853" column="35" selection-start-line="853" selection-start-column="35" selection-end-line="853" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rxjava-demo/src/main/java/com/jimo/TestRx.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="12" column="5" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
+          <folding>
+            <element signature="e#164#165#0" expanded="true" />
+            <element signature="e#229#230#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/io/reactivex/rxjava2/rxjava/2.2.8/rxjava-2.2.8.jar!/io/reactivex/observers/DisposableSingleObserver.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="34" column="22" selection-start-line="34" selection-start-column="22" selection-end-line="34" selection-end-column="22" />
+          <folding>
+            <element signature="e#1001#1002#0" expanded="true" />
+            <element signature="e#1056#1057#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/io/reactivex/rxjava2/rxjava/2.2.8/rxjava-2.2.8-sources.jar!/io/reactivex/observers/DisposableSingleObserver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="292">
+          <caret line="49" column="9" lean-forward="true" selection-start-line="49" selection-start-column="9" selection-end-line="49" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/io/reactivex/rxjava2/rxjava/2.2.8/rxjava-2.2.8-sources.jar!/io/reactivex/schedulers/Schedulers.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="303">
+          <caret line="153" column="10" lean-forward="true" selection-start-line="153" selection-start-column="10" selection-end-line="153" selection-end-column="10" />
+          <folding>
+            <element signature="e#9971#9972#0" expanded="true" />
+            <element signature="e#10025#10026#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/io/reactivex/rxjava2/rxjava/2.2.8/rxjava-2.2.8-sources.jar!/io/reactivex/internal/disposables/DisposableHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="436">
+          <caret line="115" column="7" lean-forward="true" selection-start-line="115" selection-start-column="7" selection-end-line="115" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/io/reactivex/rxjava2/rxjava/2.2.8/rxjava-2.2.8-sources.jar!/io/reactivex/observers/DisposableMaybeObserver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="274">
+          <caret line="62" column="82" lean-forward="true" selection-start-line="62" selection-start-column="82" selection-end-line="62" selection-end-column="82" />
+          <folding>
+            <element signature="e#3188#3189#0" expanded="true" />
+            <element signature="e#3238#3239#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/io/reactivex/rxjava2/rxjava/2.2.8/rxjava-2.2.8-sources.jar!/io/reactivex/disposables/Disposable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="25" column="54" lean-forward="true" selection-start-line="25" selection-start-column="54" selection-end-line="25" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rxjava-demo/src/test/java/com/jimo/TestRxTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1375">
+          <caret line="150" column="29" selection-start-line="150" selection-start-column="29" selection-end-line="150" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#779#780#0" expanded="true" />
+            <element signature="e#848#849#0" expanded="true" />
+            <element signature="e#942#943#0" expanded="true" />
+            <element signature="e#1017#1018#0" expanded="true" />
+            <element signature="e#1496#1497#0" expanded="true" />
+            <element signature="e#1565#1566#0" expanded="true" />
+            <element signature="e#1651#1652#0" expanded="true" />
+            <element signature="e#1718#1719#0" expanded="true" />
+            <element signature="e#1796#1797#0" expanded="true" />
+            <element signature="e#1870#1871#0" expanded="true" />
+            <element signature="e#2417#2418#0" expanded="true" />
+            <element signature="e#2491#2492#0" expanded="true" />
+            <element signature="e#2577#2578#0" expanded="true" />
+            <element signature="e#2644#2645#0" expanded="true" />
+            <element signature="e#2722#2723#0" expanded="true" />
+            <element signature="e#2797#2798#0" expanded="true" />
+            <element signature="e#3370#3371#0" expanded="true" />
+            <element signature="e#3439#3440#0" expanded="true" />
+            <element signature="e#3533#3534#0" expanded="true" />
+            <element signature="e#3608#3609#0" expanded="true" />
+            <element signature="e#3929#3930#0" expanded="true" />
+            <element signature="e#3998#3999#0" expanded="true" />
+            <element signature="e#4084#4085#0" expanded="true" />
+            <element signature="e#4151#4152#0" expanded="true" />
+            <element signature="e#4229#4230#0" expanded="true" />
+            <element signature="e#4303#4304#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>rxjava-demo</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>
