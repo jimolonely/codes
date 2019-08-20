@@ -2,8 +2,10 @@ package com.jimo;
 
 import io.reactivex.Completable;
 import io.reactivex.Maybe;
+import io.reactivex.Observable;
 import io.reactivex.Single;
 import io.reactivex.disposables.CompositeDisposable;
+import io.reactivex.disposables.Disposable;
 import io.reactivex.observers.DisposableCompletableObserver;
 import io.reactivex.observers.DisposableMaybeObserver;
 import io.reactivex.observers.DisposableSingleObserver;
@@ -149,5 +151,30 @@ public class TestRxTest {
 
         // start
         disposable.dispose();
+    }
+
+    @Test
+    public void createOperator() {
+
+        // from
+        final StringBuilder sb = new StringBuilder();
+        Observable<String> ob1 = Observable.fromArray("1", "2", "3", "4");
+        Disposable disposable = ob1.map(s -> s + "0")
+                .subscribe(sb::append);
+        System.out.println(sb);
+
+        Observable<Long> timer = Observable.timer(2, TimeUnit.SECONDS);
+    }
+
+    @Test
+    public void combine() {
+
+        Integer[] numbers = {1, 2, 3, 4, 5};
+        String[] letters = {"a", "b", "c", "d"};
+
+        Observable<Integer> ob1 = Observable.fromArray(numbers);
+        Observable<String> ob2 = Observable.fromArray(letters);
+        Observable.combineLatest(ob1, ob2, (a, b) -> a + b)
+                .subscribe(System.out::println);
     }
 }
