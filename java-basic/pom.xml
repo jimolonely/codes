@@ -11,7 +11,8 @@
         <module>jvm-demo</module>
         <module>rxjava-demo</module>
       <module>maven-jimo-count-plugin</module>
-  </modules>
+        <module>test-json</module>
+    </modules>
 
     <dependencies>
         <dependency>
