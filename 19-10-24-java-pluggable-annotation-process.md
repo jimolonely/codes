@@ -231,13 +231,21 @@ import java.util.stream.Collectors;
 @SupportedSourceVersion(SourceVersion.RELEASE_8)
 @AutoService(Processor.class)
 public class CustomProcessor extends AbstractProcessor {
-
+    /**
+     * AST
+     */
     private JavacTrees trees;
-
+    /**
+     * 操作修改AST
+     */
     private TreeMaker treeMaker;
-
+    /**
+     * 符号封装类，处理名称
+     */
     private Names names;
-
+    /**
+     * 打印信息
+     */
     private Messager messager;
 
     @Override
@@ -280,11 +288,10 @@ public class CustomProcessor extends AbstractProcessor {
                             System.out.println("-------------3");
                             try {
                                 // add getter
-//                                jcClassDecl.defs.prepend(getter(var));
+                                jcClassDecl.defs = jcClassDecl.defs.prepend(getter(var));
                                 // add setter
                                 jcClassDecl.defs = jcClassDecl.defs.prepend(setter(var));
 //                                jcClassDecl.defs.prepend(setter(var));
-
                             } catch (ClassNotFoundException | InstantiationException | IllegalAccessException e) {
                                 e.printStackTrace();
                                 messager.printMessage(Diagnostic.Kind.ERROR, e.getMessage());
@@ -298,13 +305,18 @@ public class CustomProcessor extends AbstractProcessor {
         return true;
     }
 
+    /**
+     * 自定义setter
+     */
     private JCTree setter(JCTree.JCVariableDecl var) throws ClassNotFoundException, IllegalAccessException,
             InstantiationException {
+        // 方法级别public
         final JCTree.JCModifiers modifiers = treeMaker.Modifiers(Flags.PUBLIC);
 
         final Name varName = var.getName();
         Name methodName = methodName(varName, "set");
 
+        // 方法体
         ListBuffer<JCTree.JCStatement> jcStatements = new ListBuffer<>();
         jcStatements.append(treeMaker.Exec(treeMaker.Assign(
                 treeMaker.Select(treeMaker.Ident(names.fromString("this")), varName),
@@ -312,27 +324,61 @@ public class CustomProcessor extends AbstractProcessor {
         )));
         final JCTree.JCBlock block = treeMaker.Block(0, jcStatements.toList());
 
-        // return type
+        // 返回值类型void
         JCTree.JCExpression returnType =
                 treeMaker.Type((Type) (Class.forName("com.sun.tools.javac.code.Type$JCVoidType").newInstance()));
 
         List<JCTree.JCTypeParameter> typeParameters = List.nil();
 
-        // params
+        // 参数
         final JCTree.JCVariableDecl paramVars = treeMaker.VarDef(treeMaker.Modifiers(Flags.PARAMETER,
                 List.nil()), var.name, var.vartype, null);
         final List<JCTree.JCVariableDecl> params = List.of(paramVars);
 
-        List<JCTree.JCExpression> throwCauses = List.nil();
-        return treeMaker.MethodDef(modifiers, methodName, returnType, typeParameters, params, throwCauses, block, null);
+        List<JCTree.JCExpression> throwClauses = List.nil();
+        // 重新构造一个方法, 最后一个参数是方法注解的默认值，这里没有
+        return treeMaker.MethodDef(modifiers, methodName, returnType, typeParameters, params, throwClauses, block,
+                null);
     }
 
+    /**
+     * 构造驼峰命名
+     */
     private Name methodName(Name varName, String prefix) {
-        return names.fromString(prefix + varName.toString().substring(0, 1).toUpperCase() + varName.toString().substring(1));
+        return names.fromString(prefix + varName.toString().substring(0, 1).toUpperCase()
+                + varName.toString().substring(1));
     }
 
+    /**
+     * 构造getter
+     */
     private JCTree getter(JCTree.JCVariableDecl var) {
-        return null;
+        // 方法级别
+        final JCTree.JCModifiers modifiers = treeMaker.Modifiers(Flags.PUBLIC);
+
+        // 方法名称
+        final Name methodName = methodName(var.getName(), "get");
+
+        // 方法内容
+        ListBuffer<JCTree.JCStatement> statements = new ListBuffer<>();
+        statements.append(treeMaker.Return(treeMaker.Select(treeMaker.Ident(names.fromString("this")), var.getName())));
+        final JCTree.JCBlock block = treeMaker.Block(0, statements.toList());
+
+        // 返回值类型
+        final JCTree.JCExpression returnType = var.vartype;
+
+        // 没有参数类型
+        List<JCTree.JCTypeParameter> typeParameters = List.nil();
+
+        // 没有参数变量
+        List<JCTree.JCVariableDecl> params = List.nil();
+
+        // 没有异常
+        List<JCTree.JCExpression> throwClauses = List.nil();
+
+        // 构造getter
+        return treeMaker.MethodDef(modifiers, methodName, returnType, typeParameters, params, throwClauses, block,
+                null);
     }
 }
 ```
