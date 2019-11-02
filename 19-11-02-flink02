@@ -1,0 +1,73 @@
+本文按照官方操作：https://ci.apache.org/projects/flink/flink-docs-release-1.9/zh/getting-started/tutorials/local_setup.html
+
+在windows上运行ubuntu shell运行ok。
+
+# java
+
+```s
+$ java -version
+openjdk version "1.8.0_222"
+OpenJDK Runtime Environment (build 1.8.0_222-8u222-b10-1ubuntu1~18.04.1-b10)
+OpenJDK 64-Bit Server VM (build 25.222-b10, mixed mode)
+```
+
+# flink安装
+
+1. 下载：[http://flink.apache.org/downloads.html](http://flink.apache.org/downloads.html)
+2. 解压运行：
+    ```
+    $ tar xzf flink-*.tgz
+    $ cd flink-1.9.1
+    $ bin/start-cluster.sh
+    Starting cluster.
+    Starting standalonesession daemon on host xxx.
+    Starting taskexecutor daemon on host xxx.
+    ```
+然后访问[http://localhost:8081/#/overview](http://localhost:8081/#/overview)
+
+日志在 `log`目录下
+
+# 运行示例
+
+1. 使用nc模拟一个流输入程序：
+   ```s
+   $ nc -l 9000
+   ```
+2. 启动示例程序：
+  ```s
+  $ bin/flink run examples/streaming/SocketWindowWordCount.jar --port 9000
+  Starting execution of program
+  ```
+3. 然后在nc这边输入一些单词：
+  ```s
+  $ nc -l 9000
+  wwq
+  wqeqw
+  qwe
+  qwe
+  we
+  qe
+  qe
+          ew
+  sada
+  ads
+  bye
+  ```
+4. 查看日志：`log/xxx.out`就可以看到结果：
+  ```s
+  $ cat flink-jack-taskexecutor-0-xxx.out
+  wwq : 1
+  wqeqw : 1
+  qe : 2
+  we : 1
+  qwe : 2
+   : 1
+  ads : 1
+  sada : 1
+  ew : 1
+  bye : 1
+   : 1
+  ```
+  
+同时在flink界面上可以看到正在运行的任务和日志。
+
