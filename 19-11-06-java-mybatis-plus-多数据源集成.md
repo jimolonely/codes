@@ -309,6 +309,13 @@ mybatis-plus:
   config-location: classpath:mybatis-config.xml
 ```
 
+# 主键递增问题
+
+默认是一个随机的数，下面设置递增：
+```java
+    @TableId(type = IdType.AUTO)
+    private Long id;
+```
 
 
 
