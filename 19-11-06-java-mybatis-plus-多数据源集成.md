@@ -317,6 +317,17 @@ mybatis-plus:
     private Long id;
 ```
 
+# 分页时total总为0的问题
+
+```java
+    /**
+     * 分页插件,解决分页时total=0问题
+     */
+    @Bean
+    public PaginationInterceptor paginationInterceptor() {
+        return new PaginationInterceptor();
+    }
+```
 
 
 
