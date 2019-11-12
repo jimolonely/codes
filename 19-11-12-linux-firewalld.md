@@ -1,6 +1,10 @@
 
 centos7推出的firewall学习。
 
+[官方网站：https://firewalld.org/](https://firewalld.org/)
+
+官方文档已经很清晰明了，但是有些需求还是得自己来搞
+
 # 理解基本概念
 
 ## zone
