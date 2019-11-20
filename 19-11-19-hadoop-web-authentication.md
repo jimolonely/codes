@@ -37,3 +37,9 @@ hadoop web访问的访问控制
 在url后跟上参数：`host:8088?user.name=dhjfkdhsjkfs`
 
 
+# 特别说明
+
+这并不是一种用户名密码的验证方式，在`user.name=xxx`后随便加一个名字也能访问，所以只是一个规则，不能广泛使用。
+
+
+
