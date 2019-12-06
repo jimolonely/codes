@@ -1,3 +1,5 @@
+
+```java
 import lombok.extern.slf4j.Slf4j;
 import sun.misc.BASE64Decoder;
 import sun.misc.BASE64Encoder;
@@ -95,3 +97,4 @@ public class EncryptUtil {
         return new SecretKeySpec(raw, "AES");
     }
 }
+```
