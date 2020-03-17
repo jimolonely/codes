@@ -71,6 +71,29 @@ public class AuthUserPO {
     </select>
 ```
 
+## mybatis与mysql的数据库时区
+
+数据库字段：
+
+```sql
+p_time timestamp not null
+```
+
+对应java类的实体类型：
+```java
+java.util.Date pTime;
+```
+网上博客都说改mysql的时区配置，但是可以不动mysql，使用spring的配置解决
+
+如果不加下面的配置，那么返回给前端的回是8小时前的时间，可以使用下面的配置矫正：
+```conf
+# 重点就是：serverTimezone=Asia/Shanghai
+spring.datasource.druid.url=jdbc:mysql://xxx:3306/db?allowMultiQueries=true&useUnicode=true&characterEncoding=utf8&serverTimezone=Asia/Shanghai
+
+spring.jackson.date-format=yyyy-MM-dd HH:mm:ss
+spring.jackson.time-zone=GMT+8
+```
+
 # opencsv乱码问题
 
 使用opencsv读取文件时，如果没指定编码，可能会中文乱码（仅仅是可能），但指定了之后才是安全的：
