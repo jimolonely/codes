@@ -2,6 +2,7 @@ package com.jimo;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.databind.SerializationFeature;
 import org.junit.Test;
 
 import java.util.HashMap;
@@ -63,5 +64,13 @@ public class JacksonAnnotationTest {
         final String s = new ObjectMapper().writeValueAsString(Bean05.USER1);
 
         assertEquals("\"JIMO\"", s);
+    }
+
+    @Test
+    public void testBean06() throws JsonProcessingException {
+        final Bean06 b = new Bean06(1, "jimo");
+
+        final String s = new ObjectMapper().enable(SerializationFeature.WRAP_ROOT_VALUE).writeValueAsString(b);
+        assertEquals("{\"user\":{\"id\":1,\"name\":\"jimo\"}}", s);
     }
 }

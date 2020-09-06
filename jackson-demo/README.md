@@ -214,4 +214,32 @@ public void testBean05() throws JsonProcessingException {
 得到： `assertEquals("\"JIMO\"", s);`
 
 
+# @JsonRootName
+
+```java
+@JsonRootName(value = "user")
+public class Bean06 {
+    public int id;
+    public String name;
+
+    public Bean06(int id, String name) {
+        this.id = id;
+        this.name = name;
+    }
+}
+```
+测试：需要启用 `WRAP_ROOT_VALUE`
+```java
+@Test
+public void testBean06() throws JsonProcessingException {
+    final Bean06 b = new Bean06(1, "jimo");
+
+    final String s = new ObjectMapper().enable(SerializationFeature.WRAP_ROOT_VALUE).writeValueAsString(b);
+    assertEquals("{\"user\":{\"id\":1,\"name\":\"jimo\"}}", s);
+}
+```
+可以看到user作为了根节点：
+```json
+{"user":{"id":1,"name":"jimo"}}
+```
 
