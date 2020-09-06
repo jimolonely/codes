@@ -142,3 +142,42 @@ public void testBean03() throws JsonProcessingException {
 ```
 也支持按字母序排列： `@JsonPropertyOrder(value = {"name", "id"}, alphabetic = true)`
 
+# @JsonRawValue 
+
+直接将字符串里的json写成json格式.
+
+```java
+public class Bean04 {
+    public String name;
+
+    @JsonRawValue
+    public String json;
+
+    public Bean04(String name, String json) {
+        this.name = name;
+        this.json = json;
+    }
+}
+```
+
+测试：
+```java
+@Test
+public void testBean04() throws JsonProcessingException {
+    final Bean04 b = new Bean04("jimo", "{\"attr\":false}");
+
+    final String s = new ObjectMapper().writeValueAsString(b);
+    assertEquals("{\"name\":\"jimo\",\"json\":{\"attr\":false}}", s);
+}
+```
+
+结果：
+```json
+{
+  "name": "jimo",
+  "json": {
+    "attr": false
+  }
+}
+```
+

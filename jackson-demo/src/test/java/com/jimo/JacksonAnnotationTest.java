@@ -49,4 +49,12 @@ public class JacksonAnnotationTest {
         final String s = new ObjectMapper().writeValueAsString(b);
         assertEquals("{\"name\":\"jimo\",\"id\":1}", s);
     }
+
+    @Test
+    public void testBean04() throws JsonProcessingException {
+        final Bean04 b = new Bean04("jimo", "{\"attr\":false}");
+
+        final String s = new ObjectMapper().writeValueAsString(b);
+        assertEquals("{\"name\":\"jimo\",\"json\":{\"attr\":false}}", s);
+    }
 }

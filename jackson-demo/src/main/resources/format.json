@@ -1,4 +1,6 @@
 {
-  "id": 1,
-  "theName": "jimo"
+  "name": "jimo",
+  "json": {
+    "attr": false
+  }
 }
