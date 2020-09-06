@@ -7,6 +7,7 @@ import org.junit.Test;
 import java.util.HashMap;
 
 import static org.hamcrest.CoreMatchers.containsString;
+import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertThat;
 
 /**
@@ -41,4 +42,11 @@ public class JacksonAnnotationTest {
         assertThat(result, containsString("1"));
     }
 
+    @Test
+    public void testBean03() throws JsonProcessingException {
+        final Bean03 b = new Bean03(1, "jimo");
+
+        final String s = new ObjectMapper().writeValueAsString(b);
+        assertEquals("{\"name\":\"jimo\",\"id\":1}", s);
+    }
 }

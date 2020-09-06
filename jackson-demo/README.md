@@ -112,3 +112,33 @@ public void testBean02() throws JsonProcessingException {
   "name": "jimo"
 }
 ```
+
+# @JsonPropertyOrder
+
+就是指定生成的json字符串中属性的顺序，默认是按照声明顺序。
+
+```java
+@JsonPropertyOrder(value = {"name", "id"})
+public class Bean03 {
+
+    public int id;
+    public String name;
+
+    public Bean03(int id, String name) {
+        this.id = id;
+        this.name = name;
+    }
+}
+```
+测试：
+```java
+@Test
+public void testBean03() throws JsonProcessingException {
+    final Bean03 b = new Bean03(1, "jimo");
+
+    final String s = new ObjectMapper().writeValueAsString(b);
+    assertEquals("{\"name\":\"jimo\",\"id\":1}", s);
+}
+```
+也支持按字母序排列： `@JsonPropertyOrder(value = {"name", "id"}, alphabetic = true)`
+
