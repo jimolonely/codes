@@ -181,3 +181,37 @@ public void testBean04() throws JsonProcessingException {
 }
 ```
 
+# JsonValue
+
+```java
+public enum Bean05 {
+    USER1(1, "JIMO"), USER2(2, "HEHE");
+
+    private int id;
+    private String name;
+
+    Bean05(int id, String name) {
+        this.id = id;
+        this.name = name;
+    }
+
+    // @JsonValue
+    public String getName() {
+        return name;
+    }
+}
+```
+看上面的枚举类，我们序列化时，其结果： "USER1"
+```java
+@Test
+public void testBean05() throws JsonProcessingException {
+    final String s = new ObjectMapper().writeValueAsString(Bean05.USER1);
+    // s== "USER1"
+}
+```
+但是我们想只用name这个字段来代表枚举类，于是加上 `@JsonValue`.
+
+得到： `assertEquals("\"JIMO\"", s);`
+
+
+
