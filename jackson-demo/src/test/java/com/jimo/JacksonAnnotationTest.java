@@ -29,4 +29,16 @@ public class JacksonAnnotationTest {
         assertThat(result1, containsString("k1"));
         assertThat(result1, containsString("v1"));
     }
+
+    @Test
+    public void testBean02() throws JsonProcessingException {
+        final Bean02 b = new Bean02(1, "jimo");
+
+        final String result = new ObjectMapper().writeValueAsString(b);
+        System.out.println(result);
+        assertThat(result, containsString("jimo"));
+        assertThat(result, containsString("name"));
+        assertThat(result, containsString("1"));
+    }
+
 }

@@ -57,7 +57,7 @@ public void testBean01() throws JsonProcessingException {
 ```
 
 当enabled=true时，结果如下：
-```java
+```json
 {
   "name": "jimo",
   "k1": "v1",
@@ -67,4 +67,48 @@ public void testBean01() throws JsonProcessingException {
 
 可以看到，map被拉平了。
 
-# 
+# @JsonGetter
+
+```java
+public class Bean02 {
+    public int id;
+    private String name;
+
+    public Bean02(int id, String name) {
+        this.id = id;
+        this.name = name;
+    }
+
+    // @JsonGetter("name")
+    public String getTheName() {
+        return name;
+    }
+}
+```
+看测试
+```java
+@Test
+public void testBean02() throws JsonProcessingException {
+    final Bean02 b = new Bean02(1, "jimo");
+
+    final String result = new ObjectMapper().writeValueAsString(b);
+    System.out.println(result);
+    assertThat(result, containsString("jimo"));
+    assertThat(result, containsString("name"));
+    assertThat(result, containsString("1"));
+}
+```
+如果没有 @JsonGetter 的注解，得到的json是：
+```json
+{
+  "id": 1,
+  "theName": "jimo"
+}
+```
+加上后才是name：
+```json
+{
+  "id": 1,
+  "name": "jimo"
+}
+```
