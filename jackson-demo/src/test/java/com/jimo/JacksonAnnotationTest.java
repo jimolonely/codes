@@ -3,8 +3,10 @@ package com.jimo;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.SerializationFeature;
+import com.jimo.serialize.*;
 import org.junit.Test;
 
+import java.time.LocalDate;
 import java.util.HashMap;
 
 import static org.hamcrest.CoreMatchers.containsString;
@@ -73,4 +75,12 @@ public class JacksonAnnotationTest {
         final String s = new ObjectMapper().enable(SerializationFeature.WRAP_ROOT_VALUE).writeValueAsString(b);
         assertEquals("{\"user\":{\"id\":1,\"name\":\"jimo\"}}", s);
     }
+
+    @Test
+    public void testBean07() throws JsonProcessingException {
+        final Bean07 b = new Bean07("jimo", LocalDate.now());
+        final String s = new ObjectMapper().writeValueAsString(b);
+        System.out.println(s);
+    }
+
 }

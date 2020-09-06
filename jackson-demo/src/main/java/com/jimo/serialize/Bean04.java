@@ -1,4 +1,4 @@
-package com.jimo;
+package com.jimo.serialize;
 
 import com.fasterxml.jackson.annotation.JsonRawValue;
 

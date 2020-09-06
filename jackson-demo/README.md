@@ -243,3 +243,40 @@ public void testBean06() throws JsonProcessingException {
 {"user":{"id":1,"name":"jimo"}}
 ```
 
+# @JsonSerialize
+
+自定义序列化。
+
+```java
+public class Bean07 {
+
+    public String name;
+
+    @JsonSerialize(using = MyLocalDateSerializer.class)
+    public LocalDate date;
+
+    public Bean07(String name, LocalDate date) {
+        this.name = name;
+        this.date = date;
+    }
+}
+```
+测试：
+```java
+@Test
+public void testBean07() throws JsonProcessingException {
+    final Bean07 b = new Bean07("jimo", LocalDate.now());
+    final String s = new ObjectMapper().writeValueAsString(b);
+    System.out.println(s);
+}
+```
+
+在没有自定义序列化时：
+```json
+{"name":"jimo","date":{"year":2020,"month":"SEPTEMBER","dayOfMonth":6,"monthValue":9,"chronology":{"id":"ISO","calendarType":"iso8601"},"dayOfWeek":"SUNDAY","dayOfYear":250,"era":"CE","leapYear":true}}
+```
+定义了之后：
+```json
+{"name":"jimo","date":"2020-09-06"}
+```
+
