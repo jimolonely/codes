@@ -612,5 +612,35 @@ public void testBean17() throws JsonProcessingException {
 }
 ```
 
+## JsonAutoDetect
+
+自动检测，也可以加一些规则
+
+```java
+@JsonAutoDetect(fieldVisibility = JsonAutoDetect.Visibility.PROTECTED_AND_PUBLIC)
+public class Bean18 {
+    public int id;
+    protected String name;
+    private int age;
+
+    public Bean18(int id, String name, int age) {
+        this.id = id;
+        this.name = name;
+        this.age = age;
+    }
+}
+```
+测试：
+```java
+@Test
+public void testBean18() throws JsonProcessingException {
+    final Bean18 b = new Bean18(1, "jimo", 18);
+
+    final String s = new ObjectMapper().writeValueAsString(b);
+    System.out.println(s); // {"id":1,"name":"jimo"}
+}
+```
+
+
 
 

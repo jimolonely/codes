@@ -36,4 +36,12 @@ public class JacksonInclusionAnnotationTest {
         final String s = new ObjectMapper().writeValueAsString(b);
         System.out.println(s); // {"id":1}
     }
+
+    @Test
+    public void testBean18() throws JsonProcessingException {
+        final Bean18 b = new Bean18(1, "jimo", 18);
+
+        final String s = new ObjectMapper().writeValueAsString(b);
+        System.out.println(s); // {"id":1,"name":"jimo"}
+    }
 }
