@@ -284,3 +284,34 @@ public void testBean07() throws JsonProcessingException {
 {"name":"jimo","date":"2020-09-06"}
 ```
 
+# 反序列化注解
+
+## @JsonCreator
+
+用在构造方法或工厂方法，调节反序列化的过程。
+
+比如，下面将 `theName`属性映射到 `name` 属性上：
+```java
+public class Bean08 {
+    public int id;
+    public String name;
+
+    @JsonCreator
+    public Bean08(@JsonProperty("id") int id,
+                  @JsonProperty("theName") String name) {
+        this.id = id;
+        this.name = name;
+    }
+}
+```
+测试：
+```java
+@Test
+public void testBean08() throws JsonProcessingException {
+    String json = "{\"id\":1,\"theName\":\"jimo\"}";
+
+    final Bean08 b = new ObjectMapper().readValue(json, Bean08.class);
+    assertEquals("jimo", b.name);
+}
+```
+
