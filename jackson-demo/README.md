@@ -378,3 +378,35 @@ public void testBean10() throws JsonProcessingException {
 }
 ```
 
+## JsonSetter
+
+将任意方法变成一个setter方法
+
+```java
+public class Bean11 {
+    public int id;
+    private String name;
+
+    @JsonSetter("name")
+    public void setTheName(String name) {
+        this.name = name;
+    }
+
+    public String getName() {
+        return name;
+    }
+}
+```
+
+测试：
+```java
+@Test
+public void testBean11() throws JsonProcessingException {
+    String json = "{\"id\":1,\"name\":\"jimo\"}";
+
+    final Bean11 b = new ObjectMapper().readValue(json, Bean11.class);
+
+    assertEquals("jimo", b.getName());
+}
+```
+
