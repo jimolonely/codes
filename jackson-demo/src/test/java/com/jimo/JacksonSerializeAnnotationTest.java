@@ -20,7 +20,7 @@ import static org.junit.Assert.assertThat;
  * @version 1.0.0
  * @date 2020/9/6 16:51
  */
-public class JacksonAnnotationTest {
+public class JacksonSerializeAnnotationTest {
 
     @Test
     public void testBean01() throws JsonProcessingException {

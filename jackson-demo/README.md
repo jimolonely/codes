@@ -9,7 +9,11 @@
     </dependency>
 ```
 
-# @JsonAnyGetter
+# 序列化注解
+
+1-7
+
+## @JsonAnyGetter
 
 允许将map的字段变成标准字段.
 
@@ -67,7 +71,7 @@ public void testBean01() throws JsonProcessingException {
 
 可以看到，map被拉平了。
 
-# @JsonGetter
+## @JsonGetter
 
 ```java
 public class Bean02 {
@@ -113,7 +117,7 @@ public void testBean02() throws JsonProcessingException {
 }
 ```
 
-# @JsonPropertyOrder
+## @JsonPropertyOrder
 
 就是指定生成的json字符串中属性的顺序，默认是按照声明顺序。
 
@@ -142,7 +146,7 @@ public void testBean03() throws JsonProcessingException {
 ```
 也支持按字母序排列： `@JsonPropertyOrder(value = {"name", "id"}, alphabetic = true)`
 
-# @JsonRawValue 
+## @JsonRawValue 
 
 直接将字符串里的json写成json格式.
 
@@ -181,7 +185,7 @@ public void testBean04() throws JsonProcessingException {
 }
 ```
 
-# JsonValue
+## JsonValue
 
 ```java
 public enum Bean05 {
@@ -214,7 +218,7 @@ public void testBean05() throws JsonProcessingException {
 得到： `assertEquals("\"JIMO\"", s);`
 
 
-# @JsonRootName
+## @JsonRootName
 
 ```java
 @JsonRootName(value = "user")
@@ -243,7 +247,7 @@ public void testBean06() throws JsonProcessingException {
 {"user":{"id":1,"name":"jimo"}}
 ```
 
-# @JsonSerialize
+## @JsonSerialize
 
 自定义序列化。
 
