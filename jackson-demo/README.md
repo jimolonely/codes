@@ -315,3 +315,28 @@ public void testBean08() throws JsonProcessingException {
 }
 ```
 
+## JacksonInject
+
+表示属性的值不从json里读，而是由注解指定。
+
+```java
+public class Bean09 {
+    @JacksonInject
+    public int id;
+    public String name;
+}
+```
+测试：
+```java
+@Test
+public void testBean09() throws IOException {
+    String json = "{\"name\":\"jimo\"}";
+
+    final InjectableValues.Std inject = new InjectableValues.Std().addValue(int.class, 1);
+    final Bean09 b = new ObjectMapper().reader(inject).readValue(json, Bean09.class);
+
+    assertEquals(1, b.id);
+    assertEquals("jimo", b.name);
+}
+```
+
