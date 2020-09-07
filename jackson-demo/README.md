@@ -474,5 +474,36 @@ public void testBean12() throws JsonProcessingException {
 }
 ```
 
+## JsonAlias
+
+别名
+
+```java
+public class Bean13 {
+    @JsonAlias({"fName", "f_name"})
+    private String firstName;
+    private String lastName;
+
+    public String getFirstName() {
+        return firstName;
+    }
+
+    public String getLastName() {
+        return lastName;
+    }
+}
+```
+测试：
+```java
+
+@Test
+public void testBean13() throws JsonProcessingException {
+    String json = "{\"fName\":\"jimo\",\"lastName\":\"hehe\"}";
+
+    final Bean13 b = new ObjectMapper().readValue(json, Bean13.class);
+    assertEquals("jimo", b.getFirstName());
+}
+```
+
 
 
