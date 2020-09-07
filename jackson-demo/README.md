@@ -586,5 +586,31 @@ public void testBean16() throws JsonProcessingException {
 }
 ```
 
+## JsonInclude
+
+过滤某些字段，比如不为null的：
+```java
+@JsonInclude(JsonInclude.Include.NON_NULL)
+public class Bean17 {
+    public int id;
+    public String name;
+
+    public Bean17(int id, String name) {
+        this.id = id;
+        this.name = name;
+    }
+}
+```
+测试：
+```java
+@Test
+public void testBean17() throws JsonProcessingException {
+    final Bean17 b = new Bean17(1, null);
+
+    final String s = new ObjectMapper().writeValueAsString(b);
+    System.out.println(s); // {"id":1}
+}
+```
+
 
 

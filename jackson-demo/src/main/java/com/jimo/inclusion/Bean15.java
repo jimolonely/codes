@@ -1,4 +1,4 @@
-package com.jimo.deserialize;
+package com.jimo.inclusion;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 

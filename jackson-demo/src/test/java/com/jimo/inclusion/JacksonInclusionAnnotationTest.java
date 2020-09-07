@@ -2,7 +2,6 @@ package com.jimo.inclusion;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.jimo.deserialize.Bean16;
 import org.junit.Test;
 
 import static org.hamcrest.CoreMatchers.containsString;
@@ -25,6 +24,14 @@ public class JacksonInclusionAnnotationTest {
     public void testBean16() throws JsonProcessingException {
         final Bean16.Name name = new Bean16.Name("jimo", "hehe");
         final Bean16 b = new Bean16(1, name);
+
+        final String s = new ObjectMapper().writeValueAsString(b);
+        System.out.println(s); // {"id":1}
+    }
+
+    @Test
+    public void testBean17() throws JsonProcessingException {
+        final Bean17 b = new Bean17(1, null);
 
         final String s = new ObjectMapper().writeValueAsString(b);
         System.out.println(s); // {"id":1}
