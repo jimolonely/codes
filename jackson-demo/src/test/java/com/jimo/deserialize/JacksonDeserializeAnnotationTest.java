@@ -55,4 +55,12 @@ public class JacksonDeserializeAnnotationTest {
         assertEquals("jimo", b.getName());
     }
 
+    @Test
+    public void testBean12() throws JsonProcessingException {
+        String json = "{\"name\":\"jimo\",\"date\":\"2020-09-06\"}";
+
+        final Bean12 b = new ObjectMapper().readValue(json, Bean12.class);
+
+        assertEquals("2020-09-06", b.date.format(MyLocalDateDeserializer.formatter));
+    }
 }

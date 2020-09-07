@@ -265,6 +265,25 @@ public class Bean07 {
     }
 }
 ```
+```java
+public class MyLocalDateSerializer extends StdSerializer<LocalDate> {
+
+    private static DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd");
+
+    public MyLocalDateSerializer() {
+        this(null);
+    }
+
+    protected MyLocalDateSerializer(Class<LocalDate> t) {
+        super(t);
+    }
+
+    @Override
+    public void serialize(LocalDate localDate, JsonGenerator jsonGenerator, SerializerProvider serializerProvider) throws IOException {
+        jsonGenerator.writeString(formatter.format(localDate));
+    }
+}
+```
 测试：
 ```java
 @Test
@@ -409,4 +428,51 @@ public void testBean11() throws JsonProcessingException {
     assertEquals("jimo", b.getName());
 }
 ```
+
+## JsonDeserialize
+
+自定义反序列化
+
+```java
+public class Bean12 {
+    public String name;
+
+    @JsonDeserialize(using = MyLocalDateDeserializer.class)
+    public LocalDate date;
+}
+```
+
+```java
+public class MyLocalDateDeserializer extends StdDeserializer<LocalDate> {
+
+    public static DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd");
+
+    public MyLocalDateDeserializer() {
+        this(null);
+    }
+
+    protected MyLocalDateDeserializer(Class<?> vc) {
+        super(vc);
+    }
+
+    @Override
+    public LocalDate deserialize(JsonParser p, DeserializationContext ctx) throws IOException,
+            JsonProcessingException {
+        return LocalDate.parse(p.getText(), formatter);
+    }
+}
+```
+测试：
+```java
+@Test
+public void testBean12() throws JsonProcessingException {
+    String json = "{\"name\":\"jimo\",\"date\":\"2020-09-06\"}";
+
+    final Bean12 b = new ObjectMapper().readValue(json, Bean12.class);
+
+    assertEquals("2020-09-06", b.date.format(MyLocalDateDeserializer.formatter));
+}
+```
+
+
 
