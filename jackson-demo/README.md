@@ -505,5 +505,36 @@ public void testBean13() throws JsonProcessingException {
 }
 ```
 
+# 属性相关注解
+
+## @JsonIgnoreProperties
+
+忽略某些注解
+
+```java
+@JsonIgnoreProperties({"id"})
+public class Bean14 {
+    public int id;
+    public String name;
+
+    public Bean14(int id, String name) {
+        this.id = id;
+        this.name = name;
+    }
+}
+```
+测试：
+```java
+@Test
+public void testBean14() throws JsonProcessingException {
+    final Bean14 b = new Bean14(1, "jimo");
+
+    final String s = new ObjectMapper().writeValueAsString(b);
+
+    assertThat(s, containsString("jimo"));
+    assertThat(s, not(containsString("id")));
+}
+```
+
 
 
