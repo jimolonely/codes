@@ -509,7 +509,7 @@ public void testBean13() throws JsonProcessingException {
 
 ## @JsonIgnoreProperties
 
-忽略某些注解
+忽略某些注解, 用在类级别
 
 ```java
 @JsonIgnoreProperties({"id"})
@@ -533,6 +533,56 @@ public void testBean14() throws JsonProcessingException {
 
     assertThat(s, containsString("jimo"));
     assertThat(s, not(containsString("id")));
+}
+```
+
+## JsonIgnore
+
+也是忽略属性字段，用在字段级别
+
+```java
+public class Bean15 {
+    @JsonIgnore
+    public int id;
+    public String name;
+}
+```
+
+## JsonIgnoreType
+
+忽略某种类型的值。
+
+```java
+public class Bean16 {
+    public int id;
+    public Name name;
+
+    public Bean16(int id, Name name) {
+        this.id = id;
+        this.name = name;
+    }
+
+    @JsonIgnoreType
+    public static class Name {
+        public String firstName;
+        public String lastName;
+
+        public Name(String firstName, String lastName) {
+            this.firstName = firstName;
+            this.lastName = lastName;
+        }
+    }
+}
+```
+测试：
+```java
+@Test
+public void testBean16() throws JsonProcessingException {
+    final Bean16.Name name = new Bean16.Name("jimo", "hehe");
+    final Bean16 b = new Bean16(1, name);
+
+    final String s = new ObjectMapper().writeValueAsString(b);
+    System.out.println(s); // {"id":1}
 }
 ```
 
