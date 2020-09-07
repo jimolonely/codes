@@ -340,3 +340,41 @@ public void testBean09() throws IOException {
 }
 ```
 
+## JsonAnySetter
+
+和JsonAnyGetter相对应，将json里的k-v映射回map：
+
+```java
+public class Bean10 {
+    public String name;
+    private Map<String, String> properties;
+
+    public Bean10() {
+        this.properties = new HashMap<>();
+    }
+
+    @JsonAnySetter
+    public void add(String key, String value) {
+        properties.put(key, value);
+    }
+
+    public Map<String, String> getProperties() {
+        return properties;
+    }
+}
+```
+
+测试：
+```java
+@Test
+public void testBean10() throws JsonProcessingException {
+    String json = "{\"name\":\"jimo\",\"attr2\":\"val2\",\"attr1\":\"val1\"}";
+
+    final Bean10 b = new ObjectMapper().readerFor(Bean10.class).readValue(json);
+
+    assertEquals("jimo", b.name);
+    assertEquals("val1", b.getProperties().get("attr1"));
+    assertEquals("val2", b.getProperties().get("attr2"));
+}
+```
+

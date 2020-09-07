@@ -35,4 +35,14 @@ public class JacksonDeserializeAnnotationTest {
         assertEquals("jimo", b.name);
     }
 
+    @Test
+    public void testBean10() throws JsonProcessingException {
+        String json = "{\"name\":\"jimo\",\"attr2\":\"val2\",\"attr1\":\"val1\"}";
+
+        final Bean10 b = new ObjectMapper().readerFor(Bean10.class).readValue(json);
+
+        assertEquals("jimo", b.name);
+        assertEquals("val1", b.getProperties().get("attr1"));
+        assertEquals("val2", b.getProperties().get("attr2"));
+    }
 }
