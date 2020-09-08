@@ -887,5 +887,47 @@ public void testBean20() throws JsonProcessingException {
 }
 ```
 
+## @JsonUnwrapped
+
+解构
+
+```java
+public class Bean21 {
+    public int id;
+
+    @JsonUnwrapped
+    public Name name;
+
+    public Bean21(int id, Name name) {
+        this.id = id;
+        this.name = name;
+    }
+
+    public static class Name {
+        public String firstName;
+        public String lastName;
+
+        public Name(String firstName, String lastName) {
+            this.firstName = firstName;
+            this.lastName = lastName;
+        }
+
+        public Name() {
+        }
+    }
+}
+```
+测试：
+```java
+@Test
+public void testBean21() throws JsonProcessingException {
+    final Bean21.Name name = new Bean21.Name("jimo", "hehe");
+    final Bean21 b = new Bean21(1, name);
+
+    final String s = new ObjectMapper().writeValueAsString(b);
+    System.out.println(s);
+    // {"id":1,"firstName":"jimo","lastName":"hehe"}
+}
+```
 
 

@@ -34,4 +34,12 @@ public class JacksonGeneralAnnotationTest {
         System.out.println(b2.date); // Tue Sep 08 09:16:55 CST 2020
     }
 
+    @Test
+    public void testBean21() throws JsonProcessingException {
+        final Bean21.Name name = new Bean21.Name("jimo", "hehe");
+        final Bean21 b = new Bean21(1, name);
+
+        final String s = new ObjectMapper().writeValueAsString(b);
+        System.out.println(s);
+    }
 }
