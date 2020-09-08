@@ -806,4 +806,49 @@ public void testCatDeserialize() throws JsonProcessingException {
 }
 ```
 
+# 通用注解
+
+## @JsonProperty
+
+标注属性的
+
+```java
+public class Bean19 {
+    public int id;
+    public String name;
+
+    public Bean19() {
+    }
+
+    public Bean19(int id, String name) {
+        this.id = id;
+        this.name = name;
+    }
+
+    @JsonProperty("name")
+    public void setTheName(String name) {
+        this.name = name;
+    }
+
+    @JsonProperty("name")
+    public String getTheName() {
+        return name;
+    }
+}
+```
+测试：
+```java
+@Test
+public void testBean19() throws JsonProcessingException {
+    final Bean19 b = new Bean19(1, "jimo");
+
+    final String s = new ObjectMapper().writeValueAsString(b);
+    System.out.println(s);
+    // {"id":1,"name":"jimo"}
+
+    final Bean19 bb = new ObjectMapper().readValue(s, Bean19.class);
+    assertEquals("jimo", bb.getTheName());
+}
+```
+
 
