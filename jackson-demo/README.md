@@ -641,6 +641,169 @@ public void testBean18() throws JsonProcessingException {
 }
 ```
 
+# 类型处理注解
 
+* @JsonTypeInfo: 声明序列化时要包含的类型信息
+* @JsonSubTypes: 声明注解的字类型
+* @JsonTypeName: 给被注解的类定义一个逻辑类型名称
+
+看例子：
+
+一个动物园里有动物，动物的子类有狗和猫：
+```java
+public class ZooRaw {
+
+    public Animal animal;
+
+    public ZooRaw() {
+    }
+
+    public ZooRaw(Animal animal) {
+        this.animal = animal;
+    }
+
+    public static class Animal {
+        public String name;
+
+        public Animal(String name) {
+            this.name = name;
+        }
+
+        public Animal() {
+        }
+    }
+
+    public static class Dog extends Animal {
+        public double barkVolume;
+
+        public Dog(String name) {
+            super(name);
+        }
+    }
+
+    public static class Cat extends Animal {
+        boolean likeCream;
+        public int lives;
+
+        public Cat(String name, int lives) {
+            super(name);
+            this.lives = lives;
+        }
+
+        public Cat() {
+        }
+    }
+}
+```
+
+现在我们序列化动物园：
+```java
+@Test
+public void testZooEmpty() throws JsonProcessingException {
+    final ZooRaw.Dog dog = new ZooRaw.Dog("jimo");
+    final ZooRaw zoo = new ZooRaw(dog);
+
+    final String s = new ObjectMapper().writeValueAsString(zoo);
+    System.out.println(s); // {"animal":{"name":"jimo","barkVolume":0.0}}
+}
+```
+没问题，但是当我们反序列化时，得到的就不是dog的实例了：
+```java
+@Test
+public void testCatEmptyDeserialize() throws JsonProcessingException {
+    String json = "{\"animal\":{\"name\":\"lily\"}}";
+
+    final ZooRaw zoo = new ObjectMapper().readValue(json, ZooRaw.class);
+    assertEquals("lily", zoo.animal.name);
+    assertEquals(ZooRaw.Animal.class, zoo.animal.getClass());
+}
+```
+
+如何才能得到呢？使用上面的注解：
+
+```java
+public class Zoo {
+
+    public Animal animal;
+
+    public Zoo() {
+    }
+
+    public Zoo(Animal animal) {
+        this.animal = animal;
+    }
+
+    @JsonTypeInfo(
+            use = JsonTypeInfo.Id.NAME,
+            include = JsonTypeInfo.As.PROPERTY,
+            property = "type"
+    )
+    @JsonSubTypes({
+            @JsonSubTypes.Type(value = Dog.class, name = "dog"),
+            @JsonSubTypes.Type(value = Cat.class, name = "cat")
+    })
+    public static class Animal {
+        public String name;
+
+        public Animal(String name) {
+            this.name = name;
+        }
+
+        public Animal() {
+        }
+    }
+
+    @JsonTypeName("dog")
+    public static class Dog extends Animal {
+        public double barkVolume;
+
+        public Dog(String name) {
+            super(name);
+        }
+    }
+
+    @JsonTypeName("cat")
+    public static class Cat extends Animal {
+        boolean likeCream;
+        public int lives;
+
+        public Cat(String name, int lives) {
+            super(name);
+            this.lives = lives;
+        }
+
+        public Cat() {
+        }
+    }
+}
+```
+
+使用type字段区分类型，name区分同类型的不同类：
+
+```java
+@Test
+public void testZoo() throws JsonProcessingException {
+    final Zoo.Dog dog = new Zoo.Dog("jimo");
+    final Zoo zoo = new Zoo(dog);
+
+    final String s = new ObjectMapper().writeValueAsString(zoo);
+    System.out.println(s);
+    // {"animal":{"type":"dog","name":"jimo","barkVolume":0.0}}
+}
+```
+
+可以看到多了 `type` 字段。
+
+反序列化也ok：
+```java
+@Test
+public void testCatDeserialize() throws JsonProcessingException {
+    String json = "{\"animal\":{\"name\":\"lily\",\"type\":\"cat\"}}";
+
+    final Zoo zoo = new ObjectMapper().readValue(json, Zoo.class);
+    assertEquals("lily", zoo.animal.name);
+    assertEquals(Zoo.Cat.class, zoo.animal.getClass());
+}
+```
 
 
