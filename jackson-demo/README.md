@@ -851,4 +851,41 @@ public void testBean19() throws JsonProcessingException {
 }
 ```
 
+## @JsonFormat
+
+```java
+public class Bean20 {
+    public String name;
+
+    @JsonFormat(
+            shape = JsonFormat.Shape.STRING,
+            pattern = "yyyy-MM-dd hh:mm:ss"
+    )
+    public Date date;
+
+    public Bean20(String name, Date date) {
+        this.name = name;
+        this.date = date;
+    }
+
+    public Bean20() {
+    }
+}
+```
+测试：
+```java
+@Test
+public void testBean20() throws JsonProcessingException {
+    final Bean20 b1 = new Bean20("jimo", new Date());
+
+    final String s = new ObjectMapper().writeValueAsString(b1);
+    System.out.println(s);
+    // {"name":"jimo","date":"2020-09-08 01:16:55"}
+
+    final Bean20 b2 = new ObjectMapper().readValue(s, Bean20.class);
+    System.out.println(b2.date); // Tue Sep 08 09:16:55 CST 2020
+}
+```
+
+
 

@@ -4,6 +4,8 @@ import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.junit.Test;
 
+import java.util.Date;
+
 import static org.junit.Assert.assertEquals;
 
 public class JacksonGeneralAnnotationTest {
@@ -18,6 +20,18 @@ public class JacksonGeneralAnnotationTest {
 
         final Bean19 bb = new ObjectMapper().readValue(s, Bean19.class);
         assertEquals("jimo", bb.getTheName());
+    }
+
+    @Test
+    public void testBean20() throws JsonProcessingException {
+        final Bean20 b1 = new Bean20("jimo", new Date());
+
+        final String s = new ObjectMapper().writeValueAsString(b1);
+        System.out.println(s);
+        // {"name":"jimo","date":"2020-09-08 01:16:55"}
+
+        final Bean20 b2 = new ObjectMapper().readValue(s, Bean20.class);
+        System.out.println(b2.date); // Tue Sep 08 09:16:55 CST 2020
     }
 
 }
