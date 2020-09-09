@@ -990,12 +990,13 @@ public class A {
 类B：引用了A
 ```java
 public class B {
-
+    public int id;
     public String name;
 
     public List<A> items;
 
-    public B(String name) {
+    public B(int id, String name) {
+        this.id = id;
         this.name = name;
         items = new ArrayList<>();
     }
@@ -1006,7 +1007,7 @@ public class B {
 ```java
 @Test
 public void testRef() throws JsonProcessingException {
-    final B b = new B("jimo");
+    final B b = new B(2, "jimo");
     final A a = new A(1, b);
     b.items.add(a);
 
@@ -1039,13 +1040,14 @@ public class A {
 B.java
 ```java
 public class B {
-
+    public int id;
     public String name;
 
     @JsonBackReference
     public List<A> items;
 
-    public B(String name) {
+    public B(int id, String name) {
+        this.id = id;
         this.name = name;
         items = new ArrayList<>();
     }
@@ -1053,6 +1055,56 @@ public class B {
 ```
 结果为：
 ```json
-{"id":1,"b":{"name":"jimo"}}
+{"id":1,"b":{"id":2,"name":"jimo"}}
+```
+
+看起来结果里缺失了 items 字段，怎么解决看下面：
+
+## @JsonIdentityInfo
+
+使用ID来标识对象。
+
+A
+```java
+@JsonIdentityInfo(
+        generator = ObjectIdGenerators.PropertyGenerator.class,
+        property = "id"
+)
+public class A {
+
+    public int id;
+    //    @JsonManagedReference
+    public B b;
+
+    public A(int id, B b) {
+        this.id = id;
+        this.b = b;
+    }
+}
+```
+B
+```java
+@JsonIdentityInfo(
+        generator = ObjectIdGenerators.PropertyGenerator.class,
+        property = "id"
+)
+public class B {
+    public int id;
+    public String name;
+
+    //    @JsonBackReference
+    public List<A> items;
+
+    public B(int id, String name) {
+        this.id = id;
+        this.name = name;
+        items = new ArrayList<>();
+    }
+}
+```
+
+结果：
+```json
+{"id":1,"b":{"id":2,"name":"jimo","items":[1]}}
 ```
 

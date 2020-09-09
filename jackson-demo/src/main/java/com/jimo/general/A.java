@@ -1,11 +1,16 @@
 package com.jimo.general;
 
-import com.fasterxml.jackson.annotation.JsonManagedReference;
+import com.fasterxml.jackson.annotation.JsonIdentityInfo;
+import com.fasterxml.jackson.annotation.ObjectIdGenerators;
 
+@JsonIdentityInfo(
+        generator = ObjectIdGenerators.PropertyGenerator.class,
+        property = "id"
+)
 public class A {
 
     public int id;
-    @JsonManagedReference
+    //    @JsonManagedReference
     public B b;
 
     public A(int id, B b) {

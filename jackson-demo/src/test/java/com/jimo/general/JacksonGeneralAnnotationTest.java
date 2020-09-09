@@ -55,7 +55,7 @@ public class JacksonGeneralAnnotationTest {
 
     @Test
     public void testRef() throws JsonProcessingException {
-        final B b = new B("jimo");
+        final B b = new B(2, "jimo");
         final A a = new A(1, b);
         b.items.add(a);
 
