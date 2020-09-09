@@ -2,6 +2,8 @@ package com.jimo.general;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.databind.ser.impl.SimpleBeanPropertyFilter;
+import com.fasterxml.jackson.databind.ser.impl.SimpleFilterProvider;
 import org.junit.Test;
 
 import java.util.Date;
@@ -62,4 +64,16 @@ public class JacksonGeneralAnnotationTest {
         final String s = new ObjectMapper().writeValueAsString(a);
         System.out.println(s);
     }
+
+    @Test
+    public void testBean23() throws JsonProcessingException {
+        final Bean23 b = new Bean23(1, "jimo");
+
+        final SimpleFilterProvider filters = new SimpleFilterProvider().addFilter("myFilter",
+                SimpleBeanPropertyFilter.filterOutAllExcept("name"));
+
+        final String s = new ObjectMapper().writer(filters).writeValueAsString(b);
+        assertEquals("{\"name\":\"jimo\"}", s);
+    }
+
 }

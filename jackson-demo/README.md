@@ -1108,3 +1108,33 @@ public class B {
 {"id":1,"b":{"id":2,"name":"jimo","items":[1]}}
 ```
 
+## @JsonFilter
+
+在序列化时指定过滤器
+
+```json
+@JsonFilter("myFilter")
+public class Bean23 {
+    public int id;
+    public String name;
+
+    public Bean23(int id, String name) {
+        this.id = id;
+        this.name = name;
+    }
+}
+```
+测试
+```json
+@Test
+public void testBean23() throws JsonProcessingException {
+    final Bean23 b = new Bean23(1, "jimo");
+
+    final SimpleFilterProvider filters = new SimpleFilterProvider().addFilter("myFilter",
+            SimpleBeanPropertyFilter.filterOutAllExcept("name"));
+
+    final String s = new ObjectMapper().writer(filters).writeValueAsString(b);
+    assertEquals("{\"name\":\"jimo\"}", s);
+}
+```
+
