@@ -42,4 +42,14 @@ public class JacksonGeneralAnnotationTest {
         final String s = new ObjectMapper().writeValueAsString(b);
         System.out.println(s);
     }
+
+    @Test
+    public void testBean22() throws JsonProcessingException {
+        final Bean22 b = new Bean22(1, "jimo", "hehe");
+
+        final String s = new ObjectMapper()
+                .writerWithView(Bean22.Public.class)
+                .writeValueAsString(b);
+        System.out.println(s); // {"id":1,"firstName":"jimo"}
+    }
 }

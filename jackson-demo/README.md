@@ -930,4 +930,43 @@ public void testBean21() throws JsonProcessingException {
 }
 ```
 
+## @JsonView
+
+就像数据库的视图一样，序列化和反序列化时指定哪些被view标记的序列化：
+
+```java
+public class Bean22 {
+    @JsonView(Public.class)
+    public int id;
+    @JsonView(Public.class)
+    public String firstName;
+    @JsonView({Internal.class})
+    public String lastName;
+
+    public Bean22(int id, String firstName, String lastName) {
+        this.id = id;
+        this.firstName = firstName;
+        this.lastName = lastName;
+    }
+
+    public class Public {
+    }
+
+    public class Internal extends Public {
+    }
+}
+```
+
+测试：只序列化 `Public` 的：
+```java
+@Test
+public void testBean22() throws JsonProcessingException {
+    final Bean22 b = new Bean22(1, "jimo", "hehe");
+
+    final String s = new ObjectMapper()
+            .writerWithView(Bean22.Public.class)
+            .writeValueAsString(b);
+    System.out.println(s); // {"id":1,"firstName":"jimo"}
+}
+```
 
