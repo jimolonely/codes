@@ -970,3 +970,89 @@ public void testBean22() throws JsonProcessingException {
 }
 ```
 
+## @JsonManagedReference,@JsonBackReference
+
+处理父子关系循环，特别是递归情况下的序列化。
+
+有一个类A：引用了B
+```java
+public class A {
+
+    public int id;
+    public B b;
+
+    public A(int id, B b) {
+        this.id = id;
+        this.b = b;
+    }
+}
+```
+类B：引用了A
+```java
+public class B {
+
+    public String name;
+
+    public List<A> items;
+
+    public B(String name) {
+        this.name = name;
+        items = new ArrayList<>();
+    }
+}
+```
+
+我们来测试：
+```java
+@Test
+public void testRef() throws JsonProcessingException {
+    final B b = new B("jimo");
+    final A a = new A(1, b);
+    b.items.add(a);
+
+    final String s = new ObjectMapper().writeValueAsString(a);
+    System.out.println(s);
+}
+```
+
+得到一个栈溢出错误：
+```java
+Caused by: java.lang.StackOverflowError
+```
+
+现在修改：
+
+A.java
+```java
+public class A {
+
+    public int id;
+    @JsonManagedReference
+    public B b;
+
+    public A(int id, B b) {
+        this.id = id;
+        this.b = b;
+    }
+}
+```
+B.java
+```java
+public class B {
+
+    public String name;
+
+    @JsonBackReference
+    public List<A> items;
+
+    public B(String name) {
+        this.name = name;
+        items = new ArrayList<>();
+    }
+}
+```
+结果为：
+```json
+{"id":1,"b":{"name":"jimo"}}
+```
+

@@ -52,4 +52,14 @@ public class JacksonGeneralAnnotationTest {
                 .writeValueAsString(b);
         System.out.println(s); // {"id":1,"firstName":"jimo"}
     }
+
+    @Test
+    public void testRef() throws JsonProcessingException {
+        final B b = new B("jimo");
+        final A a = new A(1, b);
+        b.items.add(a);
+
+        final String s = new ObjectMapper().writeValueAsString(a);
+        System.out.println(s);
+    }
 }
