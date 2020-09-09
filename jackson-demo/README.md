@@ -1178,3 +1178,41 @@ public void testBean24() throws JsonProcessingException {
 }
 ```
 
+# 混入
+
+使用`mixIn(target,source)` 方法进行混入：
+
+```java
+public class Bean25 {
+    public int id;
+    public String name;
+    public A a;
+
+    public Bean25(int id, String name, A a) {
+        this.id = id;
+        this.name = name;
+        this.a = a;
+    }
+
+    public class A {
+    }
+
+    @JsonIgnoreType
+    public class B {
+    }
+}
+```
+测试：混入B类上的注解到A类后，A就被忽略了
+```java
+@Test
+public void testBean25() throws JsonProcessingException {
+    final Bean25 b1 = new Bean25(1, "jimo", null);
+
+    final String s = new ObjectMapper().writeValueAsString(b1);
+    assertEquals("{\"id\":1,\"name\":\"jimo\",\"a\":null}", s);
+
+    final String s1 = new ObjectMapper().addMixIn(Bean25.A.class, Bean25.B.class).writeValueAsString(b1);
+    assertEquals("{\"id\":1,\"name\":\"jimo\"}", s1);
+}
+```
+
