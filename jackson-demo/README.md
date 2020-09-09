@@ -1112,7 +1112,7 @@ public class B {
 
 在序列化时指定过滤器
 
-```json
+```java
 @JsonFilter("myFilter")
 public class Bean23 {
     public int id;
@@ -1125,7 +1125,7 @@ public class Bean23 {
 }
 ```
 测试
-```json
+```java
 @Test
 public void testBean23() throws JsonProcessingException {
     final Bean23 b = new Bean23(1, "jimo");
@@ -1135,6 +1135,46 @@ public void testBean23() throws JsonProcessingException {
 
     final String s = new ObjectMapper().writer(filters).writeValueAsString(b);
     assertEquals("{\"name\":\"jimo\"}", s);
+}
+```
+
+# 自定义注解
+
+## @JacksonAnnotationInside
+
+注解：排列列的顺序，忽略为null的
+```java
+@Retention(RetentionPolicy.RUNTIME)
+@JacksonAnnotationsInside
+@JsonInclude(JsonInclude.Include.NON_NULL)
+@JsonPropertyOrder({"name", "id", "date"})
+public @interface CustomOrderAnnotation {
+}
+```
+
+定义bean
+```java
+@CustomOrderAnnotation
+public class Bean24 {
+    public int id;
+    public String name;
+    public Date date;
+
+    public Bean24(int id, String name, Date date) {
+        this.id = id;
+        this.name = name;
+        this.date = date;
+    }
+}
+```
+测试：
+```java
+@Test
+public void testBean24() throws JsonProcessingException {
+    final Bean24 b = new Bean24(1, "jimo", null);
+
+    final String s = new ObjectMapper().writeValueAsString(b);
+    assertEquals("{\"name\":\"jimo\",\"id\":1}", s);
 }
 ```
 
