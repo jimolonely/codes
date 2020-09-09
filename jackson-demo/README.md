@@ -1180,7 +1180,7 @@ public void testBean24() throws JsonProcessingException {
 
 # 混入
 
-使用`mixIn(target,source)` 方法进行混入：
+使用`addMixIn(target,source)` 方法进行混入：
 
 ```java
 public class Bean25 {
@@ -1213,6 +1213,34 @@ public void testBean25() throws JsonProcessingException {
 
     final String s1 = new ObjectMapper().addMixIn(Bean25.A.class, Bean25.B.class).writeValueAsString(b1);
     assertEquals("{\"id\":1,\"name\":\"jimo\"}", s1);
+}
+```
+
+# 禁用注解
+
+某些情况下想要禁止注解生效
+```java
+@JsonInclude(JsonInclude.Include.NON_NULL)
+@JsonPropertyOrder({"name", "id"})
+public class Bean26 {
+    public int id;
+    public String name;
+
+    public Bean26(int id, String name) {
+        this.id = id;
+        this.name = name;
+    }
+}
+```
+
+测试：
+```java
+@Test
+public void testBean26() throws JsonProcessingException {
+    final Bean26 b = new Bean26(1, null);
+
+    final String s = new ObjectMapper().disable(MapperFeature.USE_ANNOTATIONS).writeValueAsString(b);
+    assertEquals("{\"id\":1,\"name\":null}", s);
 }
 ```
 

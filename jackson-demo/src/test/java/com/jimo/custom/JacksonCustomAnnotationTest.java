@@ -1,6 +1,7 @@
 package com.jimo.custom;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.MapperFeature;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.junit.Test;
 
@@ -27,4 +28,11 @@ public class JacksonCustomAnnotationTest {
         assertEquals("{\"id\":1,\"name\":\"jimo\"}", s1);
     }
 
+    @Test
+    public void testBean26() throws JsonProcessingException {
+        final Bean26 b = new Bean26(1, null);
+
+        final String s = new ObjectMapper().disable(MapperFeature.USE_ANNOTATIONS).writeValueAsString(b);
+        assertEquals("{\"id\":1,\"name\":null}", s);
+    }
 }
