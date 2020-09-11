@@ -6,6 +6,8 @@
 * 学习永不迟到
 * 学习永无止境
 
+官方教程：[https://github.com/google/guava/wiki](https://github.com/google/guava/wiki)
+
 # 引入依赖
 
 ```xml
