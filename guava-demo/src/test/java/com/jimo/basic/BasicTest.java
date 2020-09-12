@@ -2,9 +2,11 @@ package com.jimo.basic;
 
 import com.google.common.base.Optional;
 import com.google.common.base.Preconditions;
+import com.google.common.collect.Ordering;
 import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -40,5 +42,12 @@ public class BasicTest {
         assertThrows(NullPointerException.class, () -> Preconditions.checkNotNull(null));
         assertThrows(IllegalStateException.class, () -> Preconditions.checkState(list.size() > 0));
         assertThrows(IndexOutOfBoundsException.class, () -> Preconditions.checkElementIndex(10, list.size()));
+    }
+
+    @Test
+    void testOrdering() {
+        List<String> list = Arrays.asList("ac", "b", "k", "sd", "tr", "sdf", "hee", null);
+        final Ordering<Comparable> natural = Ordering.natural();
+
     }
 }
