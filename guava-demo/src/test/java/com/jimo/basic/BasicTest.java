@@ -1,13 +1,16 @@
 package com.jimo.basic;
 
+import com.google.common.base.MoreObjects;
 import com.google.common.base.Optional;
 import com.google.common.base.Preconditions;
+import com.google.common.collect.ComparisonChain;
 import com.google.common.collect.Ordering;
 import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.Objects;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -49,5 +52,53 @@ public class BasicTest {
         List<String> list = Arrays.asList("ac", "b", "k", "sd", "tr", "sdf", "hee", null);
         final Ordering<Comparable> natural = Ordering.natural();
 
+        // TODO
+    }
+
+    @Test
+    void testObjects() {
+        // JDK7提供了同样的功能
+        // equals
+        assertTrue(Objects.equals("a", "a"));
+        assertFalse(Objects.equals("a", null));
+        assertTrue(Objects.equals(null, null));
+
+        // hashcode
+        assertEquals(2530, Objects.hash("1", "2"));
+
+        // toString
+        System.out.println(MoreObjects.toStringHelper(this).add("x", 1).toString());
+        // BasicTest{x=1}
+        System.out.println(MoreObjects.toStringHelper("MyObject").add("x", 1).toString());
+        // MyObject{x=1}
+
+        // compare/compareTo
+        final Foo foo1 = new Foo("jimo", 18, Foo.SEX.FM);
+        final Foo foo2 = new Foo("jimo", 20, Foo.SEX.M);
+        assertTrue(foo1.compareTo(foo2) < 0);
+    }
+
+    static class Foo {
+        private String name;
+        private int age;
+        private SEX sex;
+
+        public Foo(String name, int age, SEX sex) {
+            this.name = name;
+            this.age = age;
+            this.sex = sex;
+        }
+
+        enum SEX {
+            M, FM
+        }
+
+        public int compareTo(Foo that) {
+            return ComparisonChain.start()
+                    .compare(this.name, that.name)
+                    .compare(this.age, that.age)
+                    .compare(this.sex, that.sex, Ordering.natural().nullsFirst())
+                    .result();
+        }
     }
 }

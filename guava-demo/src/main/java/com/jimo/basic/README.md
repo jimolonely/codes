@@ -44,3 +44,56 @@ public void testPreconditions() {
 
 # Ordering
 
+TODO
+
+# Objects
+
+```java
+@Test
+void testObjects() {
+    // JDK7提供了同样的功能
+    // equals
+    assertTrue(Objects.equals("a", "a"));
+    assertFalse(Objects.equals("a", null));
+    assertTrue(Objects.equals(null, null));
+
+    // hashcode
+    assertEquals(2530, Objects.hash("1", "2"));
+
+    // toString
+    System.out.println(MoreObjects.toStringHelper(this).add("x", 1).toString());
+    // BasicTest{x=1}
+    System.out.println(MoreObjects.toStringHelper("MyObject").add("x", 1).toString());
+    // MyObject{x=1}
+
+    // compare/compareTo
+    final Foo foo1 = new Foo("jimo", 18, Foo.SEX.FM);
+    final Foo foo2 = new Foo("jimo", 20, Foo.SEX.M);
+    assertTrue(foo1.compareTo(foo2) < 0);
+}
+
+static class Foo {
+    private String name;
+    private int age;
+    private SEX sex;
+
+    public Foo(String name, int age, SEX sex) {
+        this.name = name;
+        this.age = age;
+        this.sex = sex;
+    }
+
+    enum SEX {
+        M, FM
+    }
+
+    public int compareTo(Foo that) {
+        return ComparisonChain.start()
+                .compare(this.name, that.name)
+                .compare(this.age, that.age)
+                .compare(this.sex, that.sex, Ordering.natural().nullsFirst())
+                .result();
+    }
+}
+```
+
