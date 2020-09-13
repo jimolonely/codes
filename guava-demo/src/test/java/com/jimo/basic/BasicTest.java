@@ -3,10 +3,13 @@ package com.jimo.basic;
 import com.google.common.base.MoreObjects;
 import com.google.common.base.Optional;
 import com.google.common.base.Preconditions;
+import com.google.common.base.Throwables;
 import com.google.common.collect.ComparisonChain;
 import com.google.common.collect.Ordering;
 import org.junit.jupiter.api.Test;
 
+import java.io.IOException;
+import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -100,5 +103,22 @@ public class BasicTest {
                     .compare(this.sex, that.sex, Ordering.natural().nullsFirst())
                     .result();
         }
+    }
+
+    @Test
+    void testThrowables() throws IOException, SQLException {
+        try {
+            manyExcpFunc();
+        } catch (IllegalArgumentException e) {
+            // 处理已知的异常
+        } catch (Throwable t) {
+            Throwables.throwIfInstanceOf(t, IOException.class);
+            Throwables.throwIfInstanceOf(t, SQLException.class);
+            Throwables.throwIfUnchecked(t);
+            throw new RuntimeException(t);
+        }
+    }
+
+    void manyExcpFunc() {
     }
 }

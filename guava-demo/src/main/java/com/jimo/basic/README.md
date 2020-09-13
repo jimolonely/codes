@@ -97,3 +97,25 @@ static class Foo {
 }
 ```
 
+# Throwables
+
+处理异常
+
+```java
+@Test
+void testThrowables() throws IOException, SQLException {
+    try {
+        manyExcpFunc();
+    } catch (IllegalArgumentException e) {
+        // 处理已知的异常
+    } catch (Throwable t) {
+        Throwables.throwIfInstanceOf(t, IOException.class);
+        Throwables.throwIfInstanceOf(t, SQLException.class);
+        Throwables.throwIfUnchecked(t);
+        throw new RuntimeException(t);
+    }
+}
+
+void manyExcpFunc() {
+}
+```
