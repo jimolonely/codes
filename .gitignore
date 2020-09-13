@@ -3,6 +3,6 @@
 */out/*
 .idea
 
-*/.gradle
+**/.gradle
 
-*/gradle
+**/gradle
