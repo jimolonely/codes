@@ -1,4 +1,6 @@
 
+[https://github.com/google/guava/wiki/NewCollectionTypesExplained](https://github.com/google/guava/wiki/NewCollectionTypesExplained)
+
 # 不可变的好处
 
 * 使用不信任的库时安全
@@ -16,6 +18,25 @@ void testCol() {
     // 深度复制
     final ImmutableSet<String> newColor = ImmutableSet.copyOf(color);
     assertEquals(3, newColor.size());
+}
+```
+
+# Multiset
+
+轻松实现map统计次数的功能
+```java
+@Test
+void testMultiSet() {
+    final ImmutableMultiset<String> multiset = ImmutableMultiset.of("hehe", "hello", "jimo", "hehe", "jimo");
+    assertEquals(5, multiset.size());
+    for (Multiset.Entry<String> e : multiset.entrySet()) {
+        System.out.println(String.format("key=%s,count=%s", e.getElement(), e.getCount()));
+    }
+    /*
+     * key=hehe,count=2
+     * key=hello,count=1
+     * key=jimo,count=2
+     */
 }
 ```
 
