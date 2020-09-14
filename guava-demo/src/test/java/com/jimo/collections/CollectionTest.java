@@ -1,8 +1,6 @@
 package com.jimo.collections;
 
-import com.google.common.collect.ImmutableMultiset;
-import com.google.common.collect.ImmutableSet;
-import com.google.common.collect.Multiset;
+import com.google.common.collect.*;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -31,5 +29,21 @@ public class CollectionTest {
          * key=hello,count=1
          * key=jimo,count=2
          */
+    }
+
+    @Test
+    void testMultimap() {
+        final ListMultimap<String, Integer> lmt = MultimapBuilder.hashKeys().arrayListValues().build();
+
+        lmt.put("a", 1);
+        lmt.put("a", 2);
+        lmt.put("a", 3);
+        lmt.put("b", 4);
+        lmt.put("b", 5);
+        lmt.put("c", 6);
+
+        assertEquals(3, lmt.get("a").size());
+        assertEquals(2, lmt.get("b").size());
+        assertEquals(1, lmt.get("c").size());
     }
 }

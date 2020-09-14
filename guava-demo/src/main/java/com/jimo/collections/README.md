@@ -40,3 +40,25 @@ void testMultiSet() {
 }
 ```
 
+# multimap
+
+multimap不是个map
+
+```java
+@Test
+void testMultimap() {
+    final ListMultimap<String, Integer> lmt = MultimapBuilder.hashKeys().arrayListValues().build();
+
+    lmt.put("a", 1);
+    lmt.put("a", 2);
+    lmt.put("a", 3);
+    lmt.put("b", 4);
+    lmt.put("b", 5);
+    lmt.put("c", 6);
+
+    assertEquals(3, lmt.get("a").size());
+    assertEquals(2, lmt.get("b").size());
+    assertEquals(1, lmt.get("c").size());
+}
+```
+
