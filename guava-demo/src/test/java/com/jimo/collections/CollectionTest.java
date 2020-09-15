@@ -6,7 +6,7 @@ import org.junit.jupiter.api.Test;
 import java.util.Map;
 import java.util.Set;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.*;
 
 public class CollectionTest {
 
@@ -85,5 +85,21 @@ public class CollectionTest {
 
         assertEquals(1, numbers.getInstance(Integer.class));
         assertEquals(1.1d, numbers.getInstance(Double.class));
+    }
+
+    @Test
+    void testRangeSet() {
+        final RangeSet<Integer> rangeSet = TreeRangeSet.create();
+        rangeSet.add(Range.closed(1, 10)); // [1,10]
+        assertEquals(1, rangeSet.asRanges().size());
+        assertTrue(rangeSet.encloses(Range.closed(2, 8)));
+
+        rangeSet.add(Range.closed(11, 15));// [1,10],[11,15]
+        assertEquals(2, rangeSet.asRanges().size());
+        assertFalse(rangeSet.encloses(Range.closed(15, 16)));
+
+        rangeSet.add(Range.closed(15, 20));// [1,10],[11,20] // 合并
+        rangeSet.add(Range.closed(0, 0));// [1,10],[11,20] // 空的会忽略
+        rangeSet.remove(Range.open(5, 10));// [1,5],[10,10],[11,20]
     }
 }
