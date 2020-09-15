@@ -76,4 +76,14 @@ public class CollectionTest {
         final Set<Table.Cell<String, String, Integer>> cells = weightGraph.cellSet();
         final Map<String, Map<String, Integer>> rowMap = weightGraph.rowMap();
     }
+
+    @Test
+    void testClassToInstanceMap() {
+        final MutableClassToInstanceMap<Number> numbers = MutableClassToInstanceMap.create();
+        numbers.putInstance(Integer.class, 1);
+        numbers.putInstance(Double.class, 1.1d);
+
+        assertEquals(1, numbers.getInstance(Integer.class));
+        assertEquals(1.1d, numbers.getInstance(Double.class));
+    }
 }

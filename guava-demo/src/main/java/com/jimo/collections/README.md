@@ -100,3 +100,17 @@ void testTable() {
 }
 ```
 
+# classToInstanceMap
+
+```java
+@Test
+void testClassToInstanceMap() {
+    final MutableClassToInstanceMap<Number> numbers = MutableClassToInstanceMap.create();
+    numbers.putInstance(Integer.class, 1);
+    numbers.putInstance(Double.class, 1.1d);
+
+    assertEquals(1, numbers.getInstance(Integer.class));
+    assertEquals(1.1d, numbers.getInstance(Double.class));
+}
+```
+
