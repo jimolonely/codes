@@ -3,6 +3,9 @@ package com.jimo.collections;
 import com.google.common.collect.*;
 import org.junit.jupiter.api.Test;
 
+import java.util.Map;
+import java.util.Set;
+
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class CollectionTest {
@@ -55,5 +58,22 @@ public class CollectionTest {
 
         assertEquals("jimo", userId.inverse().get(1));
         assertEquals("hehe", userId.inverse().get(2));
+    }
+
+    @Test
+    void testTable() {
+        Table<String, String, Integer> weightGraph = HashBasedTable.create();
+        weightGraph.put("v1", "v2", 4);
+        weightGraph.put("v1", "v3", 20);
+        weightGraph.put("v2", "v3", 5);
+
+        final Map<String, Integer> v1 = weightGraph.row("v1");
+        assertEquals(4, v1.get("v2"));
+
+        final Map<String, Integer> v3 = weightGraph.column("v3");
+        assertEquals(5, v3.get("v2"));
+
+        final Set<Table.Cell<String, String, Integer>> cells = weightGraph.cellSet();
+        final Map<String, Map<String, Integer>> rowMap = weightGraph.rowMap();
     }
 }

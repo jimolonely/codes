@@ -77,4 +77,26 @@ void testBiMap() {
 }
 ```
 
+# Table
+
+由行、列和值构成，能单独由行和列获取map
+
+```java
+@Test
+void testTable() {
+    Table<String, String, Integer> weightGraph = HashBasedTable.create();
+    weightGraph.put("v1", "v2", 4);
+    weightGraph.put("v1", "v3", 20);
+    weightGraph.put("v2", "v3", 5);
+
+    final Map<String, Integer> v1 = weightGraph.row("v1");
+    assertEquals(4, v1.get("v2"));
+
+    final Map<String, Integer> v3 = weightGraph.column("v3");
+    assertEquals(5, v3.get("v2"));
+
+    final Set<Table.Cell<String, String, Integer>> cells = weightGraph.cellSet();
+    final Map<String, Map<String, Integer>> rowMap = weightGraph.rowMap();
+}
+```
 
