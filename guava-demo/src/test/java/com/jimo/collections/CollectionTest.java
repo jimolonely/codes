@@ -46,4 +46,14 @@ public class CollectionTest {
         assertEquals(2, lmt.get("b").size());
         assertEquals(1, lmt.get("c").size());
     }
+
+    @Test
+    void testBiMap() {
+        final HashBiMap<String, Integer> userId = HashBiMap.create();
+        userId.put("jimo", 1);
+        userId.put("hehe", 2);
+
+        assertEquals("jimo", userId.inverse().get(1));
+        assertEquals("hehe", userId.inverse().get(2));
+    }
 }

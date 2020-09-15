@@ -62,3 +62,19 @@ void testMultimap() {
 }
 ```
 
+# BiMap
+
+允许反向一个map的k-v
+```java
+@Test
+void testBiMap() {
+    final HashBiMap<String, Integer> userId = HashBiMap.create();
+    userId.put("jimo", 1);
+    userId.put("hehe", 2);
+
+    assertEquals("jimo", userId.inverse().get(1));
+    assertEquals("hehe", userId.inverse().get(2));
+}
+```
+
+
