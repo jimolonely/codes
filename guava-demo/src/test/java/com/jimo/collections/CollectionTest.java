@@ -102,4 +102,14 @@ public class CollectionTest {
         rangeSet.add(Range.closed(0, 0));// [1,10],[11,20] // 空的会忽略
         rangeSet.remove(Range.open(5, 10));// [1,5],[10,10],[11,20]
     }
+
+    @Test
+    void testRangeMap() {
+        final TreeRangeMap<Integer, String> rangeMap = TreeRangeMap.create();
+        rangeMap.put(Range.closed(1, 10), "foo"); // {[1, 10] => "foo"}
+        rangeMap.put(Range.open(3, 6), "bar"); // {[1, 3] => "foo", (3, 6) => "bar", [6, 10] => "foo"}
+        rangeMap.put(Range.open(10, 20), "foo"); // {[1, 3] => "foo", (3, 6) => "bar", [6, 10] => "foo", (10, 20) =>
+        // "foo"}
+        rangeMap.remove(Range.closed(5, 11)); // {[1, 3] => "foo", (3, 5) => "bar", (11, 20) => "foo"}
+    }
 }
