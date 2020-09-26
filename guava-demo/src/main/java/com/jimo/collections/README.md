@@ -1,13 +1,15 @@
 
+# 新的集合类型
+
 [https://github.com/google/guava/wiki/NewCollectionTypesExplained](https://github.com/google/guava/wiki/NewCollectionTypesExplained)
 
-# 不可变的好处
+## 不可变的好处
 
 * 使用不信任的库时安全
 * 线程安全
 * 更高效：不可变比可变消耗更少，不需要支持改变
 
-# 简介
+## 简介
 
 ```java
 @Test
@@ -21,7 +23,7 @@ void testCol() {
 }
 ```
 
-# Multiset
+## Multiset
 
 轻松实现map统计次数的功能
 ```java
@@ -40,7 +42,7 @@ void testMultiSet() {
 }
 ```
 
-# multimap
+## multimap
 
 multimap不是个map
 
@@ -62,7 +64,7 @@ void testMultimap() {
 }
 ```
 
-# BiMap
+## BiMap
 
 允许反向一个map的k-v
 ```java
@@ -77,7 +79,7 @@ void testBiMap() {
 }
 ```
 
-# Table
+## Table
 
 由行、列和值构成，能单独由行和列获取map
 
@@ -100,7 +102,7 @@ void testTable() {
 }
 ```
 
-# classToInstanceMap
+## classToInstanceMap
 
 ```java
 @Test
@@ -114,7 +116,7 @@ void testClassToInstanceMap() {
 }
 ```
 
-# RangeSet
+## RangeSet
 
 保存一些范围集合，自动合并范围，可以判断范围的交和包含。
 ```java
@@ -135,7 +137,7 @@ void testRangeSet() {
 }
 ```
 
-# RangeMap
+## RangeMap
 
 范围为key，可以按范围操作map
 ```java
@@ -149,4 +151,80 @@ void testRangeMap() {
     rangeMap.remove(Range.closed(5, 11)); // {[1, 3] => "foo", (3, 5) => "bar", (11, 20) => "foo"}
 }
 ```
+
+# 有用的集合工具类
+
+[https://github.com/google/guava/wiki/CollectionUtilitiesExplained](https://github.com/google/guava/wiki/CollectionUtilitiesExplained)
+
+## 静态构造器
+
+```java
+@Test
+void testStaticConstructor() {
+    final List<String> list = Lists.newArrayList("A", "b", "C");
+    final ArrayList<String> list1 = Lists.newArrayListWithCapacity(10);
+
+    Map<String, String> map = Maps.newLinkedHashMap();
+
+    final HashSet<Object> set = Sets.newHashSet();
+
+    final HashMultiset<Object> multiset = HashMultiset.create();
+}
+```
+
+## 迭代器
+
+也就是 Iterables类对迭代器接口的实现封装的一些静态方法。
+
+```java
+@Test
+void testIterables() {
+    final Iterable<Integer> concat = Iterables.concat(Ints.asList(1, 2, 3), Ints.asList(4, 5, 6));
+
+    final Integer last = Iterables.getLast(concat);
+    assertEquals(6, last);
+
+    final Iterable<Integer> limit = Iterables.limit(concat, 2);
+    assertTrue(Iterables.elementsEqual(limit, Ints.asList(1, 2)));
+}
+```
+
+## 比较器
+
+Comparators类
+
+```java
+@Test
+void testComparators() {
+    assertEquals(4, Collections.max(Longs.asList(1, 2, 3, 4)));
+}
+```
+
+## Sets
+
+包含一些集合操作：交并差
+
+```java
+@Test
+void testSets() {
+    final ImmutableSet<String> s1 = ImmutableSet.of("a", "b", "c");
+    final ImmutableSet<String> s2 = ImmutableSet.of("a", "c", "d");
+
+    final Sets.SetView<String> intersection = Sets.intersection(s1, s2);
+    assertEquals(2, intersection.size());
+
+    final Sets.SetView<String> union = Sets.union(s1, s2);
+    assertEquals(4, union.size());
+
+    final Sets.SetView<String> difference = Sets.difference(s1, s2);
+    assertEquals(1, difference.size());
+}
+```
+
+
+## Maps
+
+同样集合的操作也适用于map作用于key。
+
+
 
