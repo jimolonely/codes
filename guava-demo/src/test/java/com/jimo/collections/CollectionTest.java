@@ -3,6 +3,7 @@ package com.jimo.collections;
 import com.google.common.collect.*;
 import org.junit.jupiter.api.Test;
 
+import java.util.ArrayList;
 import java.util.Map;
 import java.util.Set;
 
@@ -111,5 +112,21 @@ public class CollectionTest {
         rangeMap.put(Range.open(10, 20), "foo"); // {[1, 3] => "foo", (3, 6) => "bar", [6, 10] => "foo", (10, 20) =>
         // "foo"}
         rangeMap.remove(Range.closed(5, 11)); // {[1, 3] => "foo", (3, 5) => "bar", (11, 20) => "foo"}
+    }
+
+    @Test
+    void testPeekingIterator() {
+        // 去重
+        final ArrayList<Integer> result = Lists.newArrayList();
+        final ArrayList<Integer> integers = Lists.newArrayList(1, 2, 2, 3, 4, 5, 5);
+        final PeekingIterator<Integer> it = Iterators.peekingIterator(integers.iterator());
+        while (it.hasNext()) {
+            final Integer cur = it.next();
+            while (it.hasNext() && it.peek().equals(cur)) {
+                it.next();
+            }
+            result.add(cur);
+        }
+        assertEquals(5, result.size());
     }
 }

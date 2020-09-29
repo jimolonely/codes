@@ -227,4 +227,28 @@ void testSets() {
 同样集合的操作也适用于map作用于key。
 
 
+# 集合帮助类
+
+## PeekingIterator
+
+允许在迭代时调用peek方法查看当前元素而不移动游标。
+
+```java
+@Test
+void testPeekingIterator() {
+    // 去重
+    final ArrayList<Integer> result = Lists.newArrayList();
+    final ArrayList<Integer> integers = Lists.newArrayList(1, 2, 2, 3, 4, 5, 5);
+    final PeekingIterator<Integer> it = Iterators.peekingIterator(integers.iterator());
+    while (it.hasNext()) {
+        final Integer cur = it.next();
+        while (it.hasNext() && it.peek().equals(cur)) {
+            it.next();
+        }
+        result.add(cur);
+    }
+    assertEquals(5, result.size());
+}
+```
+
 
