@@ -16,6 +16,7 @@ public class ToolMain {
         final JCommander cmd = JCommander.newBuilder()
                 .addObject(new ToolMain())
                 .addCommand("merge", cmdMerge)
+                .addCommand("delete", cmdMerge)
                 .build();
 
         cmd.parse(args);
