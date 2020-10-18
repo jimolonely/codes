@@ -12,6 +12,14 @@ public interface BraceDemoConstants {
      * End of File.
      */
     int EOF = 0;
+    /**
+     * RegularExpression Id.
+     */
+    int LBRACE = 5;
+    /**
+     * RegularExpression Id.
+     */
+    int RBRACE = 6;
 
     /**
      * Lexical state.

@@ -1,5 +1,6 @@
 options {
     STATIC = true;
+    UNICODE_INPUT = true;
 }
 
 PARSER_BEGIN(BraceDemo)
@@ -22,15 +23,26 @@ SKIP : {
     | "\r"
 }
 
-void input():
-{}
-{
-    MatchedBraces() <EOF>
+TOKEN : {
+    <LBRACE: "{">
+    | <RBRACE: "}">
 }
 
-void MatchedBraces():
-{}
+void input():
+{int count;}
 {
-    "{" [ MatchedBraces() ] "}"
+    count = MatchedBraces() <EOF>
+    {
+        System.out.println("level of brace :"+count);
+    }
+}
+
+int MatchedBraces():
+{int nested_count = 0;}
+{
+    <LBRACE> [nested_count = MatchedBraces() ] <RBRACE>
+    {
+        return ++nested_count;
+    }
 }
 
