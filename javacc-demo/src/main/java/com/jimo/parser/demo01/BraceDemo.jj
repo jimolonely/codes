@@ -1,0 +1,29 @@
+options {
+    STATIC = false;
+}
+
+PARSER_BEGIN(BraceDemo)
+
+package com.jimo.parser.demo01;
+
+public class BraceDemo {
+
+    public static void main(String[] args) throws Exception{
+        final BraceDemo b = new BraceDemo(System.in);
+        b.input();
+    }
+}
+PARSER_END(BraceDemo)
+
+void input():
+{}
+{
+    MatchedBraces() ("\n" | "\r" | "\n\r")* <EOF>
+}
+
+void MatchedBraces():
+{}
+{
+    "{" [ MatchedBraces() ] "}"
+}
+
