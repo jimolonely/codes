@@ -1,5 +1,5 @@
 options {
-    STATIC = false;
+    STATIC = true;
 }
 
 PARSER_BEGIN(BraceDemo)
@@ -15,10 +15,17 @@ public class BraceDemo {
 }
 PARSER_END(BraceDemo)
 
+SKIP : {
+    " "
+    | "\t"
+    | "\n"
+    | "\r"
+}
+
 void input():
 {}
 {
-    MatchedBraces() ("\n" | "\r" | "\n\r")* <EOF>
+    MatchedBraces() <EOF>
 }
 
 void MatchedBraces():

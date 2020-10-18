@@ -10,48 +10,20 @@ public class BraceDemo implements BraceDemoConstants {
 
   static final public void input() throws ParseException {
     MatchedBraces();
-    label_1:
-    while (true) {
-      switch ((jj_ntk == -1) ? jj_ntk() : jj_ntk) {
-        case 1:
-        case 2:
-        case 3:
-          ;
-          break;
-        default:
-          jj_la1[0] = jj_gen;
-          break label_1;
-      }
-      switch ((jj_ntk == -1) ? jj_ntk() : jj_ntk) {
-        case 1:
-          jj_consume_token(1);
-          break;
-        case 2:
-          jj_consume_token(2);
-          break;
-        case 3:
-          jj_consume_token(3);
-          break;
-        default:
-          jj_la1[1] = jj_gen;
-          jj_consume_token(-1);
-          throw new ParseException();
-      }
-    }
     jj_consume_token(0);
   }
 
   static final public void MatchedBraces() throws ParseException {
-    jj_consume_token(4);
+    jj_consume_token(5);
     switch ((jj_ntk == -1) ? jj_ntk() : jj_ntk) {
-      case 4:
+      case 5:
         MatchedBraces();
         break;
       default:
-        jj_la1[2] = jj_gen;
+        jj_la1[0] = jj_gen;
         ;
     }
-    jj_consume_token(5);
+    jj_consume_token(6);
   }
 
   static private boolean jj_initialized_once = false;
@@ -70,7 +42,7 @@ public class BraceDemo implements BraceDemoConstants {
   static public Token jj_nt;
   static private int jj_ntk;
   static private int jj_gen;
-  static final private int[] jj_la1 = new int[3];
+  static final private int[] jj_la1 = new int[1];
   static private int[] jj_la1_0;
 
   static {
@@ -78,7 +50,7 @@ public class BraceDemo implements BraceDemoConstants {
   }
 
   private static void jj_la1_init_0() {
-    jj_la1_0 = new int[]{0xe, 0xe, 0x10,};
+    jj_la1_0 = new int[]{0x20,};
   }
 
   /**
@@ -101,42 +73,31 @@ public class BraceDemo implements BraceDemoConstants {
     jj_initialized_once = true;
     try {
       jj_input_stream = new SimpleCharStream(stream, encoding, 1, 1);
-    } catch (java.io.UnsupportedEncodingException e) {
-      throw new RuntimeException(e);
-    }
+    } catch (java.io.UnsupportedEncodingException e) { throw new RuntimeException(e); }
     token_source = new BraceDemoTokenManager(jj_input_stream);
     token = new Token();
     jj_ntk = -1;
     jj_gen = 0;
-    for (int i = 0; i < 3; i++) jj_la1[i] = -1;
+    for (int i = 0; i < 1; i++) jj_la1[i] = -1;
   }
 
-  /**
-   * Reinitialise.
-   */
+  /** Reinitialise. */
   static public void ReInit(java.io.InputStream stream) {
-    ReInit(stream, null);
+     ReInit(stream, null);
   }
-
-  /**
-   * Reinitialise.
-   */
+  /** Reinitialise. */
   static public void ReInit(java.io.InputStream stream, String encoding) {
     try {
       jj_input_stream.ReInit(stream, encoding, 1, 1);
-    } catch (java.io.UnsupportedEncodingException e) {
-      throw new RuntimeException(e);
-    }
+    } catch (java.io.UnsupportedEncodingException e) { throw new RuntimeException(e); }
     token_source.ReInit(jj_input_stream);
     token = new Token();
     jj_ntk = -1;
     jj_gen = 0;
-    for (int i = 0; i < 3; i++) jj_la1[i] = -1;
+    for (int i = 0; i < 1; i++) jj_la1[i] = -1;
   }
 
-  /**
-   * Constructor.
-   */
+  /** Constructor. */
   public BraceDemo(java.io.Reader stream) {
     if (jj_initialized_once) {
       System.out.println("ERROR: Second call to constructor of static parser. ");
@@ -150,24 +111,20 @@ public class BraceDemo implements BraceDemoConstants {
     token = new Token();
     jj_ntk = -1;
     jj_gen = 0;
-    for (int i = 0; i < 3; i++) jj_la1[i] = -1;
+    for (int i = 0; i < 1; i++) jj_la1[i] = -1;
   }
 
-  /**
-   * Reinitialise.
-   */
+  /** Reinitialise. */
   static public void ReInit(java.io.Reader stream) {
     jj_input_stream.ReInit(stream, 1, 1);
     token_source.ReInit(jj_input_stream);
     token = new Token();
     jj_ntk = -1;
     jj_gen = 0;
-    for (int i = 0; i < 3; i++) jj_la1[i] = -1;
+    for (int i = 0; i < 1; i++) jj_la1[i] = -1;
   }
 
-  /**
-   * Constructor with generated Token Manager.
-   */
+  /** Constructor with generated Token Manager. */
   public BraceDemo(BraceDemoTokenManager tm) {
     if (jj_initialized_once) {
       System.out.println("ERROR: Second call to constructor of static parser. ");
@@ -180,18 +137,16 @@ public class BraceDemo implements BraceDemoConstants {
     token = new Token();
     jj_ntk = -1;
     jj_gen = 0;
-    for (int i = 0; i < 3; i++) jj_la1[i] = -1;
+    for (int i = 0; i < 1; i++) jj_la1[i] = -1;
   }
 
-  /**
-   * Reinitialise.
-   */
+  /** Reinitialise. */
   public void ReInit(BraceDemoTokenManager tm) {
     token_source = tm;
     token = new Token();
     jj_ntk = -1;
     jj_gen = 0;
-    for (int i = 0; i < 3; i++) jj_la1[i] = -1;
+    for (int i = 0; i < 1; i++) jj_la1[i] = -1;
   }
 
   static private Token jj_consume_token(int kind) throws ParseException {
@@ -209,9 +164,7 @@ public class BraceDemo implements BraceDemoConstants {
   }
 
 
-  /**
-   * Get the next Token.
-   */
+/** Get the next Token. */
   static final public Token getNextToken() {
     if (token.next != null) token = token.next;
     else token = token.next = token_source.getNextToken();
@@ -220,9 +173,7 @@ public class BraceDemo implements BraceDemoConstants {
     return token;
   }
 
-  /**
-   * Get the specific Token.
-   */
+/** Get the specific Token. */
   static final public Token getToken(int index) {
     Token t = token;
     for (int i = 0; i < index; i++) {
@@ -243,17 +194,15 @@ public class BraceDemo implements BraceDemoConstants {
   static private int[] jj_expentry;
   static private int jj_kind = -1;
 
-  /**
-   * Generate ParseException.
-   */
+  /** Generate ParseException. */
   static public ParseException generateParseException() {
     jj_expentries.clear();
-    boolean[] la1tokens = new boolean[6];
+    boolean[] la1tokens = new boolean[7];
     if (jj_kind >= 0) {
       la1tokens[jj_kind] = true;
       jj_kind = -1;
     }
-    for (int i = 0; i < 3; i++) {
+    for (int i = 0; i < 1; i++) {
       if (jj_la1[i] == jj_gen) {
         for (int j = 0; j < 32; j++) {
           if ((jj_la1_0[i] & (1 << j)) != 0) {
@@ -262,7 +211,7 @@ public class BraceDemo implements BraceDemoConstants {
         }
       }
     }
-    for (int i = 0; i < 6; i++) {
+    for (int i = 0; i < 7; i++) {
       if (la1tokens[i]) {
         jj_expentry = new int[1];
         jj_expentry[0] = i;
@@ -271,20 +220,16 @@ public class BraceDemo implements BraceDemoConstants {
     }
     int[][] exptokseq = new int[jj_expentries.size()][];
     for (int i = 0; i < jj_expentries.size(); i++) {
-      exptokseq[i] = (int[]) jj_expentries.get(i);
+      exptokseq[i] = (int[])jj_expentries.get(i);
     }
     return new ParseException(token, exptokseq, tokenImage);
   }
 
-  /**
-   * Enable tracing.
-   */
+  /** Enable tracing. */
   static final public void enable_tracing() {
   }
 
-  /**
-   * Disable tracing.
-   */
+  /** Disable tracing. */
   static final public void disable_tracing() {
   }
 

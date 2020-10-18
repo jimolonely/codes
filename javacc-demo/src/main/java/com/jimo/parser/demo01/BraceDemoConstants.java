@@ -23,9 +23,10 @@ public interface BraceDemoConstants {
      */
     String[] tokenImage = {
             "<EOF>",
+            "\" \"",
+            "\"\\t\"",
             "\"\\n\"",
             "\"\\r\"",
-            "\"\\n\\r\"",
             "\"{\"",
             "\"}\"",
     };

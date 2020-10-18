@@ -6,14 +6,10 @@ package com.jimo.parser.demo01;
  */
 public class BraceDemoTokenManager implements BraceDemoConstants {
 
-    /**
-     * Debug output.
-     */
+    /** Debug output. */
     public static java.io.PrintStream debugStream = System.out;
 
-    /**
-     * Set debug output.
-     */
+    /** Set debug output. */
     public static void setDebugStream(java.io.PrintStream ds) {
         debugStream = ds;
     }
@@ -26,60 +22,38 @@ public class BraceDemoTokenManager implements BraceDemoConstants {
 
     static private int jjMoveStringLiteralDfa0_0() {
         switch (curChar) {
-            case 10:
-                jjmatchedKind = 1;
-                return jjMoveStringLiteralDfa1_0(0x8L);
-            case 13:
-                return jjStopAtPos(0, 2);
             case 123:
-                return jjStopAtPos(0, 4);
-            case 125:
                 return jjStopAtPos(0, 5);
+            case 125:
+                return jjStopAtPos(0, 6);
             default:
                 return 1;
         }
     }
 
-    static private int jjMoveStringLiteralDfa1_0(long active0) {
-        try {
-            curChar = input_stream.readChar();
-        } catch (java.io.IOException e) {
-            return 1;
-        }
-        switch (curChar) {
-            case 13:
-                if ((active0 & 0x8L) != 0L)
-                    return jjStopAtPos(1, 3);
-                break;
-            default:
-                return 2;
-        }
-        return 2;
-    }
-
     static final int[] jjnextStates = {
     };
 
-    /**
-     * Token literal values.
-     */
+    /** Token literal values. */
     public static final String[] jjstrLiteralImages = {
-            "", "\12", "\15", "\12\15", "\173", "\175",};
+            "", null, null, null, null, "\173", "\175",};
 
-    /**
-     * Lexer state names.
-     */
+    /** Lexer state names. */
     public static final String[] lexStateNames = {
             "DEFAULT",
+    };
+    static final long[] jjtoToken = {
+            0x61L,
+    };
+    static final long[] jjtoSkip = {
+            0x1eL,
     };
     static protected SimpleCharStream input_stream;
     static private final int[] jjrounds = new int[0];
     static private final int[] jjstateSet = new int[0];
     static protected char curChar;
 
-    /**
-     * Constructor.
-     */
+    /** Constructor. */
     public BraceDemoTokenManager(SimpleCharStream stream) {
         if (input_stream != null)
             throw new TokenMgrError("ERROR: Second call to constructor of static lexer. You must use ReInit() to " +
@@ -87,17 +61,13 @@ public class BraceDemoTokenManager implements BraceDemoConstants {
         input_stream = stream;
     }
 
-    /**
-     * Constructor.
-     */
+    /** Constructor. */
     public BraceDemoTokenManager(SimpleCharStream stream, int lexState) {
         this(stream);
         SwitchTo(lexState);
     }
 
-    /**
-     * Reinitialise parser.
-     */
+    /** Reinitialise parser. */
     static public void ReInit(SimpleCharStream stream) {
         jjmatchedPos = jjnewStateCnt = 0;
         curLexState = defaultLexState;
@@ -112,17 +82,13 @@ public class BraceDemoTokenManager implements BraceDemoConstants {
             jjrounds[i] = 0x80000000;
     }
 
-    /**
-     * Reinitialise parser.
-     */
+    /** Reinitialise parser. */
     static public void ReInit(SimpleCharStream stream, int lexState) {
         ReInit(stream);
         SwitchTo(lexState);
     }
 
-    /**
-     * Switch to specified lex state.
-     */
+    /** Switch to specified lex state. */
     static public void SwitchTo(int lexState) {
         if (lexState >= 1 || lexState < 0)
             throw new TokenMgrError("Error: Ignoring invalid lexical state : " + lexState + ". State unchanged.",
@@ -180,14 +146,25 @@ public class BraceDemoTokenManager implements BraceDemoConstants {
                 return matchedToken;
             }
 
+            try {
+                input_stream.backup(0);
+                while (curChar <= 32 && (0x100002600L & (1L << curChar)) != 0L)
+                    curChar = input_stream.BeginToken();
+            } catch (java.io.IOException e1) {
+                continue EOFLoop;
+            }
             jjmatchedKind = 0x7fffffff;
             jjmatchedPos = 0;
             curPos = jjMoveStringLiteralDfa0_0();
             if (jjmatchedKind != 0x7fffffff) {
                 if (jjmatchedPos + 1 < curPos)
                     input_stream.backup(curPos - jjmatchedPos - 1);
-                matchedToken = jjFillToken();
-                return matchedToken;
+                if ((jjtoToken[jjmatchedKind >> 6] & (1L << (jjmatchedKind & 077))) != 0L) {
+                    matchedToken = jjFillToken();
+                    return matchedToken;
+                } else {
+                    continue EOFLoop;
+                }
             }
             int error_line = input_stream.getEndLine();
             int error_column = input_stream.getEndColumn();
