@@ -1,5 +1,6 @@
 package com.jimo.tool;
 
+import com.jimo.tool.del.DeleteTable;
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.hbase.HBaseConfiguration;
 import org.apache.hadoop.hbase.HRegionInfo;
@@ -19,18 +20,37 @@ public class Main {
     private static Logger logger = LoggerFactory.getLogger(Main.class);
 
     public static void main(String[] args) throws IOException {
-        if (args.length < 2) {
-            throw new IllegalArgumentException("java -jar hbase-merge-tool.jar zk.quorum tablePattern [isRegex=false]");
+        if (args.length < 3) {
+            throw new IllegalArgumentException("java -jar hbase-merge-tool.jar zk.quorum tablePattern command" +
+                    "(merge|delete) [isRegex=false]");
         }
         String zk = args[0];
         String tablePattern = args[1];
-        boolean regex = args.length > 2 && Boolean.parseBoolean(args[2]);
+        String command = args[2];
+        boolean regex = args.length > 3 && Boolean.parseBoolean(args[3]);
 
         final Configuration conf = HBaseConfiguration.create();
         conf.set("hbase.zookeeper.quorum", zk);
         final Connection connection = ConnectionFactory.createConnection(conf);
         final HBaseAdmin admin = (HBaseAdmin) connection.getAdmin();
 
+        if (command.equals("delete")) {
+            doDelete(admin, tablePattern);
+        } else if (command.equals("merge")) {
+            doMerge(tablePattern, regex, admin);
+        } else {
+            throw new IllegalArgumentException("不合法的command");
+        }
+
+        admin.close();
+    }
+
+    private static void doDelete(HBaseAdmin admin, String path) {
+        final DeleteTable deleteTable = new DeleteTable();
+        deleteTable.delete(path, admin);
+    }
+
+    private static void doMerge(String tablePattern, boolean regex, HBaseAdmin admin) throws IOException {
         final TableName[] tableNames;
 
         if (regex) {
@@ -42,8 +62,6 @@ public class Main {
         for (TableName tableName : tableNames) {
             mergeRegion(tableName, admin);
         }
-
-        admin.close();
     }
 
     private static void mergeRegion(TableName tableName, HBaseAdmin admin) throws IOException {
