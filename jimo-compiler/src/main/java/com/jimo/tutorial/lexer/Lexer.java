@@ -1,9 +1,18 @@
 package com.jimo.tutorial.lexer;
 
+import com.jimo.tutorial.symbols.Type;
+
 import java.io.IOException;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
+/**
+ * 词法解析
+ *
+ * @author jimo
+ * @date 2020/11/7 17:28
+ * @since 1.0.0
+ */
 public class Lexer {
     public static int line = 1;
 
@@ -22,7 +31,10 @@ public class Lexer {
         reserve(new Word("break", Tag.IF));
         reserve(Word.True);
         reserve(Word.False);
-        // TODO
+        reserve(Type.Int);
+        reserve(Type.Float);
+        reserve(Type.Char);
+        reserve(Type.Bool);
     }
 
     void readChar() throws IOException {
