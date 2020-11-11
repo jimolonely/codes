@@ -1,5 +1,8 @@
 package com.jimo.tutorial.symbols;
 
+import com.jimo.tutorial.inter.Id;
+import com.jimo.tutorial.lexer.Token;
+
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
@@ -12,7 +15,25 @@ import java.util.concurrent.ConcurrentHashMap;
  */
 public class Env {
 
-    // TODO Id
-    private Map<String, String> table = new ConcurrentHashMap<>();
+    private Map<Token, Id> table = new ConcurrentHashMap<>();
 
+    protected Env prev;
+
+    public Env(Env n) {
+        prev = n;
+    }
+
+    public void put(Token w, Id i) {
+        table.put(w, i);
+    }
+
+    public Id get(Token w) {
+        for (Env e = this; e != null; e = e.prev) {
+            final Id id = e.table.get(w);
+            if (id != null) {
+                return id;
+            }
+        }
+        return null;
+    }
 }
