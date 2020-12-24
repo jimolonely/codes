@@ -3,6 +3,10 @@ package com.jimo.tool;
 import org.apache.hadoop.hbase.HRegionInfo;
 import org.junit.jupiter.api.Test;
 
+import java.util.regex.Pattern;
+
+import static org.junit.Assert.assertTrue;
+
 public class MainTest {
 
     @Test
@@ -14,4 +18,10 @@ public class MainTest {
     }
 
 
+    @Test
+    void testRegex() {
+        Pattern pattern = Pattern.compile("wan.*");
+        assertTrue(pattern.matcher("wangpe").matches());
+        assertTrue(pattern.matcher("wangpe12").matches());
+    }
 }

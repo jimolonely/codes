@@ -13,7 +13,9 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.List;
+import java.util.regex.Pattern;
 
 public class Main {
 
@@ -22,12 +24,13 @@ public class Main {
     public static void main(String[] args) throws IOException {
         if (args.length < 3) {
             throw new IllegalArgumentException("java -jar hbase-merge-tool.jar zk.quorum tablePattern command" +
-                    "(merge|delete) [isRegex=false]");
+                    "(merge|delete) [isRegex=false] [namespace=default]");
         }
         String zk = args[0];
         String tablePattern = args[1];
         String command = args[2];
         boolean regex = args.length > 3 && Boolean.parseBoolean(args[3]);
+        String namespace = args.length > 4 ? args[4] : "default";
 
         final Configuration conf = HBaseConfiguration.create();
         conf.set("hbase.zookeeper.quorum", zk);
@@ -37,7 +40,7 @@ public class Main {
         if (command.equals("delete")) {
             doDelete(admin, tablePattern);
         } else if (command.equals("merge")) {
-            doMerge(tablePattern, regex, admin);
+            doMerge(tablePattern, regex, admin, namespace);
         } else {
             throw new IllegalArgumentException("不合法的command");
         }
@@ -50,13 +53,20 @@ public class Main {
         deleteTable.delete(path, admin);
     }
 
-    private static void doMerge(String tablePattern, boolean regex, HBaseAdmin admin) throws IOException {
-        final TableName[] tableNames;
+    private static void doMerge(String tablePattern, boolean regex, HBaseAdmin admin, String namespace) throws IOException {
+        final List<TableName> tableNames = new ArrayList<>();
 
+        final TableName[] allTable = admin.listTableNamesByNamespace(namespace);
         if (regex) {
-            tableNames = admin.listTableNames(tablePattern);
+//            tableNames = admin.listTableNames(tablePattern);
+            Pattern pattern = Pattern.compile(tablePattern);
+            for (TableName t : allTable) {
+                if (pattern.matcher(t.getNameAsString()).matches()) {
+                    tableNames.add(t);
+                }
+            }
         } else {
-            tableNames = new TableName[]{TableName.valueOf(tablePattern)};
+            tableNames.add(TableName.valueOf(tablePattern));
         }
 
         for (TableName tableName : tableNames) {
