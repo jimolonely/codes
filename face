@@ -1,16 +1,16 @@
-<mxfile host="app.diagrams.net" modified="2022-03-18T01:14:40.332Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.51 Safari/537.36" etag="ANC79tuJxLko7WplyWHw" version="17.1.2" type="github">
+<mxfile host="app.diagrams.net" modified="2022-03-18T01:21:19.958Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.51 Safari/537.36" etag="W0bjwdyTarAVqMVk7-aw" version="17.1.2" type="github">
   <diagram id="nykQP9pd-hNnzfNa85de" name="Page-1">
     <mxGraphModel dx="1209" dy="791" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="aWdwBC-b2DexiPPqQBXa-2" value="Linux Shell" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;sketch=1;" parent="1" vertex="1">
-          <mxGeometry x="99" y="510" width="191" height="20" as="geometry" />
+        <mxCell id="aWdwBC-b2DexiPPqQBXa-2" value="Shell" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;sketch=1;" parent="1" vertex="1">
+          <mxGeometry x="199" y="510" width="90" height="20" as="geometry" />
         </mxCell>
         <mxCell id="aWdwBC-b2DexiPPqQBXa-3" value="Centos" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;sketch=1;glass=0;" parent="1" vertex="1">
           <mxGeometry x="99" y="540" width="91" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="aWdwBC-b2DexiPPqQBXa-4" value="Debian" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;sketch=1;" parent="1" vertex="1">
+        <mxCell id="aWdwBC-b2DexiPPqQBXa-4" value="Pyhton" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;sketch=1;" parent="1" vertex="1">
           <mxGeometry x="199" y="540" width="91" height="20" as="geometry" />
         </mxCell>
         <mxCell id="aWdwBC-b2DexiPPqQBXa-7" value="设计模式" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;sketch=1;" parent="1" vertex="1">
@@ -114,6 +114,9 @@
         </mxCell>
         <mxCell id="sWrderpffoNrXYAuHNAe-5" value="经常实践，能解决常见问题，了解一些原理" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;glass=0;sketch=1;" vertex="1" parent="1">
           <mxGeometry x="199.5" y="290" width="310" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="sWrderpffoNrXYAuHNAe-6" value="Docker" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;sketch=1;" vertex="1" parent="1">
+          <mxGeometry x="98" y="510" width="91" height="20" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
